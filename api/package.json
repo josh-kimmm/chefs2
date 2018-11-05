@@ -5,11 +5,12 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "@sailshq/lodash": "^3.10.3",
+    "async": "2.0.1",
+    "bcryptjs": "^2.4.3",
     "sails": "^1.0.2",
     "sails-hook-orm": "^2.0.0-16",
-    "sails-hook-sockets": "^1.4.0",
-    "@sailshq/lodash": "^3.10.3",
-    "async": "2.0.1"
+    "sails-hook-sockets": "^1.4.0"
   },
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3"
@@ -26,8 +27,12 @@
     "url": "git://github.com/Joshua/chefs-2.git"
   },
   "author": "Joshua",
-  "license": "",
+  "license": "ISC",
   "engines": {
     "node": ">=8.11"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Joshua/chefs-2/issues"
+  },
+  "homepage": "https://github.com/Joshua/chefs-2#readme"
 }
