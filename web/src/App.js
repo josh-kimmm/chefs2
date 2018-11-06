@@ -33,21 +33,22 @@ class App extends Component {
 
     return (
       /* UNCOMMENT FOR TEMP SIGNUP FORM */
-      // <form action="http://localhost:1337/signup" method="post">
-      //   <input name="email" placeholder="email"/>
-      //   <input name="password" type="password" placeholder="password"/>
-      //   <input name="confirmPassword" type="password" placeholder="confirmPassword"/>
-      //   <input name="firstName" placeholder="firstName"/>
-      //   <input name="lastName" placeholder="lastName"/>
-      //   <button>Register</button>
-      // </form>
+      <div>
+        <form action="http://localhost:1337/signup" method="post">
+          <input name="email" placeholder="email"/>
+          <input name="password" type="password" placeholder="password"/>
+          <input name="confirmPassword" type="password" placeholder="confirmPassword"/>
+          <input name="firstName" placeholder="firstName"/>
+          <input name="lastName" placeholder="lastName"/>
+          <button class="btn">Registerrr</button>
+        </form>
 
-      /* UNCOMMENT FOR TEMP LOGIN FORM */
-      <form action="http://localhost:1337/login" method="post">
-        <input name="email" placeholder="email"/>
-        <input name="password" type="password" placeholder="password"/>
-        <button>Login</button>
-      </form>
+        <form action="http://localhost:1337/login" method="post">
+          <input name="email" placeholder="email"/>
+          <input name="password" type="password" placeholder="password"/>
+          <button>Login</button>
+        </form>
+      </div>
     );
   }
 }
