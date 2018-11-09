@@ -7,25 +7,68 @@
 
 module.exports = {
 
-    attributes: {
-  
-      //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-      //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-      //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-
-  
-      //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-      //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-      //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-  
-  
-      //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-      //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-      //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-        user: {
-            model: 'User',
-        },
+  attributes: {
+    /**
+     * foreign key: User
+     * one to one association
+     */
+    user: {
+      collection: 'User',
+      via: 'userProfile',
     },
-  
-  };
-  
+
+    /**
+     * foreign key: Recipe
+     * many to many
+     */
+    cookbook: {
+      collection: 'Recipe',
+      via: 'userProfile',
+    },
+
+    followingList: {
+      type: 'string',
+    },
+
+    followerList: {
+      type: 'string',
+    },
+
+    /**
+     * foreign key: Ingredient
+     * many to many
+     */
+    dietaryRestriction: {
+      collection: 'Ingredient',
+      via: 'userProfileDietaryRestriction',
+    },
+
+    /**
+     * foreign key: Ingredient
+     * many to many
+     */
+    ingredientPreference: {
+      collection: 'Ingredient',
+      via: 'userProfileIngredientPreference',
+    },
+
+    emailNotification: {
+      type: 'string',
+    },
+
+    cookedRecipes: {
+      type: 'string',
+    },
+
+    /**
+     * foreign key: Review
+     * one to many
+     */
+    reviews: {
+      collection: 'Review',
+      via: 'userProfile',
+    },
+  },
+
+};
+

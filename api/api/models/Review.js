@@ -1,5 +1,5 @@
 /**
- * User.js
+ * Review.js
  *
  * @description :: A model definition.  Represents a database table/collection/etc.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -10,32 +10,28 @@ module.exports = {
   attributes: {
     /**
      * foreign key: UserProfile
-     * one to one association
+     * many to one
      */
     userProfile: {
-      model: 'UserProfile',
+      collection: 'UserProfile',
+      via: 'reviews',
     },
 
-    email: {
-      type: 'string',
-      unique: true,
-      required: true,
+    rating: {
+      type: 'number',
     },
 
-    password: {
+    reviewBody: {
       type: 'string',
-      required: true,
     },
 
-    firstName: {
-      type: 'string',
-      required: true,
-    },
-
-    lastName: {
-      type: 'string',
-      required: true,
-    },
+    /**
+     * foreign key: UserProfile
+     * many to one
+     */
+    recipe: {
+      model: 'Recipe',
+    }
   },
 
 };
