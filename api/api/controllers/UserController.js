@@ -78,8 +78,8 @@ module.exports = {
   login: async function(req, res) {
     console.log('random start');
 
-    var recipes = search.randomPick(await loader.findAllRecipe(), 2);
-    for (var i = 0; i < 2; i++) {
+    var recipes = search.randomPick(await loader.findAllRecipe(), 1);
+    for (var i = 0; i < 1; i++) {
       console.log(recipes[i]);
     }
 
