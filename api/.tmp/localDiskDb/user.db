@@ -1,3 +1,4 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"$$indexCreated":{"fieldName":"email","unique":true,"sparse":false}}
-{"createdAt":1541374985449,"updatedAt":1541374985449,"id":1,"email":"tdp011@ucsd.edu","password":"$2a$10$V.8JIw7sdGk6IaMlOAQ5ruM/ZI8PMfhNuBjyvlFbg8uVm17V20Cp.","firstName":"Tuyet Dao","lastName":"Phan","userProfile":1,"_id":1}
+{"createdAt":1541721549600,"updatedAt":1541721594528,"id":1,"email":"e1","password":"123","firstName":"harry","lastName":"potter","userProfile":1,"_id":1}
+{"createdAt":1541723113240,"updatedAt":1541723990758,"id":2,"email":"e2","password":"234","firstName":"tom","lastName":"voldemort","userProfile":2,"_id":2}

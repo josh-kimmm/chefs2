@@ -8,7 +8,7 @@
 const bcrypt = require('bcryptjs');
 
 var search = require('../search/Search');
-var loader = require('../utility/GetRecipeInfo');
+var Recipe = require('../models/Recipe');
 
 module.exports = {
 
@@ -76,7 +76,7 @@ module.exports = {
 
   login: async function(req, res) {
     console.log('random pick 2 recipes');
-    var allRecipes = await loader.findAllRecipes();
+    var allRecipes = await Recipe.findAllRecipes();
     var recipes = search.randomPick(allRecipes, 2);
     for (var i = 0; i < 2; i++) {
       console.log(recipes[i]);
