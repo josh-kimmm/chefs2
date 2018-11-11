@@ -8,6 +8,9 @@
     "@sailshq/lodash": "^3.10.3",
     "async": "2.0.1",
     "bcryptjs": "^2.4.3",
+    "js-priority-queue": "^0.1.5",
+    "node-priority-queue": "^1.0.0",
+    "requirejs": "^2.3.6",
     "sails": "^1.0.2",
     "sails-hook-orm": "^2.0.0-16",
     "sails-hook-sockets": "^1.4.0"

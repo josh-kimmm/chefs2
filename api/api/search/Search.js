@@ -1,4 +1,5 @@
 var random = require('../utility/RandomGenerator');
+var PriorityQueue = require('js-priority-queue');
 
 module.exports = {
   /**
@@ -18,4 +19,28 @@ module.exports = {
     }
     return selectedRecipes;
   },
+
+  /**
+   * Select the top k rated recipes
+   * @param recipes all recipes
+   * @param k number of recipes selected
+   * @returns top k rated recipes
+   */
+  topRated: function (recipes, k) {
+    if (recipes.length <= k) {
+      return recipes;
+    }
+    var priorityQueue = new PriorityQueue({comparator: (r1, r2) => r1['rating'] - r2['rating']});
+    for (var i = 0; i < recipes.length; i++) {
+      priorityQueue.queue(recipes[i]);
+      if (priorityQueue.length > k) {
+        priorityQueue.dequeue();
+      }
+    }
+    var topRecipes = new Array(k);
+    for (var i = k-1; i >= 0; i--) {
+      topRecipes[i] = priorityQueue.dequeue();
+    }
+    return topRecipes;
+  }
 };

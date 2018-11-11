@@ -5,14 +5,14 @@ module.exports = {
    * @returns {Promise<*>} full info for that recipe
    */
   findRecipeById: async function (recipeId) {
-    return await Recipe.find({id: recipeId}).populateAll();
+    return await Recipe.findOne({id: recipeId}).populateAll();
   },
 
   /**
    * Find all recipes with full info.
    * @returns {Promise<*>} all recipes
    */
-  findAllRecipe: async function() {
+  findAllRecipes: async function() {
     return await Recipe.find().populateAll();
   },
 };

@@ -8,7 +8,6 @@
 const bcrypt = require('bcryptjs');
 
 var search = require('../search/Search');
-var random = require('../utility/RandomGenerator');
 var loader = require('../utility/GetRecipeInfo');
 
 module.exports = {
@@ -36,7 +35,7 @@ module.exports = {
       return res.json({
         'errorMessage': 'Please enter and confirm your password.',
       });
-    } else if (password != confirmPassword) {
+    } else if (password !== confirmPassword) {
       return res.json({
         'errorMessage': 'Your passwords do not match.',
       });
@@ -76,14 +75,21 @@ module.exports = {
   },
 
   login: async function(req, res) {
-    console.log('random start');
-
-    var recipes = search.randomPick(await loader.findAllRecipe(), 1);
-    for (var i = 0; i < 1; i++) {
+    console.log('random pick 2 recipes');
+    var allRecipes = await loader.findAllRecipes();
+    var recipes = search.randomPick(allRecipes, 2);
+    for (var i = 0; i < 2; i++) {
       console.log(recipes[i]);
+      console.log('\n');
     }
-
     console.log('random end');
+    console.log('top 2 rated recipes');
+    recipes = search.topRated(allRecipes, 2);
+    for (var i = 0; i < 2; i++) {
+      console.log(recipes[i]);
+      console.log('\n');
+    }
+    console.log('top rated selected');
     let {email, password} = req.allParams();
     let user = await User.find({
       email: email,
