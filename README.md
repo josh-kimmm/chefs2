@@ -27,3 +27,8 @@ This project's boilerplate is based on an expanded seed app provided by the [Sai
 Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
 -->
 
+### React.js Notes
+
++ Make sure these commands have been run once on your project root: ```npm init -y``` ```npm install babel-cli@6 babel-preset-react-app@3```
++ Write/edit your jsx React code in assets/jsx.
++ Go to your project root and run this command: ```npx babel --watch assets/jsx --out-dir asts/js --presets react-app/prod``` everytime you want to apply your changes to your React.js code.
