@@ -31,4 +31,4 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 
 + Make sure these commands have been run once on your project root: ```npm init -y``` ```npm install babel-cli@6 babel-preset-react-app@3```
 + Write/edit your jsx React code in assets/jsx.
-+ Go to your project root and run this command: ```npx babel --watch assets/jsx --out-dir asts/js --presets react-app/prod``` everytime you want to apply your changes to your React.js code.
++ Go to your project root and run this command: ```npx babel --watch assets/jsx --out-dir assets/js --presets react-app/prod``` everytime you want to apply your changes to your React.js code.
