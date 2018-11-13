@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NEW_APP_NAME</title>
+
+    <% /* Viewport tag for sensible mobile support */ %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <% /*
+        Stylesheets
+        ========================
+
+        Stylesheets can be hard-coded as «link» tags, automatically injected
+        by the asset pipeline between "STYLES" and "STYLES END", or both.
+        (https://sailsjs.com/docs/concepts/assets/task-automation)
+    */ %>
+
+    <% /* Auto-injected «link» tags: */ %>
+    <!--STYLES-->
+    <link rel="stylesheet" href="/dependencies/bootstrap-4/bootstrap-4.css">
+    <link rel="stylesheet" href="/dependencies/font-awesome-4/css/font-awesome.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+  </head>
+
+  <body>
+    <div id="page-wrap">
+      <%- body %>
+    </div>
+    <div id="react"></div>
+
+
+    <% /*
+      Client-side JavaScript
+      ========================
+
+      Scripts can be hard-coded as «script» tags, automatically injected
+      by the asset pipeline between "SCRIPTS" and "SCRIPTS END", or both.
+      (https://sailsjs.com/docs/concepts/assets/task-automation)
+    */ %>
+
+    <% /* Load Stripe Checkout */ %>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+    <% /* Delete the global `self` to help avoid client-side bugs.
+    (see https://developer.mozilla.org/en-US/docs/Web/API/Window/self) */ %>
+    <script>delete window.self;</script>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+
+    <% /* Auto-injected «script» tags: */ %>
+    <!--SCRIPTS-->
+    <script src="/dependencies/sails.io.js"></script>
+    <script src="/dependencies/lodash.js"></script>
+    <script src="/dependencies/jquery.min.js"></script>
+    <script src="/dependencies/bowser.js"></script>
+    <script src="/dependencies/vue.js"></script>
+    <script src="/dependencies/bootstrap-4/bootstrap-4.bundle.js"></script>
+    <script src="/dependencies/cloud.js"></script>
+    <script src="/dependencies/parasails.js"></script>
+    <script src="/js/cloud.setup.js"></script>
+    <script src="/js/components/ajax-button.component.js"></script>
+    <script src="/js/components/ajax-form.component.js"></script>
+    <script src="/js/components/modal.component.js"></script>
+    <script src="/js/utilities/open-stripe-checkout.js"></script>
+    <script src="/js/App.js"></script>
+    <script src="/js/pages/498.page.js"></script>
+    <script src="/js/pages/account/account-overview.page.js"></script>
+    <script src="/js/pages/account/edit-password.page.js"></script>
+    <script src="/js/pages/account/edit-profile.page.js"></script>
+    <script src="/js/pages/contact.page.js"></script>
+    <script src="/js/pages/dashboard/welcome.page.js"></script>
+    <script src="/js/pages/entrance/confirmed-email.page.js"></script>
+    <script src="/js/pages/entrance/forgot-password.page.js"></script>
+    <script src="/js/pages/entrance/login.page.js"></script>
+    <script src="/js/pages/entrance/new-password.page.js"></script>
+    <script src="/js/pages/entrance/signup.page.js"></script>
+    <script src="/js/pages/faq.page.js"></script>
+    <script src="/js/pages/homepage.page.js"></script>
+    <script src="/js/pages/legal/privacy.page.js"></script>
+    <script src="/js/pages/legal/terms.page.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
