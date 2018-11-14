@@ -1,0 +1,5 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"ingredientName","unique":true,"sparse":false}}
+{"createdAt":1542148911531,"updatedAt":1542148911531,"id":1,"ingredientName":"tomato","_id":1}
+{"createdAt":1542149138115,"updatedAt":1542149138115,"id":2,"ingredientName":"pumpkin","_id":2}
+{"createdAt":1542149855699,"updatedAt":1542149855699,"id":3,"ingredientName":"pear","_id":3}

@@ -1,2 +1,5 @@
-
+<script>
+    var csrf = "<%- _csrf %>";
+    var result = <%= typeof result == 'undefined' ? '' : JSON.stringify(result) %>;
+</script>
 <%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>

@@ -18,4 +18,9 @@ module.exports.policies = {
   'view-homepage-or-redirect': true,
   'deliver-contact-form-message': true,
 
+  RecipeController: {
+    'createIngredient': true,
+    'createRecipe': true,
+  },
+
 };
