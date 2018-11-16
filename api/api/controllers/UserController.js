@@ -100,9 +100,14 @@ module.exports = {
         return res.json(userFound);
       }
     }
-    return res.json({
-      'errorMessage': 'Email address or password is incorrect.',
-    });
+    return res.json(recipes);
+    // return res.json({
+    //   'errorMessage': 'Email address or password is incorrect.',
+    // });
+  },
+
+  top: async function(req, res) {
+    return res.json({'text': 'hi'});
   },
 
 };

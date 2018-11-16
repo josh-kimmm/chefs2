@@ -29,7 +29,7 @@ module.exports.routes = {
   'GET /test': { action: 'test/getData'},
   'POST /signup': 'UserController.signup',
   'POST /login': 'UserController.login',
-
+  'GET /top': 'UserController.top',
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
   //  ╚╩╝╚═╝╚═╝╩ ╩╚═╝╚═╝╩ ╩╚═╝
