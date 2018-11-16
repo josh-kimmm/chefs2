@@ -106,8 +106,4 @@ module.exports = {
     // });
   },
 
-  top: async function(req, res) {
-    return res.json({'text': 'hi'});
-  },
-
 };
