@@ -73,17 +73,17 @@ module.exports = {
 
     login: async function(req, res) {
         let {email, password} = req.allParams();
-        let user = await User.find({
-            email: email,
-        });
-        if (user.length == 1) {
-            userFound = user[0];
-            if (bcrypt.compareSync(password, userFound.password)) {
-                return res.json(userFound);
-            }
-        }
+        // let user = await User.find({
+        //     email: email,
+        // });
+        // if (user.length == 1) {
+        //     userFound = user[0];
+        //     if (bcrypt.compareSync(password, userFound.password)) {
+        //         return res.json(userFound);
+        //     }
+        // }
         return res.json({
-            'errorMessage': 'Email address or password is incorrect.',
+            'someData': email + password,
         });
     },
 

@@ -14,8 +14,14 @@ class App extends Component {
     console.log("WUBBAS LUBBBB");
 
     var poop = "poop";
-    var url = "http://localhost:1337/test"
-    var opts = {method: "GET"};
+    var url = "http://localhost:1337/login"
+    var opts = {
+                  method: "POST",
+                  body: JSON.stringify({
+                    email: "josh_kimmm@yahoo.com",
+                    password: "test",
+                  })
+                };
 
     fetch(url, opts).then(function (res) {
           console.log(res);
@@ -35,21 +41,21 @@ class App extends Component {
     return (
       /* UNCOMMENT FOR TEMP SIGNUP FORM */
       <div id="wrap">
-        <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+        <nav className="navbar navbar-default navbar-fixed-top">
+        <div className="container-fluid">
+          <div className="navbar-header">
+            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a className="navbar-brand" href="#">
               <img src={logo}/>
             </a>
           </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
+          <div id="navbar" className="navbar-collapse collapse">
+            <ul className="nav navbar-nav navbar-right">
               <li><a href="login.html">LOG IN</a></li>
               <li><a href="#"><div id="signup">SIGN UP</div></a></li>
             </ul>
@@ -58,11 +64,11 @@ class App extends Component {
         </nav>
 
         <div id="maincontent">
-          <div class= "center">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search Recipes"></input>
-              <div class="input-group-btn">
-                <button class="btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
+          <div className= "center">
+            <div className="input-group">
+              <input type="text" className="form-control" placeholder="Search Recipes"></input>
+              <div className="input-group-btn">
+                <button className="btn" type="button"><i className="glyphicon glyphicon-search"></i></button>
               </div>
             </div>
 
@@ -72,7 +78,7 @@ class App extends Component {
             <input name="confirmPassword" type="password" placeholder="confirmPassword"/>
             <input name="firstName" placeholder="firstName"/>
             <input name="lastName" placeholder="lastName"/>
-            <button class="btn">Registerrr</button>
+            <button className="btn">Registerrr</button>
           </form>
 
           <form action="http://localhost:1337/login" method="post">
@@ -80,6 +86,7 @@ class App extends Component {
             <input name="password" type="password" placeholder="password"/>
             <button>Login</button>
           </form>
+          <button onClick={this.callBackEnd}>YASSS</button>
           </div>
         </div>
       </div>
