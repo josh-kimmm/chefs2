@@ -31,5 +31,5 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 
 + Make sure these commands have been run once on your project root: ```npm init -y``` and ```npm install babel-cli@6 babel-preset-react-app@3```
 + Write/edit your jsx React code in assets/jsx.
-+ Go to your project root and run this command: ```npx babel --watch assets/jsx --out-dir assets/jsx-converts --presets react-app/prod``` everytime you want to apply your changes to your React.js code.
++ Go to your project root and run this command: ```npx babel --watch assets/jsx --out-dir assets/jsx-converted --presets react-app/prod``` everytime you want to apply your changes to your React.js code.
 + If you created a new file in assets/jsx and want to add it to the project, make sure it is converted. Then add ```<script type="module" src="/jsx-converted/[NAME_OF_FILE]"></script>``` in layouts.ejs before the script tag for App.js
