@@ -1,9 +1,9 @@
 'use strict';
+
 if (typeof result == 'undefined') {
-  var result = {};
-} else {
-  result = JSON.parse(result);
+  result = {};
 }
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -11,7 +11,7 @@ class App extends React.Component {
       csrf: typeof csrf == 'undefined' || !csrf ? '' : csrf,
       errorMessages: typeof result.errorMessages == 'undefined' || !result.errorMessages ? '' : result.errorMessages,
       successMessage: typeof result.successMessage == 'undefined' || !result.successMessage ? '' : result.successMessage,
-      ingredient: typeof result.ingredient == 'undefined' || !result.ingredient ? '' : result.ingredient,
+      ingredient: typeof result.ingredient == 'undefined' || !result.ingredient ? '' : result.ingredient.ingredientName,
     };
   }
 

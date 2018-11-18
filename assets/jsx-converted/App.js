@@ -9,9 +9,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 if (typeof result == 'undefined') {
-  var result = {};
-} else {
-  result = JSON.parse(result);
+  result = {};
 }
 
 var App = function (_React$Component) {
@@ -26,7 +24,7 @@ var App = function (_React$Component) {
       csrf: typeof csrf == 'undefined' || !csrf ? '' : csrf,
       errorMessages: typeof result.errorMessages == 'undefined' || !result.errorMessages ? '' : result.errorMessages,
       successMessage: typeof result.successMessage == 'undefined' || !result.successMessage ? '' : result.successMessage,
-      ingredient: typeof result.ingredient == 'undefined' || !result.ingredient ? '' : result.ingredient
+      ingredient: typeof result.ingredient == 'undefined' || !result.ingredient ? '' : result.ingredient.ingredientName
     };
     return _this;
   }

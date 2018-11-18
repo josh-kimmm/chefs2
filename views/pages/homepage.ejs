@@ -1,5 +1,5 @@
 <script>
     var csrf = "<%- _csrf %>";
-    var result = <%= typeof result == 'undefined' ? '' : JSON.stringify(result) %>;
+    var result = <%- typeof result == "undefined" ? '{}' : result %>;
 </script>
 <%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>
