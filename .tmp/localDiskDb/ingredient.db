@@ -7,6 +7,6 @@
 {"createdAt":1542489802872,"updatedAt":1542489802872,"id":5,"ingredientName":"beef","_id":5}
 {"createdAt":1542489821804,"updatedAt":1542489821804,"id":6,"ingredientName":"pork","_id":6}
 {"createdAt":1542490013373,"updatedAt":1542490013373,"id":7,"ingredientName":"salt","_id":7}
-{"ingredientName":"sugar","createdAt":1542490062819,"updatedAt":1542490062819,"id":8,"_id":8}
-{"ingredientName":"cholula","createdAt":1542490190733,"updatedAt":1542490190733,"id":9,"_id":9}
-{"ingredientName":"onion","createdAt":1542490218360,"updatedAt":1542490218360,"id":10,"_id":10}
+{"createdAt":1542490062819,"updatedAt":1542490062819,"id":8,"ingredientName":"sugar","_id":8}
+{"createdAt":1542490190733,"updatedAt":1542490190733,"id":9,"ingredientName":"cholula","_id":9}
+{"createdAt":1542490218360,"updatedAt":1542490218360,"id":10,"ingredientName":"onion","_id":10}
