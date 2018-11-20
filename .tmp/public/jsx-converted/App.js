@@ -18,12 +18,117 @@ var App = function (_React$Component) {
   }
 
   _createClass(App, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return React.createElement(
-        'div',
-        null,
-        'Hello everyone, this text is made with React.'
+        "div",
+        { id: "wrap" },
+        React.createElement(
+          "nav",
+          { "class": "navbar navbar-default navbar-fixed-top" },
+          React.createElement(
+            "div",
+            { "class": "container-fluid" },
+            React.createElement(
+              "div",
+              { "class": "navbar-header" },
+              React.createElement(
+                "button",
+                { type: "button", "class": "navbar-toggle collapsed", "data-toggle": "collapse", "data-target": "#navbar", "aria-expanded": "false", "aria-controls": "navbar" },
+                React.createElement(
+                  "span",
+                  { "class": "sr-only" },
+                  "Toggle navigation"
+                ),
+                React.createElement("span", { "class": "icon-bar" }),
+                React.createElement("span", { "class": "icon-bar" }),
+                React.createElement("span", { "class": "icon-bar" })
+              ),
+              React.createElement(
+                "a",
+                { "class": "navbar-brand", href: "#" },
+                React.createElement("img", { src: logo })
+              )
+            ),
+            React.createElement(
+              "div",
+              { id: "navbar", "class": "navbar-collapse collapse" },
+              React.createElement(
+                "ul",
+                { "class": "nav navbar-nav navbar-right" },
+                React.createElement(
+                  "li",
+                  null,
+                  React.createElement(
+                    "a",
+                    { href: "login.html" },
+                    "LOG IN"
+                  )
+                ),
+                React.createElement(
+                  "li",
+                  null,
+                  React.createElement(
+                    "a",
+                    { href: "#" },
+                    React.createElement(
+                      "div",
+                      { id: "signup" },
+                      "SIGN UP"
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        React.createElement(
+          "div",
+          { id: "maincontent" },
+          React.createElement(
+            "div",
+            { "class": "center" },
+            React.createElement(
+              "div",
+              { "class": "input-group" },
+              React.createElement("input", { type: "text", "class": "form-control", placeholder: "Search Recipes" }),
+              React.createElement(
+                "div",
+                { "class": "input-group-btn" },
+                React.createElement(
+                  "button",
+                  { "class": "btn", type: "button" },
+                  React.createElement("i", { "class": "glyphicon glyphicon-search" })
+                )
+              )
+            ),
+            React.createElement(
+              "form",
+              { action: "http://localhost:1337/signup", method: "post" },
+              React.createElement("input", { name: "email", placeholder: "email" }),
+              React.createElement("input", { name: "password", type: "password", placeholder: "password" }),
+              React.createElement("input", { name: "confirmPassword", type: "password", placeholder: "confirmPassword" }),
+              React.createElement("input", { name: "firstName", placeholder: "firstName" }),
+              React.createElement("input", { name: "lastName", placeholder: "lastName" }),
+              React.createElement(
+                "button",
+                { "class": "btn" },
+                "Registerrr"
+              )
+            ),
+            React.createElement(
+              "form",
+              { action: "http://localhost:1337/login", method: "post" },
+              React.createElement("input", { name: "email", placeholder: "email" }),
+              React.createElement("input", { name: "password", type: "password", placeholder: "password" }),
+              React.createElement(
+                "button",
+                null,
+                "Login"
+              )
+            )
+          )
+        )
       );
     }
   }]);
@@ -31,5 +136,4 @@ var App = function (_React$Component) {
   return App;
 }(React.Component);
 
-var domContainer = document.querySelector('#react');
-ReactDOM.render(React.createElement(App, null), domContainer);
+export default App;

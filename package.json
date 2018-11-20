@@ -9,7 +9,6 @@
     "@sailshq/lodash": "^3.10.3",
     "@sailshq/socket.io-redis": "^5.2.0",
     "async": "2.0.1",
-    "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "sails": "^1.1.0",
     "sails-hook-apianalytics": "^2.0.0",
@@ -21,6 +20,7 @@
     "@sailshq/eslint": "^4.19.3",
     "@sailshq/htmlhint": "^0.9.16",
     "@sailshq/lesshint": "^4.6.6",
+    "babel-cli": "^6.26.0",
     "grunt": "^1.0.3",
     "sails-hook-grunt": "^3.0.2"
   },
