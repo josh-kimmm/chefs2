@@ -8,6 +8,14 @@
 module.exports = {
 
   attributes: {
+    recipeName: {
+      type: 'string',
+      required: true,
+    },
+    instructions: {
+      type: 'string',
+      required: true,
+    },
     /**
      * foreign key: Ingredient
      * many to many
