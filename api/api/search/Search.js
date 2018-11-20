@@ -42,5 +42,15 @@ module.exports = {
       topRecipes[i] = priorityQueue.dequeue();
     }
     return topRecipes;
+  },
+
+  searchByIngredient: async function (ingredientName) {
+    var ingredientList = await Ingredient.find({
+      ingredientName: {
+        contains: ingredientName,
+      },
+    });
+    ingredientList = ingredientList.map(x => x.id);
+    return await Recipe.findByIngredientId(ingredientList);
   }
 };

@@ -68,5 +68,20 @@ module.exports = {
   findAllRecipes: async function() {
     return await Recipe.find().populateAll();
   },
+
+  findByIngredientId: async function(ingredientId) {
+    var recipes = await Recipe.find().populate('ingredients');
+    var ingredientIdSet = new Set(ingredientId);
+    var selectedRecipes = [];
+    for (var i = 0; i < recipes.length; i++) {
+      for (var j = 0; j < recipes[i].ingredients.length; j++) {
+        if (ingredientIdSet.has(recipes[i].ingredients[j].id)) {
+          selectedRecipes.push(recipes[i]);
+          break;
+        }
+      }
+    }
+    return selectedRecipes;
+  },
 };
 

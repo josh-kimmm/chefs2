@@ -94,6 +94,13 @@ module.exports = {
     let user = await User.find({
       email: email,
     });
+    console.log('recipes with beef');
+    recipes = await search.searchByIngredient('beef');
+    for (var i = 0; i < recipes.length; i++) {
+      console.log(recipes[i]);
+      console.log('\n');
+    }
+    console.log('beef recipe ends');
     if (user.length === 1) {
       userFound = user[0];
       if (bcrypt.compareSync(password, userFound.password)) {
