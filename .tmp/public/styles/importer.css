@@ -324,6 +324,143 @@ body {
     display: block;
   }
 }
+body {
+  background-image: url("/images/background2.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+img {
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+header {
+  background-color: white;
+  padding: 20px 0;
+}
+header .row,
+footer .row {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  font-weight: 700;
+  margin: 0;
+  margin-left: 20px;
+}
+header nav {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+header p {
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 20px;
+  margin: 0;
+}
+.jumbotron h2 {
+  font-size: 100px;
+}
+/*input {
+padding: 10px;
+padding-left: 20px;
+margin-top: 30px;
+width: 600px;
+border: none;
+}*/
+.form-control,
+body {
+  border: 0px;
+  height: 50px;
+}
+#searchit {
+  width: 70px;
+  background-image: none;
+  background-color: #CD5E4E;
+  border-color: white;
+  height: 50px;
+  padding: 0px;
+  border: 0px;
+  color: white;
+}
+.form-control::-webkit-input-placeholder {
+  font-weight: bold;
+}
+.input-group {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+#ingredientsInput {
+  height: 35px;
+  margin-bottom: 20px;
+}
+#cookingMethods {
+  height: 35px;
+}
+.glyphicon {
+  font-size: 20px;
+}
+.container-fluid {
+  padding: 30px;
+  padding-right: 30px;
+}
+#filter {
+  background-color: #CD5E4E;
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+}
+#diet {
+  background-color: white;
+  color: black;
+  width: 220px;
+  height: 35px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+#hours {
+  width: 50px;
+}
+#minutes {
+  width: 70px;
+}
+.dropdown {
+  float: right;
+  margin-right: 24%;
+  margin-top: 40px;
+}
+.dropdown-menu {
+  width: 700px;
+  border-width: 3px;
+  border-color: #CD5E4E;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 #homepage a:not(.btn) {
   color: #14acc2;
   border-bottom: 1px solid #000;
