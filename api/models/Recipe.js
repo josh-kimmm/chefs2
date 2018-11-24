@@ -16,6 +16,9 @@ module.exports = {
       type: 'string',
       required: true,
     },
+    image: {
+      type: 'string',
+    },
     /**
      * foreign key: Ingredient
      * many to many
