@@ -1,5 +1,18 @@
 <div class="user-details">
-    <h1><%= fullName %></h1>
+    <div class="row">
+        <div class="col-8">
+            <h1><%= fullName %></h1>
+        </div>
+        <div class="col-4">
+            <% if (id != req.session.userId) { %>
+                <% if (!following) { %>
+                    <a class="btn btn-primary" href="/follow-user/<%= id %>">Follow</a>
+                <% } else { %>
+                    <a class="btn btn-primary" href="/unfollow-user/<%= id %>">Unfollow</a>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
     <p>
         <%= userProfile.followerList ? userProfile.followerList.length : 0 %> followers
         <%= userProfile.followingList ? userProfile.followingList.length : 0 %> following

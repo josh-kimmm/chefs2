@@ -27,11 +27,13 @@ module.exports = {
     },
 
     followingList: {
-      type: 'string',
+      collection: 'User',
+      via: 'userProfileFollowingList',
     },
 
     followerList: {
-      type: 'string',
+      collection: 'User',
+      via: 'userProfileFollowerList',
     },
 
     /**
