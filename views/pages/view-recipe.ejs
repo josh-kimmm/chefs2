@@ -6,7 +6,11 @@
         <div class="col-md-6 col-12 recipe-details-column">
             <h1><%= recipeName %></h1>
             <p><%= review.length %> user ratings</p>
-            <a href="/save-recipe/<%= id %>" class="btn btn-primary"><%= saved ? 'Unsave' : 'Save' %> Recipe</a>
+            <% if (!saved) { %>
+                <a href="/save-recipe/<%= id %>" class="btn btn-primary">Save Recipe</a>
+            <% } else { %>
+                <a href="/unsave-recipe/<%= id %>" class="btn btn-primary">Unsave Recipe</a>
+            <% } %>
             <p>Diet Type: <%= dietType == '' ? 'N/A' : dietType %></p>
             <p>Prep Time: <%= prepTime == '' ? 'N/A' : prepTime %></p>
             <p>Cooking Method: <%= cookingMethod == '' ? 'N/A' : cookingMethod %></p>

@@ -112,5 +112,33 @@ module.exports= {
         await UserProfile.addToCollection(currentUser.userProfile[0].id, 'cookbook').members([recipe.id]);
 
         return res.redirect('/recipe/' + recipe.id);
+    },
+
+    unsaveRecipe: async function(req, res) {
+        let recipeId = req.param('recipeId', null);
+        
+        if (!recipeId || !req.session.userId) {
+            return res.notFound();
+        }
+
+        let currentUser = await User.findOne({
+            id: req.session.userId,
+        }).populateAll();
+
+        if (!currentUser) {
+            return res.notFound();
+        }
+
+        let recipe = await Recipe.findOne({
+            id: recipeId,
+        }).populateAll();
+
+        if (!recipe) {
+            return res.notFound();
+        }
+
+        await UserProfile.removeFromCollection(currentUser.userProfile[0].id, 'cookbook').members([recipe.id]);
+
+        return res.redirect('/recipe/' + recipe.id);
     }
 }

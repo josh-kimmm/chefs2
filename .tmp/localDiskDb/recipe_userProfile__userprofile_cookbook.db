@@ -1,3 +1,6 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
 {"id":1,"recipe_userProfile":410,"userprofile_cookbook":3,"_id":1}
-{"userprofile_cookbook":3,"recipe_userProfile":410,"id":2,"_id":2}
+{"id":2,"recipe_userProfile":410,"userprofile_cookbook":3,"_id":2}
+{"$$deleted":true,"_id":1}
+{"$$deleted":true,"_id":2}
+{"userprofile_cookbook":3,"recipe_userProfile":410,"id":3,"_id":3}
