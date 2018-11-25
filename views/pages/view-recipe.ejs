@@ -1,0 +1,30 @@
+<div class="recipe-details">
+    <div class="row recipe-row">
+        <div class="col-md-6 col-12 recipe-media-column">
+            <img src="<%= image %>" class="img-fluid recipe-media" alt="<%= recipeName %>"/>
+        </div>
+        <div class="col-md-6 col-12 recipe-details-column">
+            <h1><%= recipeName %></h1>
+            <p><%= review.length %> user ratings</p>
+            <a href="/save-recipe/<%= id %>" class="btn btn-primary">Save Recipe</a>
+            <p>Diet Type: <%= dietType == '' ? 'N/A' : dietType %></p>
+            <p>Prep Time: <%= prepTime == '' ? 'N/A' : prepTime %></p>
+            <p>Cooking Method: <%= cookingMethod == '' ? 'N/A' : cookingMethod %></p>
+            <p>Ingredients</p>
+            <ul>
+                <% for (let i = 0; i < ingredients.length; i++) { %>
+                    <li><%= ingredients[i].ingredientName %></li>
+                <% } %>
+            </ul>
+            <p>Instructions</p>
+            <ol>
+                <% 
+                instructionsArray = instructions.split('||');
+                for (let i = 0; i < instructionsArray.length; i++) { 
+                %>
+                    <li><%= instructionsArray[i] %></li>
+                <% } %>
+            </ol>
+        </div>
+    </div>
+</div>

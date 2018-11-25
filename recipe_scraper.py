@@ -54,8 +54,8 @@ for i in range(20):
 					toPost = {
 						'ingredientName': ' '.join(li.get_text().split()).encode('utf-8'),
 					}
-					#r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
-					#ingredientsToPost.append(json.loads(r.content)['id'])
+					r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
+					ingredientsToPost.append(json.loads(r.content)['id'])
 
 			data['ingredients'] = ingredientsToPost
 
@@ -80,7 +80,7 @@ for i in range(20):
 			data['dietType'] = 'vegetarian' if len(recipe.findAll('a', {'class':'tag-list--item', 'data-vars-object-name':'vegetarian'})) > 0 else ''
 
 			video = recipe.findAll('amp-ima-video', {'id':'tasty-video-desktop'})[0]
-			data['image'] = video.findAll('source')[0]['src']
+			data['image'] = video['data-poster']
 
 			r = requests.post('http://localhost:1337/create-recipe', data=data)
 
@@ -153,6 +153,7 @@ for i in range(20):
 			data['dietType'] = 'vegan' if len(recipe.findAll('a', {'class':'tag-list--item', 'data-vars-object-name':'vegan'})) > 0 else ''
 
 			video = recipe.findAll('amp-ima-video', {'id':'tasty-video-desktop'})[0]
-			data['image'] = video.findAll('source')[0]['src']
+			data['image'] = video['data-poster']
 
 			r = requests.post('http://localhost:1337/create-recipe', data=data)
+			print 'test'

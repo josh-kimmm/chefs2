@@ -325,7 +325,6 @@ body {
   }
 }
 body {
-  background-image: url("/images/background2.png");
   background-repeat: no-repeat;
   background-size: 110%;
   font-family: 'Roboto', sans-serif;
@@ -334,6 +333,10 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: #e2dbd4;
+}
+body.homepage {
+  background-image: url("/images/background2.png");
 }
 img {
   width: auto;
@@ -460,6 +463,12 @@ a:hover {
 }
 a:active {
   text-decoration: none;
+}
+.recipe-details .recipe-row {
+  margin: 90px;
+}
+.recipe-details .recipe-row .recipe-media {
+  margin: 0;
 }
 #homepage a:not(.btn) {
   color: #14acc2;

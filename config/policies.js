@@ -21,6 +21,7 @@ module.exports.policies = {
   RecipeController: {
     'createIngredient': true,
     'createRecipe': true,
+    'viewRecipe': true,
   },
 
 };

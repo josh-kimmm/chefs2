@@ -51,6 +51,7 @@ module.exports.routes = {
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
   'POST /create-ingredient': 'RecipeController.createIngredient',
   'POST /create-recipe': 'RecipeController.createRecipe',
+  '/recipe/:recipeId': 'RecipeController.viewRecipe',
 
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗

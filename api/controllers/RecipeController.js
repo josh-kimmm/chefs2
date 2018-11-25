@@ -35,13 +35,14 @@ module.exports= {
         let recipe = await Recipe.create({
             recipeName: recipeName,
             instructions: instructions,
-            ingredients: ingredients,
             dietType: dietType,
             prepTime: prepTime,
             cookingMethod: cookingMethod,
             rating: rating,
             image: image,
         }).fetch();
+
+        await Recipe.addToCollection(recipe.id, 'ingredients').members(ingredients);
 
         // UNCOMMENT IF WANT RESPONSE FOR WEBSERVER
         // return res.view('pages/homepage', {
@@ -51,5 +52,23 @@ module.exports= {
         //     }),
         // });
         return res.json(recipe)
-    }
+    },
+
+    viewRecipe: async function(req, res) {
+        let recipeId = req.param('recipeId', null);
+
+        if (!recipeId) {
+            return res.notFound();
+        }
+
+        let recipe = await Recipe.findOne({
+            id: recipeId,
+        }).populateAll();
+        
+        if (!recipe) {
+            return res.notFound();
+        }
+
+        return res.view('pages/view-recipe', recipe);
+    },
 }
