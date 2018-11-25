@@ -52,6 +52,7 @@ module.exports.routes = {
   'POST /create-ingredient': 'RecipeController.createIngredient',
   'POST /create-recipe': 'RecipeController.createRecipe',
   '/recipe/:recipeId': 'RecipeController.viewRecipe',
+  '/save-recipe/:recipeId': 'RecipeController.saveRecipe',
 
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗

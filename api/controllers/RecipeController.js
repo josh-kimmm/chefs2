@@ -69,6 +69,48 @@ module.exports= {
             return res.notFound();
         }
 
+        recipe.saved = false;
+        if (req.session.userId) {
+            // check if user has this recipe saved
+            let currentUser = await User.findOne({
+                id: req.session.userId,
+            }).populateAll();
+            let savedRecipe = await UserProfile.findOne({
+                id: currentUser.userProfile[0].id,
+            }).populate('cookbook', {
+                id: recipe.id,
+            });
+            recipe.saved = savedRecipe.cookbook.length > 0 ? true : false;
+        }
+
         return res.view('pages/view-recipe', recipe);
     },
+
+    saveRecipe: async function(req, res) {
+        let recipeId = req.param('recipeId', null);
+        
+        if (!recipeId || !req.session.userId) {
+            return res.notFound();
+        }
+
+        let currentUser = await User.findOne({
+            id: req.session.userId,
+        }).populateAll();
+
+        if (!currentUser) {
+            return res.notFound();
+        }
+
+        let recipe = await Recipe.findOne({
+            id: recipeId,
+        }).populateAll();
+
+        if (!recipe) {
+            return res.notFound();
+        }
+
+        await UserProfile.addToCollection(currentUser.userProfile[0].id, 'cookbook').members([recipe.id]);
+
+        return res.redirect('/recipe/' + recipe.id);
+    }
 }
