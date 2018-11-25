@@ -352,6 +352,10 @@ header {
   background-color: white;
   padding: 20px 0;
 }
+header .nav-logo {
+  height: 20px;
+  margin: 0;
+}
 header .row,
 footer .row {
   background-color: white;
@@ -366,7 +370,11 @@ header h1 {
 header nav {
   background-color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+header nav div {
+  display: inline-flex;
+  align-items: center;
 }
 header p {
   color: black;

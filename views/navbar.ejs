@@ -1,9 +1,19 @@
 
 <header class="container-fluid">
     <div class="row">
-        <nav class="col-sm-12 text-right">
-            <a href="#"><p>COMMUNITY</p></a>
-            <a href="#"><p style="color: #A2AD7E;">MY PROFILE</p></a>
+        <nav class="col-sm-12">
+            <% if (typeof pageName !== 'undefined' && pageName != 'homepage') { %>
+                <img src="/images/chefs-logo-red.png" alt="CHEFS" class="nav-logo"/>
+            <% } %>
+            <div>
+                <% if (req.session.userId) { %>
+                    <a href="#"><p>COMMUNITY</p></a>
+                    <a href="#"><p style="color: #A2AD7E;">MY PROFILE</p></a>
+                <% } else { %>
+                    <a href="#"><p>LOG IN</p></a>
+                    <a href="#"><p style="color: #A2AD7E;">SIGN UP</p></a>
+                <% } %>
+            </div>
         </nav>
     </div>
 </header>

@@ -82,6 +82,7 @@ module.exports= {
             });
             recipe.saved = savedRecipe.cookbook.length > 0 ? true : false;
         }
+        recipe.pageName = 'viewRecipe';
 
         return res.view('pages/view-recipe', recipe);
     },
@@ -110,6 +111,7 @@ module.exports= {
         }
 
         await UserProfile.addToCollection(currentUser.userProfile[0].id, 'cookbook').members([recipe.id]);
+        recipe.pageName = 'viewRecipe';
 
         return res.redirect('/recipe/' + recipe.id);
     },
@@ -138,6 +140,7 @@ module.exports= {
         }
 
         await UserProfile.removeFromCollection(currentUser.userProfile[0].id, 'cookbook').members([recipe.id]);
+        recipe.pageName = 'viewRecipe';
 
         return res.redirect('/recipe/' + recipe.id);
     }
