@@ -478,6 +478,12 @@ a:active {
 .recipe-details .recipe-row .recipe-media {
   margin: 0;
 }
+.user-details {
+  padding: 100px;
+}
+.user-details .recipe-row img {
+  margin: 0;
+}
 #homepage a:not(.btn) {
   color: #14acc2;
   border-bottom: 1px solid #000;

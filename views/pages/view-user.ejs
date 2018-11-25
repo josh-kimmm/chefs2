@@ -1,0 +1,25 @@
+<div class="user-details">
+    <h1><%= fullName %></h1>
+    <p>
+        <%= userProfile.followerList ? userProfile.followerList.length : 0 %> followers
+        <%= userProfile.followingList ? userProfile.followingList.length : 0 %> following
+    </p>
+    <h2>MY COOKBOOK</h2>
+    <% 
+    let cookbook = userProfile.cookbook ? userProfile.cookbook : [];
+
+    for (let i = 0; i < cookbook.length; i++) {
+    %>
+        <a href="/recipe/<%= cookbook[i].id %>" class="row recipe-row">
+            <div class="col-4">
+                <img src="<%= cookbook[i].image %>" class="img-fluid" alt="<%= cookbook[i].recipeName %>"/>
+            </div>
+            <div class="col-8">
+                <h3><%= cookbook[i].recipeName %></h3>
+                <p><%= cookbook[i].prepTime %></p>
+                <p><%= cookbook[i].dietType %></p>
+                <p><%= cookbook[i].cookingMethod %></p>
+            </div>
+        </a>
+    <% } %>
+</div>
