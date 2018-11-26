@@ -1,2 +1,6 @@
 node_modules
-node_modules
+**/public
+*.map
+assets/jsx-converted/*
+*.ppk
+*.pem
