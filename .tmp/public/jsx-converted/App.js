@@ -10,6 +10,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 import Test from './test.js';
 import Home from './Home.js';
+import NavBar from './NavBar.js';
+// import SignUp from './Signup.js';
+// import Login from './Login.js';
 
 var Route = ReactRouterDOM.Route;
 var Router = ReactRouterDOM.BrowserRouter;
@@ -27,9 +30,14 @@ var App = function (_React$Component) {
     key: 'render',
     value: function render() {
       return React.createElement(
-        Router,
+        'div',
         null,
-        React.createElement(Route, { exact: true, path: '/', component: Home })
+        React.createElement(NavBar, null),
+        React.createElement(
+          Router,
+          null,
+          React.createElement(Route, { exact: true, path: '/', component: Home })
+        )
       );
     }
   }]);

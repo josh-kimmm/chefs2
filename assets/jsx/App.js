@@ -1,6 +1,9 @@
 'use strict';
 import Test from './test.js';
 import Home from './Home.js';
+import NavBar from './NavBar.js';
+// import SignUp from './Signup.js';
+// import Login from './Login.js';
 
 const Route = ReactRouterDOM.Route;
 const Router = ReactRouterDOM.BrowserRouter;
@@ -9,9 +12,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
-        <Route exact path="/" component={Home} />
-      </Router>
+      <div>
+        <NavBar />
+        <Router>
+          <Route exact path="/" component={Home} />
+        </Router>
+      </div>
     );
   }
 }

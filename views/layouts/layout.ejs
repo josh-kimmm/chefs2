@@ -26,9 +26,9 @@
   <body>
     <%- partial('../navbar.ejs') %>
     <div id="server-side-content">
+      <div id="react"></div>
       <%- body %>
     </div>
-    <div id="react"></div>
 
 
     <% /*
@@ -51,6 +51,20 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-router/umd/react-router.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js" crossorigin></script>
+
+
+    <!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <% /* Auto-injected «script» tags: */ %>
     <!--SCRIPTS-->
@@ -83,8 +97,7 @@
     <script src="/js/pages/legal/privacy.page.js"></script>
     <script src="/js/pages/legal/terms.page.js"></script>
     <!--SCRIPTS END-->
-
-    <script type="module" src="/jsx-converted/test.js"></script>
+    
     <script type="module" src="/jsx-converted/App.js"></script>
   </body>
 </html>
