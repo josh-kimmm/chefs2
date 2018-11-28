@@ -982,7 +982,6 @@ a:active {
 #signup .container {
   background: white;
   padding: 4rem 1rem;
-  max-width: 60vw;
 }
 #signup .signup-form {
   width: 100%;
@@ -1031,7 +1030,6 @@ a:active {
 #login .container {
   background: white;
   padding: 4rem 1rem;
-  max-width: 60vw;
 }
 #login .container h1 {
   margin: 1rem 0;
@@ -1062,28 +1060,86 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-#forgot-password .forgot-form {
+#forgot-password .container {
+  background: white;
+  padding: 4rem 2rem;
+}
+#forgot-password .container h1 {
+  margin: 1rem 0;
+}
+#forgot-password .container .forgot-form {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
-#forgot-password .success-message {
+#forgot-password .container .forgot-form .form-control {
+  border: 1px solid #AEB0AE;
+}
+#forgot-password .container .forgot-form .ajax-button {
+  background: #A2AD7E;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem;
+}
+#forgot-password .container .forgot-form p a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#forgot-password .container .forgot-form p a:hover {
+  text-decoration: underline;
+}
+#forgot-password .container .success-message {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+#forgot-password .container .success-message a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#forgot-password .container .success-message a:hover {
+  text-decoration: underline;
+}
+#forgot-password .container .success-message .btn.btn-outline-primary {
+  border: 1px solid #A2AD7E !important;
+}
+#forgot-password .container .success-message a .btn.btn-outline-primary:hover {
+  background: #A2AD7E;
+  color: white;
+  text-decoration: none;
+}
 #new-password {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-#new-password .new-password-form {
+#new-password .container {
+  background: white;
+  padding: 4rem 2rem;
+}
+#new-password .container .new-password-form {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+#new-password .container .new-password-form .form-control {
+  border: 1px solid #AEB0AE;
+}
+#new-password .container .new-password-form .ajax-button {
+  background: #A2AD7E;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem;
+}
+#new-password .container .new-password-form p a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#new-password .container .new-password-form p a:hover {
+  text-decoration: underline;
 }
 #account-overview {
   padding-top: 75px;
