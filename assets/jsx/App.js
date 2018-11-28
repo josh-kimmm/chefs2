@@ -1,5 +1,5 @@
 'use strict';
-import Test from './test.js';
+
 import Home from './Home.js';
 
 const Route = ReactRouterDOM.Route;
