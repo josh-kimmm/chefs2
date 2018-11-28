@@ -977,11 +977,32 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+#signup .container {
+  background: white;
+  padding: 4rem 1rem;
+  max-width: 60vw;
+}
 #signup .signup-form {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+#signup .signup-form .form-control {
+  border: 1px solid #AEB0AE;
+}
+#signup .signup-form .ajax-button {
+  background: #A2AD7E;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem;
+}
+#signup .signup-form a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#signup .signup-form a:hover {
+  text-decoration: underline;
 }
 #signup .success-message {
   width: 100%;
@@ -1005,11 +1026,35 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+#login .container {
+  background: white;
+  padding: 4rem 1rem;
+  max-width: 60vw;
+}
+#login .container h1 {
+  margin: 1rem 0;
+}
 #login .login-form-container {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+#login .login-form-container .form-control {
+  border: 1px solid #AEB0AE;
+}
+#login .login-form-container button {
+  background: #A2AD7E;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem;
+}
+#login .login-form-container p a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#login .login-form-container p a:hover {
+  text-decoration: underline;
 }
 #forgot-password {
   padding-top: 75px;

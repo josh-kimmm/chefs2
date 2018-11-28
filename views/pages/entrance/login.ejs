@@ -1,6 +1,7 @@
 <div id="login" v-cloak>
   <div class="container">
-    <h1 class="text-center">Sign in to your account</h1>
+    <h1 class="text-center">Sign In</h1>
+    <h5 class="text-center">to continue to CHEFS</h5>
     <div class="login-form-container">
       <hr/>
       <ajax-form action="login" :syncing.sync="syncing" :cloud-error.sync="cloudError" :form-data="formData" :form-rules="formRules" :form-errors.sync="formErrors" @submitted="submittedForm()">
@@ -22,6 +23,7 @@
           <ajax-button :syncing="syncing" class="btn-dark btn-lg btn-block">Sign in</ajax-button>
         </div>
       </ajax-form>
+      <p class="text-center">Don't have an account? <a href="/signup">Sign Up</a></p>
       <p class="text-center"><a href="/password/forgot">Forgot your password?</a></p>
     </div>
   </div>
