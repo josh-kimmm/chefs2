@@ -1,5 +1,5 @@
 'use strict';
-import Test from './test.js';
+
 import Home from './Home.js';
 import NavBar from './NavBar.js';
 // import SignUp from './Signup.js';
