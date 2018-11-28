@@ -408,6 +408,7 @@ body {
   padding: 0px;
   border: 0px;
   color: white;
+  border-radius: 0 3px 3px 0;
 }
 .form-control::-webkit-input-placeholder {
   font-weight: bold;
@@ -434,6 +435,7 @@ body {
 }
 #filter {
   background-color: #CD5E4E;
+  border: none;
   font-weight: bold;
   width: 120px;
   height: 40px;
