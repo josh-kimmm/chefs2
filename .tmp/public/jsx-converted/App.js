@@ -29,3 +29,4 @@ var App = function (_React$Component) {
 
 var domContainer = document.querySelector('#react');
 ReactDOM.render(React.createElement(App, null), domContainer);
+//# sourceMappingURL=App.js.map
