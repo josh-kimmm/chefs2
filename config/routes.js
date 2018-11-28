@@ -55,8 +55,6 @@ module.exports.routes = {
   '/save-recipe/:recipeId': 'RecipeController.saveRecipe',
   '/unsave-recipe/:recipeId': 'RecipeController.unsaveRecipe',
   '/user/:userId': 'UserController.viewUserProfile',
-  '/follow-user/:userId': 'UserController.followUser',
-  '/unfollow-user/:userId': 'UserController.unfollowUser',
 
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
