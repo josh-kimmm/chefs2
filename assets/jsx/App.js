@@ -1,5 +1,4 @@
 'use strict';
-
 import Home from './Home.js';
 import NavBar from './NavBar.js';
 // import SignUp from './Signup.js';

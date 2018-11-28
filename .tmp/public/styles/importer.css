@@ -325,7 +325,6 @@ body {
   }
 }
 body {
-  background-image: url("/images/background2.png");
   background-repeat: no-repeat;
   background-size: 110%;
   font-family: 'Roboto', sans-serif;
@@ -334,6 +333,10 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: #e2dbd4;
+}
+body.homepage {
+  background-image: url("/images/background2.png");
 }
 img {
   width: auto;
@@ -349,6 +352,10 @@ header {
   background-color: white;
   padding: 20px 0;
 }
+header .nav-logo {
+  height: 20px;
+  margin: 0;
+}
 header .row,
 footer .row {
   background-color: white;
@@ -363,7 +370,11 @@ header h1 {
 header nav {
   background-color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+header nav div {
+  display: inline-flex;
+  align-items: center;
 }
 header p {
   color: black;
@@ -460,6 +471,18 @@ a:hover {
 }
 a:active {
   text-decoration: none;
+}
+.recipe-details .recipe-row {
+  margin: 90px;
+}
+.recipe-details .recipe-row .recipe-media {
+  margin: 0;
+}
+.user-details {
+  padding: 100px;
+}
+.user-details .recipe-row img {
+  margin: 0;
 }
 #homepage a:not(.btn) {
   color: #14acc2;

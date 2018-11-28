@@ -12,7 +12,7 @@ module.exports = {
     success: {
       statusCode: 200,
       description: 'Requesting user is a guest, so show the public landing page.',
-      viewTemplatePath: 'pages/homepage'
+      viewTemplatePath: 'pages/homepage',
     },
 
     redirect: {
@@ -24,12 +24,9 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-
-    if (this.req.me) {
-      throw {redirect:'/welcome'};
-    }
-
-    return exits.success();
+    return exits.success({
+      pageName: 'homepage',
+    });
 
   }
 

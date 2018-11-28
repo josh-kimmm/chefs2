@@ -1,0 +1,981 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"ingredientName","unique":true,"sparse":false}}
+{"createdAt":1543113092071,"updatedAt":1543113092071,"id":1868,"ingredientName":"2 lb ground beef (905 g)","_id":1868}
+{"createdAt":1543113092088,"updatedAt":1543113092088,"id":1869,"ingredientName":"2 tablespoons kosher salt","_id":1869}
+{"createdAt":1543113092096,"updatedAt":1543113092096,"id":1870,"ingredientName":"1 tablespoon black pepper","_id":1870}
+{"createdAt":1543113092105,"updatedAt":1543113092105,"id":1871,"ingredientName":"1 tablespoon ground cumin","_id":1871}
+{"createdAt":1543113092113,"updatedAt":1543113092113,"id":1872,"ingredientName":"1 tablespoon chilli powder","_id":1872}
+{"createdAt":1543113092122,"updatedAt":1543113092122,"id":1873,"ingredientName":"1 tablespoon smoked paprika, ground","_id":1873}
+{"createdAt":1543113092131,"updatedAt":1543113092131,"id":1874,"ingredientName":"1 teaspoon cayenne","_id":1874}
+{"createdAt":1543113092139,"updatedAt":1543113092139,"id":1875,"ingredientName":"1 large onion, chopped","_id":1875}
+{"createdAt":1543113092147,"updatedAt":1543113092147,"id":1876,"ingredientName":"1 red bell pepper, chopped","_id":1876}
+{"createdAt":1543113092154,"updatedAt":1543113092154,"id":1877,"ingredientName":"6 cloves garlic, minced","_id":1877}
+{"createdAt":1543113092163,"updatedAt":1543113092163,"id":1878,"ingredientName":"2 chipotle peppers in adobo sauce, chopped","_id":1878}
+{"createdAt":1543113092170,"updatedAt":1543113092170,"id":1879,"ingredientName":"12 oz tomato paste (340 g)","_id":1879}
+{"createdAt":1543113092179,"updatedAt":1543113092179,"id":1880,"ingredientName":"2 cups beef broth (480 mL)","_id":1880}
+{"createdAt":1543113092188,"updatedAt":1543113092188,"id":1881,"ingredientName":"12 oz chopped tomato, 1 can (340 g)","_id":1881}
+{"createdAt":1543113092196,"updatedAt":1543113092196,"id":1882,"ingredientName":"15 oz black beans, 1 can (425 g)","_id":1882}
+{"createdAt":1543113092207,"updatedAt":1543113092207,"id":1883,"ingredientName":"15 oz red kidney bean, 1 can (425 g)","_id":1883}
+{"createdAt":1543113092215,"updatedAt":1543113092215,"id":1884,"ingredientName":"1 tablespoon apple cider vinegar, optional","_id":1884}
+{"createdAt":1543113092223,"updatedAt":1543113092223,"id":1885,"ingredientName":"1 cup cornmeal (120 g)","_id":1885}
+{"createdAt":1543113092231,"updatedAt":1543113092231,"id":1886,"ingredientName":"1 cup flour (125 g)","_id":1886}
+{"createdAt":1543113092239,"updatedAt":1543113092239,"id":1887,"ingredientName":"1 teaspoon baking powder","_id":1887}
+{"createdAt":1543113092248,"updatedAt":1543113092248,"id":1888,"ingredientName":"1 pinch salt","_id":1888}
+{"createdAt":1543113092255,"updatedAt":1543113092255,"id":1889,"ingredientName":"2 eggs","_id":1889}
+{"createdAt":1543113092264,"updatedAt":1543113092264,"id":1890,"ingredientName":"¼ cup honey (85 g)","_id":1890}
+{"createdAt":1543113092272,"updatedAt":1543113092272,"id":1891,"ingredientName":"½ cup buttermilk (120 mL)","_id":1891}
+{"createdAt":1543113092639,"updatedAt":1543113092639,"id":1892,"ingredientName":"6 boneless, skinless chicken thighs","_id":1892}
+{"createdAt":1543113092648,"updatedAt":1543113092648,"id":1893,"ingredientName":"salt, to taste","_id":1893}
+{"createdAt":1543113092656,"updatedAt":1543113092656,"id":1894,"ingredientName":"pepper, to taste","_id":1894}
+{"createdAt":1543113092664,"updatedAt":1543113092664,"id":1895,"ingredientName":"1 tablespoon garlic powder","_id":1895}
+{"createdAt":1543113092671,"updatedAt":1543113092671,"id":1896,"ingredientName":"1 tablespoon dried thyme","_id":1896}
+{"createdAt":1543113092679,"updatedAt":1543113092679,"id":1897,"ingredientName":"1 tablespoon dried parsley","_id":1897}
+{"createdAt":1543113092687,"updatedAt":1543113092687,"id":1898,"ingredientName":"2 tablespoons butter","_id":1898}
+{"createdAt":1543113092703,"updatedAt":1543113092703,"id":1899,"ingredientName":"4 carrots, small diced","_id":1899}
+{"createdAt":1543113092711,"updatedAt":1543113092711,"id":1900,"ingredientName":"1 yellow onion, small diced","_id":1900}
+{"createdAt":1543113092719,"updatedAt":1543113092719,"id":1901,"ingredientName":"4 stalks celery, small diced","_id":1901}
+{"createdAt":1543113092728,"updatedAt":1543113092728,"id":1902,"ingredientName":"½ lb cremini mushroom, sliced (225 g)","_id":1902}
+{"createdAt":1543113092736,"updatedAt":1543113092736,"id":1903,"ingredientName":"5 cloves garlic, minced","_id":1903}
+{"createdAt":1543113092743,"updatedAt":1543113092743,"id":1904,"ingredientName":"2 cups wild rice (400 g)","_id":1904}
+{"createdAt":1543113092751,"updatedAt":1543113092751,"id":1905,"ingredientName":"8 cups chicken broth (2 L)","_id":1905}
+{"createdAt":1543113092759,"updatedAt":1543113092759,"id":1906,"ingredientName":"2 cups grated parmesan cheese, plus more for garnish (220 g)","_id":1906}
+{"createdAt":1543113092771,"updatedAt":1543113092771,"id":1907,"ingredientName":"1 cup heavy cream (240 mL)","_id":1907}
+{"createdAt":1543113092779,"updatedAt":1543113092779,"id":1908,"ingredientName":"1 tablespoon fresh thyme","_id":1908}
+{"createdAt":1543113092789,"updatedAt":1543113092789,"id":1909,"ingredientName":"½ cup sour cream (115 g)","_id":1909}
+{"createdAt":1543113092798,"updatedAt":1543113092798,"id":1910,"ingredientName":"fresh parsley, for garnish","_id":1910}
+{"createdAt":1543113093151,"updatedAt":1543113093151,"id":1911,"ingredientName":"1 tablespoon olive oil","_id":1911}
+{"createdAt":1543113093159,"updatedAt":1543113093159,"id":1912,"ingredientName":"5 links hot italian sausage","_id":1912}
+{"createdAt":1543113093166,"updatedAt":1543113093166,"id":1913,"ingredientName":"1 large yellow onion, chopped","_id":1913}
+{"createdAt":1543113093196,"updatedAt":1543113093196,"id":1914,"ingredientName":"1 tablespoon dried oregano","_id":1914}
+{"createdAt":1543113093204,"updatedAt":1543113093204,"id":1915,"ingredientName":"1 tablespoon dried basil","_id":1915}
+{"createdAt":1543113093228,"updatedAt":1543113093228,"id":1916,"ingredientName":"15 oz diced tomato (425 g)","_id":1916}
+{"createdAt":1543113093237,"updatedAt":1543113093237,"id":1917,"ingredientName":"2 cups grated parmesan cheese, divided (220 g)","_id":1917}
+{"createdAt":1543113093245,"updatedAt":1543113093245,"id":1918,"ingredientName":"2 cups spinach (80 g)","_id":1918}
+{"createdAt":1543113093253,"updatedAt":1543113093253,"id":1919,"ingredientName":"1 lb rigatoni, cooked (455 g)","_id":1919}
+{"createdAt":1543113093261,"updatedAt":1543113093261,"id":1920,"ingredientName":"1 cup ricotta cheese (245 g)","_id":1920}
+{"createdAt":1543113093269,"updatedAt":1543113093269,"id":1921,"ingredientName":"fresh basil, to garnish","_id":1921}
+{"createdAt":1543113093631,"updatedAt":1543113093631,"id":1922,"ingredientName":"6 dill pickles","_id":1922}
+{"createdAt":1543113093639,"updatedAt":1543113093639,"id":1923,"ingredientName":"6 sticks mozzarella cheese","_id":1923}
+{"createdAt":1543113093647,"updatedAt":1543113093647,"id":1924,"ingredientName":"6 slices ham","_id":1924}
+{"createdAt":1543113093655,"updatedAt":1543113093655,"id":1925,"ingredientName":"1 ½ cups all-purpose flour (185 g)","_id":1925}
+{"createdAt":1543113093664,"updatedAt":1543113093664,"id":1926,"ingredientName":"1 ½ cups panko breadcrumbs (75 g)","_id":1926}
+{"createdAt":1543113093672,"updatedAt":1543113093672,"id":1927,"ingredientName":"3 large eggs, beaten","_id":1927}
+{"createdAt":1543113093683,"updatedAt":1543113093683,"id":1928,"ingredientName":"oil, for frying","_id":1928}
+{"createdAt":1543113093690,"updatedAt":1543113093690,"id":1929,"ingredientName":"spicy mayonnaise, for serving","_id":1929}
+{"createdAt":1543113094085,"updatedAt":1543113094085,"id":1930,"ingredientName":"1 ½ lb boneless pork shoulder, or pork belly, chilled or frozen for easier slicing (680 g)","_id":1930}
+{"createdAt":1543113094094,"updatedAt":1543113094094,"id":1931,"ingredientName":"½ onion, sliced into thin strips","_id":1931}
+{"createdAt":1543113094102,"updatedAt":1543113094102,"id":1932,"ingredientName":"3 stalks green onion, sliced into 2-inch (5 cm) pieces","_id":1932}
+{"createdAt":1543113094109,"updatedAt":1543113094109,"id":1933,"ingredientName":"3 cloves garlic, minced","_id":1933}
+{"createdAt":1543113094117,"updatedAt":1543113094117,"id":1934,"ingredientName":"1 teaspoon ginger, minced","_id":1934}
+{"createdAt":1543113094125,"updatedAt":1543113094125,"id":1935,"ingredientName":"¼ cup korean red chili paste, gochujang (55 g)","_id":1935}
+{"createdAt":1543113094133,"updatedAt":1543113094133,"id":1936,"ingredientName":"1 teaspoon red pepper flakes","_id":1936}
+{"createdAt":1543113094141,"updatedAt":1543113094141,"id":1937,"ingredientName":"¼ cup soy sauce (60 mL)","_id":1937}
+{"createdAt":1543113094150,"updatedAt":1543113094150,"id":1938,"ingredientName":"3 tablespoons rice wine","_id":1938}
+{"createdAt":1543113094158,"updatedAt":1543113094158,"id":1939,"ingredientName":"1 tablespoon sesame oil","_id":1939}
+{"createdAt":1543113094167,"updatedAt":1543113094167,"id":1940,"ingredientName":"1 tablespoon sugar","_id":1940}
+{"createdAt":1543113094175,"updatedAt":1543113094175,"id":1941,"ingredientName":"1 teaspoon black pepper","_id":1941}
+{"createdAt":1543113094184,"updatedAt":1543113094184,"id":1942,"ingredientName":"1 tablespoon canola oil","_id":1942}
+{"createdAt":1543113094193,"updatedAt":1543113094193,"id":1943,"ingredientName":"sesame seed, to garnish","_id":1943}
+{"createdAt":1543113094202,"updatedAt":1543113094202,"id":1944,"ingredientName":"rice, to serve","_id":1944}
+{"createdAt":1543113094582,"updatedAt":1543113094582,"id":1945,"ingredientName":"12 hard-boiled eggs, peeled","_id":1945}
+{"createdAt":1543113094597,"updatedAt":1543113094597,"id":1946,"ingredientName":"3 eggs","_id":1946}
+{"createdAt":1543113094606,"updatedAt":1543113094606,"id":1947,"ingredientName":"1 cup panko breadcrumbs (50 g)","_id":1947}
+{"createdAt":1543113094621,"updatedAt":1543113094621,"id":1948,"ingredientName":"4 tablespoons mayonnaise","_id":1948}
+{"createdAt":1543113094633,"updatedAt":1543113094633,"id":1949,"ingredientName":"2 tablespoons pickle relish","_id":1949}
+{"createdAt":1543113094642,"updatedAt":1543113094642,"id":1950,"ingredientName":"2 tablespoons mustard","_id":1950}
+{"createdAt":1543113094650,"updatedAt":1543113094650,"id":1951,"ingredientName":"1 teaspoon hot sauce","_id":1951}
+{"createdAt":1543113094672,"updatedAt":1543113094672,"id":1952,"ingredientName":"paprika, or seasoning of choice on top, optional","_id":1952}
+{"createdAt":1543113095023,"updatedAt":1543113095023,"id":1953,"ingredientName":"nonstick cooking spray, optional","_id":1953}
+{"createdAt":1543113095031,"updatedAt":1543113095031,"id":1954,"ingredientName":"3 bell peppers","_id":1954}
+{"createdAt":1543113095038,"updatedAt":1543113095038,"id":1955,"ingredientName":"1 cup whole wheat breadcrumbs, or panko bread crumbs (50 g) (115 g)","_id":1955}
+{"createdAt":1543113095045,"updatedAt":1543113095045,"id":1956,"ingredientName":"½ cup grated parmesan cheese (55 g)","_id":1956}
+{"createdAt":1543113095053,"updatedAt":1543113095053,"id":1957,"ingredientName":"2 teaspoons garlic powder","_id":1957}
+{"createdAt":1543113095060,"updatedAt":1543113095060,"id":1958,"ingredientName":"1 teaspoon paprika","_id":1958}
+{"createdAt":1543113095068,"updatedAt":1543113095068,"id":1959,"ingredientName":"1 teaspoon dried oregano","_id":1959}
+{"createdAt":1543113095075,"updatedAt":1543113095075,"id":1960,"ingredientName":"1 teaspoon dried basil","_id":1960}
+{"createdAt":1543113095084,"updatedAt":1543113095084,"id":1961,"ingredientName":"1 teaspoon salt","_id":1961}
+{"createdAt":1543113095091,"updatedAt":1543113095091,"id":1962,"ingredientName":"½ teaspoon pepper","_id":1962}
+{"createdAt":1543113095099,"updatedAt":1543113095099,"id":1963,"ingredientName":"3 eggs, beaten","_id":1963}
+{"createdAt":1543113095107,"updatedAt":1543113095107,"id":1964,"ingredientName":"1 cup all-purpose flour (125 g)","_id":1964}
+{"createdAt":1543113095115,"updatedAt":1543113095115,"id":1965,"ingredientName":"dipping sauce, of your choice, optional","_id":1965}
+{"createdAt":1543113095460,"updatedAt":1543113095460,"id":1966,"ingredientName":"1 ½ lb ribeye steak, or any other well-marbled, tender cut (700 g)","_id":1966}
+{"createdAt":1543113095468,"updatedAt":1543113095468,"id":1967,"ingredientName":"1 onion, 1/2 roughly chopped and 1/2 thinly sliced","_id":1967}
+{"createdAt":1543113095476,"updatedAt":1543113095476,"id":1968,"ingredientName":"3 cloves garlic cloves","_id":1968}
+{"createdAt":1543113095487,"updatedAt":1543113095487,"id":1969,"ingredientName":"½ pear, peeled and roughly chopped","_id":1969}
+{"createdAt":1543113095499,"updatedAt":1543113095499,"id":1970,"ingredientName":"3 spring onions, 1 cut into pieces and 2 sliced into 1/4-inch rounds","_id":1970}
+{"createdAt":1543113095507,"updatedAt":1543113095507,"id":1971,"ingredientName":"3 tablespoons brown sugar","_id":1971}
+{"createdAt":1543113095522,"updatedAt":1543113095522,"id":1972,"ingredientName":"⅓ cup soy sauce (85 g)","_id":1972}
+{"createdAt":1543113095530,"updatedAt":1543113095530,"id":1973,"ingredientName":"3 tablespoons sesame oil","_id":1973}
+{"createdAt":1543113095545,"updatedAt":1543113095545,"id":1974,"ingredientName":"1 teaspoon sesame seed, for serving","_id":1974}
+{"createdAt":1543113095552,"updatedAt":1543113095552,"id":1975,"ingredientName":"cooked rice, for serving","_id":1975}
+{"createdAt":1543113095560,"updatedAt":1543113095560,"id":1976,"ingredientName":"Banchan (Korean side dishes), for serving (optional)","_id":1976}
+{"createdAt":1543113095884,"updatedAt":1543113095884,"id":1977,"ingredientName":"1 pork tenderloin","_id":1977}
+{"createdAt":1543113095904,"updatedAt":1543113095904,"id":1978,"ingredientName":"1 teaspoon pepper","_id":1978}
+{"createdAt":1543113095918,"updatedAt":1543113095918,"id":1979,"ingredientName":"1 cup plain breadcrumbs (115 g)","_id":1979}
+{"createdAt":1543113095933,"updatedAt":1543113095933,"id":1980,"ingredientName":"2 sweet onions, sliced","_id":1980}
+{"createdAt":1543113095940,"updatedAt":1543113095940,"id":1981,"ingredientName":"1 cup beer (235 mL)","_id":1981}
+{"createdAt":1543113095948,"updatedAt":1543113095948,"id":1982,"ingredientName":"2 lemons, juiced","_id":1982}
+{"createdAt":1543113095955,"updatedAt":1543113095955,"id":1983,"ingredientName":"4 slices cheese, quartered, we used swiss","_id":1983}
+{"createdAt":1543113095963,"updatedAt":1543113095963,"id":1984,"ingredientName":"½ head red cabbage, thinly sliced","_id":1984}
+{"createdAt":1543113097220,"updatedAt":1543113097220,"id":1985,"ingredientName":"1 tablespoon butter, unsalted","_id":1985}
+{"createdAt":1543113097231,"updatedAt":1543113097231,"id":1986,"ingredientName":"fresh chives, to serve","_id":1986}
+{"createdAt":1543113097605,"updatedAt":1543113097605,"id":1987,"ingredientName":"4 eggs","_id":1987}
+{"createdAt":1543113097613,"updatedAt":1543113097613,"id":1988,"ingredientName":"2 sugars","_id":1988}
+{"createdAt":1543113097627,"updatedAt":1543113097627,"id":1989,"ingredientName":"1 teaspoon sake","_id":1989}
+{"createdAt":1543113097634,"updatedAt":1543113097634,"id":1990,"ingredientName":"1 teaspoon mirin","_id":1990}
+{"createdAt":1543113097642,"updatedAt":1543113097642,"id":1991,"ingredientName":"175 ⅓ cup bonito dashi broth","_id":1991}
+{"createdAt":1543113097650,"updatedAt":1543113097650,"id":1992,"ingredientName":"oil, to taste","_id":1992}
+{"createdAt":1543113097657,"updatedAt":1543113097657,"id":1993,"ingredientName":"1 shiso leaf","_id":1993}
+{"createdAt":1543113097666,"updatedAt":1543113097666,"id":1994,"ingredientName":"japanese radish, grated, to serve","_id":1994}
+{"createdAt":1543113097673,"updatedAt":1543113097673,"id":1995,"ingredientName":"soy sauce, to serve","_id":1995}
+{"createdAt":1543113100687,"updatedAt":1543113100687,"id":1996,"ingredientName":"1 small sweet potato, diced","_id":1996}
+{"createdAt":1543113100697,"updatedAt":1543113100697,"id":1997,"ingredientName":"1 lemon, sliced, seeds removed","_id":1997}
+{"createdAt":1543113100705,"updatedAt":1543113100705,"id":1998,"ingredientName":"1 cup green beans, trimmed (360 g)","_id":1998}
+{"createdAt":1543113100721,"updatedAt":1543113100721,"id":1999,"ingredientName":"1 tablespoon fresh rosemary, chopped","_id":1999}
+{"createdAt":1543113100733,"updatedAt":1543113100733,"id":2000,"ingredientName":"1 tablespoon fresh thyme, chopped","_id":2000}
+{"createdAt":1543113100741,"updatedAt":1543113100741,"id":2001,"ingredientName":"1 clove garlic, minced","_id":2001}
+{"createdAt":1543113100750,"updatedAt":1543113100750,"id":2002,"ingredientName":"½ teaspoon salt, plus more to season","_id":2002}
+{"createdAt":1543113100758,"updatedAt":1543113100758,"id":2003,"ingredientName":"¼ teaspoon ground black pepper, plus more to season","_id":2003}
+{"createdAt":1543113100769,"updatedAt":1543113100769,"id":2004,"ingredientName":"1 boneless, skinless chicken breast","_id":2004}
+{"createdAt":1543113100779,"updatedAt":1543113100779,"id":2005,"ingredientName":"¼ teaspoon paprika","_id":2005}
+{"createdAt":1543113101188,"updatedAt":1543113101188,"id":2006,"ingredientName":"2 tablespoons all-purpose flour","_id":2006}
+{"createdAt":1543113101201,"updatedAt":1543113101201,"id":2007,"ingredientName":"1 teaspoon salt, divided","_id":2007}
+{"createdAt":1543113101209,"updatedAt":1543113101209,"id":2008,"ingredientName":"¾ teaspoon ground black pepper, divided","_id":2008}
+{"createdAt":1543113101217,"updatedAt":1543113101217,"id":2009,"ingredientName":"1 large egg","_id":2009}
+{"createdAt":1543113101224,"updatedAt":1543113101224,"id":2010,"ingredientName":"2 tablespoons plain breadcrumbs","_id":2010}
+{"createdAt":1543113101232,"updatedAt":1543113101232,"id":2011,"ingredientName":"2 teaspoons olive oil","_id":2011}
+{"createdAt":1543113101247,"updatedAt":1543113101247,"id":2012,"ingredientName":"½ teaspoon minced garlic, about 1 small clove","_id":2012}
+{"createdAt":1543113101254,"updatedAt":1543113101254,"id":2013,"ingredientName":"¼ teaspoon red pepper flakes","_id":2013}
+{"createdAt":1543113101261,"updatedAt":1543113101261,"id":2014,"ingredientName":"1 ½ cups eggplant, diced, (about half a small eggplant) (540 g)","_id":2014}
+{"createdAt":1543113101269,"updatedAt":1543113101269,"id":2015,"ingredientName":"1 cup crushed tomato, with juice (260 g)","_id":2015}
+{"createdAt":1543113101277,"updatedAt":1543113101277,"id":2016,"ingredientName":"1 slice fresh mozzarella cheese","_id":2016}
+{"createdAt":1543113101284,"updatedAt":1543113101284,"id":2017,"ingredientName":"1 tablespoon fresh basil, chopped","_id":2017}
+{"createdAt":1543113101679,"updatedAt":1543113101679,"id":2018,"ingredientName":"¼ cup brown rice (50 g)","_id":2018}
+{"createdAt":1543113101695,"updatedAt":1543113101695,"id":2019,"ingredientName":"¾ cup water (180 mL)","_id":2019}
+{"createdAt":1543113101704,"updatedAt":1543113101704,"id":2020,"ingredientName":"4 oz flank steak, thinly sliced (115 g)","_id":2020}
+{"createdAt":1543113101713,"updatedAt":1543113101713,"id":2021,"ingredientName":"1 small red onion, thinly sliced","_id":2021}
+{"createdAt":1543113101722,"updatedAt":1543113101722,"id":2022,"ingredientName":"1 red bell pepper, thinly sliced lengthwise","_id":2022}
+{"createdAt":1543113101731,"updatedAt":1543113101731,"id":2023,"ingredientName":"1 tablespoon lime juice","_id":2023}
+{"createdAt":1543113101739,"updatedAt":1543113101739,"id":2024,"ingredientName":"1 teaspoon onion powder","_id":2024}
+{"createdAt":1543113101748,"updatedAt":1543113101748,"id":2025,"ingredientName":"¾ teaspoon chili powder","_id":2025}
+{"createdAt":1543113101756,"updatedAt":1543113101756,"id":2026,"ingredientName":"½ teaspoon ground black pepper","_id":2026}
+{"createdAt":1543113101766,"updatedAt":1543113101766,"id":2027,"ingredientName":"2 tablespoons fresh cilantro, chopped","_id":2027}
+{"createdAt":1543113101774,"updatedAt":1543113101774,"id":2028,"ingredientName":"1 lime, cut into wedges","_id":2028}
+{"createdAt":1543113104751,"updatedAt":1543113104751,"id":2029,"ingredientName":"8 oz reduced fat cream cheese (225 g)","_id":2029}
+{"createdAt":1543113104760,"updatedAt":1543113104760,"id":2030,"ingredientName":"¼ cup nonfat greek yogurt (70 g)","_id":2030}
+{"createdAt":1543113104768,"updatedAt":1543113104768,"id":2031,"ingredientName":"2 chicken breasts, cooked and shredded","_id":2031}
+{"createdAt":1543113104776,"updatedAt":1543113104776,"id":2032,"ingredientName":"½ cup low fat cheddar cheese (50 g)","_id":2032}
+{"createdAt":1543113104784,"updatedAt":1543113104784,"id":2033,"ingredientName":"½ cup light crumbled blue cheese (50 g)","_id":2033}
+{"createdAt":1543113104793,"updatedAt":1543113104793,"id":2034,"ingredientName":"⅓ cup buffalo sauce (80 g)","_id":2034}
+{"createdAt":1543113105135,"updatedAt":1543113105135,"id":2035,"ingredientName":"6 whole wheat pitas","_id":2035}
+{"createdAt":1543113105142,"updatedAt":1543113105142,"id":2036,"ingredientName":"2 tablespoons olive oil","_id":2036}
+{"createdAt":1543113105151,"updatedAt":1543113105151,"id":2037,"ingredientName":"½ teaspoon salt","_id":2037}
+{"createdAt":1543113105166,"updatedAt":1543113105166,"id":2038,"ingredientName":"½ teaspoon garlic powder","_id":2038}
+{"createdAt":1543113105602,"updatedAt":1543113105602,"id":2039,"ingredientName":"2 cups canned artichoke heart, drained and chopped (335 g)","_id":2039}
+{"createdAt":1543113105613,"updatedAt":1543113105613,"id":2040,"ingredientName":"2 cups frozen spinach (310 g)","_id":2040}
+{"createdAt":1543113105625,"updatedAt":1543113105625,"id":2041,"ingredientName":"1 cup low fat mozzarella cheese (100 g)","_id":2041}
+{"createdAt":1543113107707,"updatedAt":1543113107707,"id":2042,"ingredientName":"½ loaf whole wheat bread","_id":2042}
+{"createdAt":1543113107716,"updatedAt":1543113107716,"id":2043,"ingredientName":"1 ½ cups frozen blueberry (150 g)","_id":2043}
+{"createdAt":1543113107724,"updatedAt":1543113107724,"id":2044,"ingredientName":"6 eggs","_id":2044}
+{"createdAt":1543113107733,"updatedAt":1543113107733,"id":2045,"ingredientName":"1 tablespoon maple syrup","_id":2045}
+{"createdAt":1543113107741,"updatedAt":1543113107741,"id":2046,"ingredientName":"2 tablespoons coconut oil, melted","_id":2046}
+{"createdAt":1543113107750,"updatedAt":1543113107750,"id":2047,"ingredientName":"1 tablespoon vanilla extract","_id":2047}
+{"createdAt":1543113107758,"updatedAt":1543113107758,"id":2048,"ingredientName":"1 teaspoon cinnamon","_id":2048}
+{"createdAt":1543113107767,"updatedAt":1543113107767,"id":2049,"ingredientName":"1 lemon, zested","_id":2049}
+{"createdAt":1543113107774,"updatedAt":1543113107774,"id":2050,"ingredientName":"2 cups milk, or milk alternative (470 mL)","_id":2050}
+{"createdAt":1543113107781,"updatedAt":1543113107781,"id":2051,"ingredientName":"maple syrup, to serve","_id":2051}
+{"createdAt":1543113107790,"updatedAt":1543113107790,"id":2052,"ingredientName":"powdered sugar, to serve","_id":2052}
+{"createdAt":1543113108842,"updatedAt":1543113108842,"id":2053,"ingredientName":"4 cups sweet potato, peeled, diced, divided (800 g)","_id":2053}
+{"createdAt":1543113108849,"updatedAt":1543113108849,"id":2054,"ingredientName":"1 cup mushroom, divided (75 g)","_id":2054}
+{"createdAt":1543113108857,"updatedAt":1543113108857,"id":2055,"ingredientName":"2 red bell peppers, diced, seeded, divided","_id":2055}
+{"createdAt":1543113108865,"updatedAt":1543113108865,"id":2056,"ingredientName":"1 cup broccoli floret, divided (150 g)","_id":2056}
+{"createdAt":1543113108874,"updatedAt":1543113108874,"id":2057,"ingredientName":"1 cup tomato, diced, divided (200 g)","_id":2057}
+{"createdAt":1543113108883,"updatedAt":1543113108883,"id":2058,"ingredientName":"½ white onion, divided","_id":2058}
+{"createdAt":1543113108892,"updatedAt":1543113108892,"id":2059,"ingredientName":"2 cups spinach, divided (80 g)","_id":2059}
+{"createdAt":1543113108902,"updatedAt":1543113108902,"id":2060,"ingredientName":"8 eggs","_id":2060}
+{"createdAt":1543113108911,"updatedAt":1543113108911,"id":2061,"ingredientName":"4 egg whites","_id":2061}
+{"createdAt":1543113108919,"updatedAt":1543113108919,"id":2062,"ingredientName":"¾ cup milk (175 g)","_id":2062}
+{"createdAt":1543113108943,"updatedAt":1543113108943,"id":2063,"ingredientName":"1 cup shredded cheddar cheese (100 g)","_id":2063}
+{"createdAt":1543113109890,"updatedAt":1543113109890,"id":2064,"ingredientName":"3 cups potato, peeled, diced (675 g)","_id":2064}
+{"createdAt":1543113109902,"updatedAt":1543113109902,"id":2065,"ingredientName":"2 cups breakfast sausage, cooked (275 g)","_id":2065}
+{"createdAt":1543113109915,"updatedAt":1543113109915,"id":2066,"ingredientName":"1 green bell pepper, diced","_id":2066}
+{"createdAt":1543113109927,"updatedAt":1543113109927,"id":2067,"ingredientName":"½ white onion, chopped","_id":2067}
+{"createdAt":1543113109950,"updatedAt":1543113109950,"id":2068,"ingredientName":"12 eggs","_id":2068}
+{"createdAt":1543113109996,"updatedAt":1543113109996,"id":2069,"ingredientName":"1 cup milk, or milk alternative (240 mL)","_id":2069}
+{"createdAt":1543113110018,"updatedAt":1543113110018,"id":2070,"ingredientName":"salsa, to serve","_id":2070}
+{"createdAt":1543113111377,"updatedAt":1543113111377,"id":2071,"ingredientName":"2 cups steel-cut oat (200 g)","_id":2071}
+{"createdAt":1543113111411,"updatedAt":1543113111411,"id":2072,"ingredientName":"¼ cup maple syrup (55 g)","_id":2072}
+{"createdAt":1543113111427,"updatedAt":1543113111427,"id":2073,"ingredientName":"4 apples, peeled, cored, cut into ½-inch (1-cm) pieces","_id":2073}
+{"createdAt":1543113111442,"updatedAt":1543113111442,"id":2074,"ingredientName":"3 cups water (710 mL)","_id":2074}
+{"createdAt":1543113111453,"updatedAt":1543113111453,"id":2075,"ingredientName":"3 cups milk, or milk alternative (710 mL)","_id":2075}
+{"createdAt":1543113111465,"updatedAt":1543113111465,"id":2076,"ingredientName":"chopped nut, to serve","_id":2076}
+{"createdAt":1543113114866,"updatedAt":1543113114866,"id":2077,"ingredientName":"8 oz cremini mushroom, finely chopped (225 g)","_id":2077}
+{"createdAt":1543113114876,"updatedAt":1543113114876,"id":2078,"ingredientName":"15 oz cannellini bean, 1 can, drained and rinsed (425 g)","_id":2078}
+{"createdAt":1543113114886,"updatedAt":1543113114886,"id":2079,"ingredientName":"1 small yellow onion, finely chopped","_id":2079}
+{"createdAt":1543113114899,"updatedAt":1543113114899,"id":2080,"ingredientName":"1 ¼ cups panko breadcrumbs (60 g)","_id":2080}
+{"createdAt":1543113114912,"updatedAt":1543113114912,"id":2081,"ingredientName":"½ cup fresh parsley, finely chopped (20 g)","_id":2081}
+{"createdAt":1543113114936,"updatedAt":1543113114936,"id":2082,"ingredientName":"1 teaspoon dried rosemary","_id":2082}
+{"createdAt":1543113114948,"updatedAt":1543113114948,"id":2083,"ingredientName":"1 teaspoon vegan worcestershire","_id":2083}
+{"createdAt":1543113114961,"updatedAt":1543113114961,"id":2084,"ingredientName":"1 tablespoon soy sauce","_id":2084}
+{"createdAt":1543113114973,"updatedAt":1543113114973,"id":2085,"ingredientName":"¼ teaspoon ground nutmeg","_id":2085}
+{"createdAt":1543113114986,"updatedAt":1543113114986,"id":2086,"ingredientName":"½ teaspoon liquid smoke","_id":2086}
+{"createdAt":1543113115022,"updatedAt":1543113115022,"id":2087,"ingredientName":"3 tablespoons canola oil","_id":2087}
+{"createdAt":1543113115031,"updatedAt":1543113115031,"id":2088,"ingredientName":"3 cups vegetable broth (720 mL)","_id":2088}
+{"createdAt":1543113115042,"updatedAt":1543113115042,"id":2089,"ingredientName":"14 oz full-fat coconut milk, 1 can (395 mL)","_id":2089}
+{"createdAt":1543113115051,"updatedAt":1543113115051,"id":2090,"ingredientName":"1 tablespoon vegan worcestershire","_id":2090}
+{"createdAt":1543113115074,"updatedAt":1543113115074,"id":2091,"ingredientName":"¼ cup all-purpose flour (30 g)","_id":2091}
+{"createdAt":1543113115083,"updatedAt":1543113115083,"id":2092,"ingredientName":"4 cups bow tie pasta, or pasta of choice (400 g)","_id":2092}
+{"createdAt":1543113115090,"updatedAt":1543113115090,"id":2093,"ingredientName":"fresh parsley, for ganish","_id":2093}
+{"createdAt":1543113115901,"updatedAt":1543113115901,"id":2094,"ingredientName":"1 cup quinoa, rinsed (170 g)","_id":2094}
+{"createdAt":1543113115908,"updatedAt":1543113115908,"id":2095,"ingredientName":"1 ½ cups water, or vegetable broth (360 mL)","_id":2095}
+{"createdAt":1543113115917,"updatedAt":1543113115917,"id":2096,"ingredientName":"1 ¼ cups salsa (325 g)","_id":2096}
+{"createdAt":1543113115925,"updatedAt":1543113115925,"id":2097,"ingredientName":"1 tablespoon cumin","_id":2097}
+{"createdAt":1543113115933,"updatedAt":1543113115933,"id":2098,"ingredientName":"15 oz black beans, 1 can, drained and rinsed (425 g)","_id":2098}
+{"createdAt":1543113115941,"updatedAt":1543113115941,"id":2099,"ingredientName":"1 cup frozen corn, defrosted (175 g)","_id":2099}
+{"createdAt":1543113115958,"updatedAt":1543113115958,"id":2100,"ingredientName":"olive oil, to taste","_id":2100}
+{"createdAt":1543113115967,"updatedAt":1543113115967,"id":2101,"ingredientName":"1 avocado, mashed","_id":2101}
+{"createdAt":1543113115981,"updatedAt":1543113115981,"id":2102,"ingredientName":"2 teaspoons lemon juice","_id":2102}
+{"createdAt":1543113115991,"updatedAt":1543113115991,"id":2103,"ingredientName":"3 tablespoons olive oil","_id":2103}
+{"createdAt":1543113116012,"updatedAt":1543113116012,"id":2104,"ingredientName":"4 tablespoons water","_id":2104}
+{"createdAt":1543113116019,"updatedAt":1543113116019,"id":2105,"ingredientName":"tortilla, to serve, optional","_id":2105}
+{"createdAt":1543113117060,"updatedAt":1543113117060,"id":2106,"ingredientName":"2 tablespoons vegetable oil","_id":2106}
+{"createdAt":1543113117067,"updatedAt":1543113117067,"id":2107,"ingredientName":"1 medium yellow onion, diced","_id":2107}
+{"createdAt":1543113117076,"updatedAt":1543113117076,"id":2108,"ingredientName":"4 cloves garlic, minced","_id":2108}
+{"createdAt":1543113117084,"updatedAt":1543113117084,"id":2109,"ingredientName":"4 teaspoons curry powder","_id":2109}
+{"createdAt":1543113117093,"updatedAt":1543113117093,"id":2110,"ingredientName":"1 ½ teaspoons paprika","_id":2110}
+{"createdAt":1543113117108,"updatedAt":1543113117108,"id":2111,"ingredientName":"2 teaspoons cumin powder","_id":2111}
+{"createdAt":1543113117118,"updatedAt":1543113117118,"id":2112,"ingredientName":"½ teaspoon allspice","_id":2112}
+{"createdAt":1543113117126,"updatedAt":1543113117126,"id":2113,"ingredientName":"2 teaspoons fresh ginger, minced","_id":2113}
+{"createdAt":1543113117135,"updatedAt":1543113117135,"id":2114,"ingredientName":"½ teaspoon black pepper","_id":2114}
+{"createdAt":1543113117145,"updatedAt":1543113117145,"id":2115,"ingredientName":"2 lb potato, peeled and cubed (907 g)","_id":2115}
+{"createdAt":1543113117152,"updatedAt":1543113117152,"id":2116,"ingredientName":"15 oz chickpeas, 1 can, drained (425 g)","_id":2116}
+{"createdAt":1543113117160,"updatedAt":1543113117160,"id":2117,"ingredientName":"1 cup vegetable broth (240 mL)","_id":2117}
+{"createdAt":1543113117167,"updatedAt":1543113117167,"id":2118,"ingredientName":"1 tablespoon lemon juice","_id":2118}
+{"createdAt":1543113117175,"updatedAt":1543113117175,"id":2119,"ingredientName":"14 oz diced tomato, 1 can (395 g)","_id":2119}
+{"createdAt":1543113117182,"updatedAt":1543113117182,"id":2120,"ingredientName":"14 oz coconut milk, 1 can (415 mL)","_id":2120}
+{"createdAt":1543113117190,"updatedAt":1543113117190,"id":2121,"ingredientName":"rice, cooked, for serving","_id":2121}
+{"createdAt":1543113117198,"updatedAt":1543113117198,"id":2122,"ingredientName":"naan bread, for serving","_id":2122}
+{"createdAt":1543113117205,"updatedAt":1543113117205,"id":2123,"ingredientName":"fresh cilantro, chopped, for garnish","_id":2123}
+{"createdAt":1543113118207,"updatedAt":1543113118207,"id":2124,"ingredientName":"4 cups broth, of your choice (960 mL)","_id":2124}
+{"createdAt":1543113118214,"updatedAt":1543113118214,"id":2125,"ingredientName":"10 oz linguine, uncooked (285 g)","_id":2125}
+{"createdAt":1543113118222,"updatedAt":1543113118222,"id":2126,"ingredientName":"10 oz broccoli floret (285 g)","_id":2126}
+{"createdAt":1543113118229,"updatedAt":1543113118229,"id":2127,"ingredientName":"1 lb asparagus, chopped into 1-inch (2 cm) pieces (455 g)","_id":2127}
+{"createdAt":1543113118238,"updatedAt":1543113118238,"id":2128,"ingredientName":"1 small onion, diced","_id":2128}
+{"createdAt":1543113118253,"updatedAt":1543113118253,"id":2129,"ingredientName":"½ teaspoon red pepper flakes","_id":2129}
+{"createdAt":1543113118273,"updatedAt":1543113118273,"id":2130,"ingredientName":"1 teaspoon olive oil, to taste","_id":2130}
+{"createdAt":1543113118281,"updatedAt":1543113118281,"id":2131,"ingredientName":"4 oz mushroom, sliced (110 g)","_id":2131}
+{"createdAt":1543113118290,"updatedAt":1543113118290,"id":2132,"ingredientName":"¼ cup heavy whipping cream (60 mL)","_id":2132}
+{"createdAt":1543113118307,"updatedAt":1543113118307,"id":2133,"ingredientName":"3 tablespoons fresh parsley, finely chopped","_id":2133}
+{"createdAt":1543113119258,"updatedAt":1543113119258,"id":2134,"ingredientName":"1 tablespoon oil","_id":2134}
+{"createdAt":1543113119265,"updatedAt":1543113119265,"id":2135,"ingredientName":"1 tablespoon minced garlic, minced","_id":2135}
+{"createdAt":1543113119273,"updatedAt":1543113119273,"id":2136,"ingredientName":"½ cup red onion, chopped (75 g)","_id":2136}
+{"createdAt":1543113119280,"updatedAt":1543113119280,"id":2137,"ingredientName":"1 cup bell pepper, chopped (100 g)","_id":2137}
+{"createdAt":1543113119289,"updatedAt":1543113119289,"id":2138,"ingredientName":"1 cup tomato, chopped (200 g)","_id":2138}
+{"createdAt":1543113119297,"updatedAt":1543113119297,"id":2139,"ingredientName":"3 cups water (720 mL)","_id":2139}
+{"createdAt":1543113119305,"updatedAt":1543113119305,"id":2140,"ingredientName":"1 ½ cups rice (345 g)","_id":2140}
+{"createdAt":1543113119313,"updatedAt":1543113119313,"id":2141,"ingredientName":"1 cup black beans (170 g)","_id":2141}
+{"createdAt":1543113119322,"updatedAt":1543113119322,"id":2142,"ingredientName":"1 tablespoon fresh cilantro, chopped","_id":2142}
+{"createdAt":1543113119330,"updatedAt":1543113119330,"id":2143,"ingredientName":"1 cup tomato sauce (260 g)","_id":2143}
+{"createdAt":1543113119338,"updatedAt":1543113119338,"id":2144,"ingredientName":"1 teaspoon chili powder","_id":2144}
+{"createdAt":1543113119345,"updatedAt":1543113119345,"id":2145,"ingredientName":"1 teaspoon cumin","_id":2145}
+{"createdAt":1543113119366,"updatedAt":1543113119366,"id":2146,"ingredientName":"½ cup shredded cheese, optional (50 g)","_id":2146}
+{"createdAt":1543113119373,"updatedAt":1543113119373,"id":2147,"ingredientName":"½ avocado, cubed, for garnish","_id":2147}
+{"createdAt":1543113122594,"updatedAt":1543113122594,"id":2148,"ingredientName":"1 ½ lb brussels sprouts (680 g)","_id":2148}
+{"createdAt":1543113122602,"updatedAt":1543113122602,"id":2149,"ingredientName":"2 tablespoons oil","_id":2149}
+{"createdAt":1543113122613,"updatedAt":1543113122613,"id":2150,"ingredientName":"2 tablespoons balsamic vinegar","_id":2150}
+{"createdAt":1543113122621,"updatedAt":1543113122621,"id":2151,"ingredientName":"2 teaspoons honey","_id":2151}
+{"createdAt":1543113123969,"updatedAt":1543113123969,"id":2152,"ingredientName":"3 heads broccoli","_id":2152}
+{"createdAt":1543113123991,"updatedAt":1543113123991,"id":2153,"ingredientName":"¼ cup vegetarian parmesan cheese (25 g)","_id":2153}
+{"createdAt":1543113125351,"updatedAt":1543113125351,"id":2154,"ingredientName":"4 carrots","_id":2154}
+{"createdAt":1543113125409,"updatedAt":1543113125409,"id":2155,"ingredientName":"¼ cup Chopped fresh parsley (10 g)","_id":2155}
+{"createdAt":1543113125417,"updatedAt":1543113125417,"id":2156,"ingredientName":"2 teaspoons paprika","_id":2156}
+{"createdAt":1543113126263,"updatedAt":1543113126263,"id":2157,"ingredientName":"3 sweet potatoes","_id":2157}
+{"createdAt":1543113126278,"updatedAt":1543113126278,"id":2158,"ingredientName":"1 tablespoon dried rosemary","_id":2158}
+{"createdAt":1543113126298,"updatedAt":1543113126298,"id":2159,"ingredientName":"fresh parsley, chopped, for serving","_id":2159}
+{"createdAt":1543113129354,"updatedAt":1543113129354,"id":2160,"ingredientName":"2 tablespoons refined coconut oil","_id":2160}
+{"createdAt":1543113129369,"updatedAt":1543113129369,"id":2161,"ingredientName":"1 tablespoon ginger, minced","_id":2161}
+{"createdAt":1543113129377,"updatedAt":1543113129377,"id":2162,"ingredientName":"2 ½ tablespoons red curry paste","_id":2162}
+{"createdAt":1543113129385,"updatedAt":1543113129385,"id":2163,"ingredientName":"15 oz coconut milk, 1 can (440 mL)","_id":2163}
+{"createdAt":1543113129524,"updatedAt":1543113129524,"id":2164,"ingredientName":"1 tablespoon agave","_id":2164}
+{"createdAt":1543113129532,"updatedAt":1543113129532,"id":2165,"ingredientName":"8 oz rice noodle (225 g)","_id":2165}
+{"createdAt":1543113129539,"updatedAt":1543113129539,"id":2166,"ingredientName":"7 oz tofu, cubed (200 g)","_id":2166}
+{"createdAt":1543113129547,"updatedAt":1543113129547,"id":2167,"ingredientName":"2 cups broccoli floret (300 g)","_id":2167}
+{"createdAt":1543113129554,"updatedAt":1543113129554,"id":2168,"ingredientName":"1 red bell pepper, thinly sliced","_id":2168}
+{"createdAt":1543113129576,"updatedAt":1543113129576,"id":2169,"ingredientName":"fresh cilantro, to serve","_id":2169}
+{"createdAt":1543113130854,"updatedAt":1543113130854,"id":2170,"ingredientName":"2 tablespoons olive oil, divided","_id":2170}
+{"createdAt":1543113130869,"updatedAt":1543113130869,"id":2171,"ingredientName":"12 oz cremini mushroom, sliced (340 g)","_id":2171}
+{"createdAt":1543113130877,"updatedAt":1543113130877,"id":2172,"ingredientName":"3 cloves garlic","_id":2172}
+{"createdAt":1543113130885,"updatedAt":1543113130885,"id":2173,"ingredientName":"½ teaspoon dried thyme","_id":2173}
+{"createdAt":1543113130893,"updatedAt":1543113130893,"id":2174,"ingredientName":"¼ teaspoon pepper","_id":2174}
+{"createdAt":1543113130910,"updatedAt":1543113130910,"id":2175,"ingredientName":"¼ cup dry white wine (60 mL)","_id":2175}
+{"createdAt":1543113130918,"updatedAt":1543113130918,"id":2176,"ingredientName":"½ tablespoon vegan worcestershire","_id":2176}
+{"createdAt":1543113130925,"updatedAt":1543113130925,"id":2177,"ingredientName":"¼ cup flour (30 g)","_id":2177}
+{"createdAt":1543113130933,"updatedAt":1543113130933,"id":2178,"ingredientName":"2 cups vegetable broth (480 mL)","_id":2178}
+{"createdAt":1543113130940,"updatedAt":1543113130940,"id":2179,"ingredientName":"1 ½ cups almond milk (360 mL)","_id":2179}
+{"createdAt":1543113130948,"updatedAt":1543113130948,"id":2180,"ingredientName":"8 oz fusilli pasta, uncooked (225 g)","_id":2180}
+{"createdAt":1543113130955,"updatedAt":1543113130955,"id":2181,"ingredientName":"fresh parsley, chopped, for serving, garnish","_id":2181}
+{"createdAt":1543113131805,"updatedAt":1543113131805,"id":2182,"ingredientName":"1 sourdough loaf","_id":2182}
+{"createdAt":1543113131819,"updatedAt":1543113131819,"id":2183,"ingredientName":"2 onions, chopped","_id":2183}
+{"createdAt":1543113131826,"updatedAt":1543113131826,"id":2184,"ingredientName":"2 carrots, chopped","_id":2184}
+{"createdAt":1543113131834,"updatedAt":1543113131834,"id":2185,"ingredientName":"3 stalks celery, chopped","_id":2185}
+{"createdAt":1543113131849,"updatedAt":1543113131849,"id":2186,"ingredientName":"2 ½ cups split peas (560 g)","_id":2186}
+{"createdAt":1543113131856,"updatedAt":1543113131856,"id":2187,"ingredientName":"1 teaspoon dried thyme","_id":2187}
+{"createdAt":1543113131878,"updatedAt":1543113131878,"id":2188,"ingredientName":"1 teaspoon turmeric","_id":2188}
+{"createdAt":1543113131893,"updatedAt":1543113131893,"id":2189,"ingredientName":"3 potatoes, cubed","_id":2189}
+{"createdAt":1543113131902,"updatedAt":1543113131902,"id":2190,"ingredientName":"8 cups vegetable stock (2 L)","_id":2190}
+{"createdAt":1543113131910,"updatedAt":1543113131910,"id":2191,"ingredientName":"2 bay leaves","_id":2191}
+{"createdAt":1543113133256,"updatedAt":1543113133256,"id":2192,"ingredientName":"1 onion, diced","_id":2192}
+{"createdAt":1543113133271,"updatedAt":1543113133271,"id":2193,"ingredientName":"2 tablespoons tomato paste","_id":2193}
+{"createdAt":1543113133278,"updatedAt":1543113133278,"id":2194,"ingredientName":"1 pt grape tomato, halved (400 g)","_id":2194}
+{"createdAt":1543113133300,"updatedAt":1543113133300,"id":2195,"ingredientName":"2 ½ cups vegetable broth (600 mL)","_id":2195}
+{"createdAt":1543113133307,"updatedAt":1543113133307,"id":2196,"ingredientName":"2 ½ cups non-dairy milk (600 mL)","_id":2196}
+{"createdAt":1543113133314,"updatedAt":1543113133314,"id":2197,"ingredientName":"16 oz dried pasta (455 g)","_id":2197}
+{"createdAt":1543113133321,"updatedAt":1543113133321,"id":2198,"ingredientName":"5 oz fresh spinach (40 g)","_id":2198}
+{"createdAt":1543113133329,"updatedAt":1543113133329,"id":2199,"ingredientName":"⅓ cup nutritional yeast (20 g)","_id":2199}
+{"createdAt":1543113134517,"updatedAt":1543113134517,"id":2200,"ingredientName":"28 oz crushed tomato (795 g)","_id":2200}
+{"createdAt":1543113134525,"updatedAt":1543113134525,"id":2201,"ingredientName":"6 cups vegetable broth (1.4 L)","_id":2201}
+{"createdAt":1543113134533,"updatedAt":1543113134533,"id":2202,"ingredientName":"⅓ cup green lentil, rinsed (55 g)","_id":2202}
+{"createdAt":1543113134541,"updatedAt":1543113134541,"id":2203,"ingredientName":"8 oz lasagna noodle, uncooked (225 g)","_id":2203}
+{"createdAt":1543113134548,"updatedAt":1543113134548,"id":2204,"ingredientName":"3 cups spinach (120 g)","_id":2204}
+{"createdAt":1543113134556,"updatedAt":1543113134556,"id":2205,"ingredientName":"fresh basil, cut chiffonade, for serving","_id":2205}
+{"createdAt":1543113136543,"updatedAt":1543113136543,"id":2206,"ingredientName":"½ lb wide rice noodle (225 g)","_id":2206}
+{"createdAt":1543113136550,"updatedAt":1543113136550,"id":2207,"ingredientName":"¼ cup palm sugar (50 g)","_id":2207}
+{"createdAt":1543113136557,"updatedAt":1543113136557,"id":2208,"ingredientName":"¼ cup fish sauce (65 g)","_id":2208}
+{"createdAt":1543113136566,"updatedAt":1543113136566,"id":2209,"ingredientName":"¼ cup tamarind paste (55 g)","_id":2209}
+{"createdAt":1543113136574,"updatedAt":1543113136574,"id":2210,"ingredientName":"6 oz pork belly, cubed (170 g)","_id":2210}
+{"createdAt":1543113136581,"updatedAt":1543113136581,"id":2211,"ingredientName":"1 teaspoon oil","_id":2211}
+{"createdAt":1543113136589,"updatedAt":1543113136589,"id":2212,"ingredientName":"2 cloves garlic, minced","_id":2212}
+{"createdAt":1543113136596,"updatedAt":1543113136596,"id":2213,"ingredientName":"2 shallots, minced","_id":2213}
+{"createdAt":1543113136604,"updatedAt":1543113136604,"id":2214,"ingredientName":"1 teaspoon pickled turnip, optional","_id":2214}
+{"createdAt":1543113136614,"updatedAt":1543113136614,"id":2215,"ingredientName":"1 egg","_id":2215}
+{"createdAt":1543113136622,"updatedAt":1543113136622,"id":2216,"ingredientName":"4 oz tofu, cubed, optional (110 g)","_id":2216}
+{"createdAt":1543113136629,"updatedAt":1543113136629,"id":2217,"ingredientName":"½ bunch green onion, or chinese chives, sliced, plus more for serving","_id":2217}
+{"createdAt":1543113136637,"updatedAt":1543113136637,"id":2218,"ingredientName":"½ cup bean sprout, plus more for serving (50 g)","_id":2218}
+{"createdAt":1543113136644,"updatedAt":1543113136644,"id":2219,"ingredientName":"1 egg yolk","_id":2219}
+{"createdAt":1543113136652,"updatedAt":1543113136652,"id":2220,"ingredientName":"lime, for serving","_id":2220}
+{"createdAt":1543113136659,"updatedAt":1543113136659,"id":2221,"ingredientName":"peanuts, for serving","_id":2221}
+{"createdAt":1543113136667,"updatedAt":1543113136667,"id":2222,"ingredientName":"red thai chile, diced, for serving, optional","_id":2222}
+{"createdAt":1543113137034,"updatedAt":1543113137034,"id":2223,"ingredientName":"¼ cup fish sauce (60 mL)","_id":2223}
+{"createdAt":1543113137054,"updatedAt":1543113137054,"id":2224,"ingredientName":"6 oz boneless, skinless chicken breast (170 g)","_id":2224}
+{"createdAt":1543113139952,"updatedAt":1543113139952,"id":2225,"ingredientName":"1 small yellow onion, diced","_id":2225}
+{"createdAt":1543113139966,"updatedAt":1543113139966,"id":2226,"ingredientName":"1 teaspoon fresh thyme","_id":2226}
+{"createdAt":1543113139974,"updatedAt":1543113139974,"id":2227,"ingredientName":"1 ½ cups arborio rice (345 g)","_id":2227}
+{"createdAt":1543113139998,"updatedAt":1543113139998,"id":2228,"ingredientName":"½ cup dry white wine (120 mL)","_id":2228}
+{"createdAt":1543113140006,"updatedAt":1543113140006,"id":2229,"ingredientName":"4 cups butternut squash, cubed (820 g)","_id":2229}
+{"createdAt":1543113140013,"updatedAt":1543113140013,"id":2230,"ingredientName":"4 cups vegetable broth (945 mL)","_id":2230}
+{"createdAt":1543113140020,"updatedAt":1543113140020,"id":2231,"ingredientName":"fresh parsley, chopped, to serve","_id":2231}
+{"createdAt":1543113141433,"updatedAt":1543113141433,"id":2232,"ingredientName":"1 jalapeño, minced","_id":2232}
+{"createdAt":1543113141441,"updatedAt":1543113141441,"id":2233,"ingredientName":"15 oz black beans (425 g)","_id":2233}
+{"createdAt":1543113141448,"updatedAt":1543113141448,"id":2234,"ingredientName":"15 oz corn (425 g)","_id":2234}
+{"createdAt":1543113141455,"updatedAt":1543113141455,"id":2235,"ingredientName":"3 roma tomatoes, diced","_id":2235}
+{"createdAt":1543113141470,"updatedAt":1543113141470,"id":2236,"ingredientName":"2 cups vegetable stock (480 mL)","_id":2236}
+{"createdAt":1543113141477,"updatedAt":1543113141477,"id":2237,"ingredientName":"1 tablespoon chili powder","_id":2237}
+{"createdAt":1543113141484,"updatedAt":1543113141484,"id":2238,"ingredientName":"2 teaspoons cumin","_id":2238}
+{"createdAt":1543113141504,"updatedAt":1543113141504,"id":2239,"ingredientName":"1 avocado, cubed","_id":2239}
+{"createdAt":1543113141511,"updatedAt":1543113141511,"id":2240,"ingredientName":"1 lime, juiced","_id":2240}
+{"createdAt":1543113141519,"updatedAt":1543113141519,"id":2241,"ingredientName":"fresh cilantro, to garnish","_id":2241}
+{"createdAt":1543113145099,"updatedAt":1543113145099,"id":2242,"ingredientName":"½ green bell pepper, sliced","_id":2242}
+{"createdAt":1543113145106,"updatedAt":1543113145106,"id":2243,"ingredientName":"½ red bell pepper, sliced","_id":2243}
+{"createdAt":1543113145114,"updatedAt":1543113145114,"id":2244,"ingredientName":"¼ onion, sliced","_id":2244}
+{"createdAt":1543113145121,"updatedAt":1543113145121,"id":2245,"ingredientName":"olive oil","_id":2245}
+{"createdAt":1543113145142,"updatedAt":1543113145142,"id":2246,"ingredientName":"1 chicken breast","_id":2246}
+{"createdAt":1543113145150,"updatedAt":1543113145150,"id":2247,"ingredientName":"parchment paper","_id":2247}
+{"createdAt":1543113145161,"updatedAt":1543113145161,"id":2248,"ingredientName":"2 tablespoons honey","_id":2248}
+{"createdAt":1543113145168,"updatedAt":1543113145168,"id":2249,"ingredientName":"1 tablespoon low sodium soy sauce","_id":2249}
+{"createdAt":1543113145182,"updatedAt":1543113145182,"id":2250,"ingredientName":"1 lime, half for the juice, half for slices","_id":2250}
+{"createdAt":1543113146139,"updatedAt":1543113146139,"id":2251,"ingredientName":"½ lb asparagus, trimmed (230 g)","_id":2251}
+{"createdAt":1543113146186,"updatedAt":1543113146186,"id":2252,"ingredientName":"fresh mozzarella cheese, sliced","_id":2252}
+{"createdAt":1543113146193,"updatedAt":1543113146193,"id":2253,"ingredientName":"1 tomato, sliced","_id":2253}
+{"createdAt":1543113146202,"updatedAt":1543113146202,"id":2254,"ingredientName":"3 leaves fresh basil","_id":2254}
+{"createdAt":1543113147366,"updatedAt":1543113147366,"id":2255,"ingredientName":"½ lb aspargus, trimmed (230 g)","_id":2255}
+{"createdAt":1543113147419,"updatedAt":1543113147419,"id":2256,"ingredientName":"½ teaspoon dried oregano","_id":2256}
+{"createdAt":1543113147425,"updatedAt":1543113147425,"id":2257,"ingredientName":"1 lemon, half for the juice, half for slices","_id":2257}
+{"createdAt":1543113148261,"updatedAt":1543113148261,"id":2258,"ingredientName":"red bell pepper, sliced","_id":2258}
+{"createdAt":1543113148268,"updatedAt":1543113148268,"id":2259,"ingredientName":"¼ onion","_id":2259}
+{"createdAt":1543113148349,"updatedAt":1543113148349,"id":2260,"ingredientName":"1 parchment paper","_id":2260}
+{"createdAt":1543113148356,"updatedAt":1543113148356,"id":2261,"ingredientName":"fajita seasoning","_id":2261}
+{"createdAt":1543113148363,"updatedAt":1543113148363,"id":2262,"ingredientName":"½ tablespoon chilli powder","_id":2262}
+{"createdAt":1543113148371,"updatedAt":1543113148371,"id":2263,"ingredientName":"¼ teaspoon garlic powder","_id":2263}
+{"createdAt":1543113148378,"updatedAt":1543113148378,"id":2264,"ingredientName":"¼ teaspoon cumin","_id":2264}
+{"createdAt":1543113148393,"updatedAt":1543113148393,"id":2265,"ingredientName":"¼ teaspoon salt","_id":2265}
+{"createdAt":1543113148400,"updatedAt":1543113148400,"id":2266,"ingredientName":"¼ teaspoon ground black pepper","_id":2266}
+{"createdAt":1543113151623,"updatedAt":1543113151623,"id":2267,"ingredientName":"3 boneless, skinless chicken breasts","_id":2267}
+{"createdAt":1543113151637,"updatedAt":1543113151637,"id":2268,"ingredientName":"1 teaspoon ground cumin","_id":2268}
+{"createdAt":1543113151657,"updatedAt":1543113151657,"id":2269,"ingredientName":"2 cups salsa, or 1 16 oz jar (475 mL)","_id":2269}
+{"createdAt":1543113151665,"updatedAt":1543113151665,"id":2270,"ingredientName":"tortilla, to serve","_id":2270}
+{"createdAt":1543113151672,"updatedAt":1543113151672,"id":2271,"ingredientName":"pico de gallo, to serve","_id":2271}
+{"createdAt":1543113151679,"updatedAt":1543113151679,"id":2272,"ingredientName":"guacamole, to serve","_id":2272}
+{"createdAt":1543113151688,"updatedAt":1543113151688,"id":2273,"ingredientName":"sour cream, to serve","_id":2273}
+{"createdAt":1543113152695,"updatedAt":1543113152695,"id":2274,"ingredientName":"1 ½ lb chuck roast (680 g)","_id":2274}
+{"createdAt":1543113152722,"updatedAt":1543113152722,"id":2275,"ingredientName":"1 white onion, diced","_id":2275}
+{"createdAt":1543113152729,"updatedAt":1543113152729,"id":2276,"ingredientName":"4 carrots, sliced 2 inch (5 cm) long","_id":2276}
+{"createdAt":1543113152744,"updatedAt":1543113152744,"id":2277,"ingredientName":"2 cups beef broth (475 mL)","_id":2277}
+{"createdAt":1543113152752,"updatedAt":1543113152752,"id":2278,"ingredientName":"2 tablespoons flour","_id":2278}
+{"createdAt":1543113152760,"updatedAt":1543113152760,"id":2279,"ingredientName":"1 cauliflower, cut into florets","_id":2279}
+{"createdAt":1543113152767,"updatedAt":1543113152767,"id":2280,"ingredientName":"1 cup beef broth (235 mL)","_id":2280}
+{"createdAt":1543113152797,"updatedAt":1543113152797,"id":2281,"ingredientName":"1 tablespoon sour cream","_id":2281}
+{"createdAt":1543113152804,"updatedAt":1543113152804,"id":2282,"ingredientName":"fresh chives, for garnish","_id":2282}
+{"createdAt":1543113153915,"updatedAt":1543113153915,"id":2283,"ingredientName":"2 cups brown rice (390 g)","_id":2283}
+{"createdAt":1543113153922,"updatedAt":1543113153922,"id":2284,"ingredientName":"2 cups vegetable broth (475 mL)","_id":2284}
+{"createdAt":1543113153930,"updatedAt":1543113153930,"id":2285,"ingredientName":"2 carrots, diced","_id":2285}
+{"createdAt":1543113153945,"updatedAt":1543113153945,"id":2286,"ingredientName":"½ white onion, diced","_id":2286}
+{"createdAt":1543113153960,"updatedAt":1543113153960,"id":2287,"ingredientName":"½ cup frozen peas (75 g)","_id":2287}
+{"createdAt":1543113153982,"updatedAt":1543113153982,"id":2288,"ingredientName":"2 eggs, whisked","_id":2288}
+{"createdAt":1543113153990,"updatedAt":1543113153990,"id":2289,"ingredientName":"scallion, sliced, for garnish","_id":2289}
+{"createdAt":1543113154958,"updatedAt":1543113154958,"id":2290,"ingredientName":"1 spaghetti squash","_id":2290}
+{"createdAt":1543113154989,"updatedAt":1543113154989,"id":2291,"ingredientName":"1 lb raw shrimp, peeled and deveined (455 g)","_id":2291}
+{"createdAt":1543113155016,"updatedAt":1543113155016,"id":2292,"ingredientName":"1 teaspoon dried parsley","_id":2292}
+{"createdAt":1543113155065,"updatedAt":1543113155065,"id":2293,"ingredientName":"parmesan cheese, optional","_id":2293}
+{"createdAt":1543113158623,"updatedAt":1543113158623,"id":2294,"ingredientName":"2 cups shredded chicken (250 g)","_id":2294}
+{"createdAt":1543113158638,"updatedAt":1543113158638,"id":2295,"ingredientName":"½ lime, juiced","_id":2295}
+{"createdAt":1543113158646,"updatedAt":1543113158646,"id":2296,"ingredientName":"¼ cup fresh cilantro, chopped (10 g)","_id":2296}
+{"createdAt":1543113158668,"updatedAt":1543113158668,"id":2297,"ingredientName":"¾ teaspoon salt","_id":2297}
+{"createdAt":1543113158676,"updatedAt":1543113158676,"id":2298,"ingredientName":"pico de gallo, or salsa, for topping","_id":2298}
+{"createdAt":1543113158683,"updatedAt":1543113158683,"id":2299,"ingredientName":"4 corn tortillas","_id":2299}
+{"createdAt":1543113159690,"updatedAt":1543113159690,"id":2300,"ingredientName":"5 cups whole milk (1.18 L)","_id":2300}
+{"createdAt":1543113159697,"updatedAt":1543113159697,"id":2301,"ingredientName":"1 box elbow macaroni","_id":2301}
+{"createdAt":1543113159705,"updatedAt":1543113159705,"id":2302,"ingredientName":"½ cup butter (115 g)","_id":2302}
+{"createdAt":1543113159712,"updatedAt":1543113159712,"id":2303,"ingredientName":"2 cups cheddar cheese (200 g)","_id":2303}
+{"createdAt":1543113159732,"updatedAt":1543113159732,"id":2304,"ingredientName":"fresh parsley, to serve","_id":2304}
+{"createdAt":1543113160928,"updatedAt":1543113160928,"id":2305,"ingredientName":"½ cup warm water (120 mL)","_id":2305}
+{"createdAt":1543113160943,"updatedAt":1543113160943,"id":2306,"ingredientName":"⅔ cup all purpose flour (85 g)","_id":2306}
+{"createdAt":1543113160951,"updatedAt":1543113160951,"id":2307,"ingredientName":"½ teaspoon sugar","_id":2307}
+{"createdAt":1543113160958,"updatedAt":1543113160958,"id":2308,"ingredientName":"½ teaspoon instant yeast","_id":2308}
+{"createdAt":1543113160972,"updatedAt":1543113160972,"id":2309,"ingredientName":"½ cup marinara sauce (130 g)","_id":2309}
+{"createdAt":1543113160980,"updatedAt":1543113160980,"id":2310,"ingredientName":"2 cups shredded mozzarella cheese (200 g)","_id":2310}
+{"createdAt":1543113160988,"updatedAt":1543113160988,"id":2311,"ingredientName":"½ cup pepperoni slices (75 g)","_id":2311}
+{"createdAt":1543113160996,"updatedAt":1543113160996,"id":2312,"ingredientName":"fresh basil, chopped, for garnish","_id":2312}
+{"createdAt":1543113161854,"updatedAt":1543113161854,"id":2313,"ingredientName":"1 ½ lb boneless, skinless chicken breast, cut into chunks (680 g)","_id":2313}
+{"createdAt":1543113161864,"updatedAt":1543113161864,"id":2314,"ingredientName":"2 cups white mushroom, or button mushrooms, sliced (150 g)","_id":2314}
+{"createdAt":1543113161872,"updatedAt":1543113161872,"id":2315,"ingredientName":"1 white onion, sliced","_id":2315}
+{"createdAt":1543113161880,"updatedAt":1543113161880,"id":2316,"ingredientName":"3 cups chicken stock (720 mL)","_id":2316}
+{"createdAt":1543113161889,"updatedAt":1543113161889,"id":2317,"ingredientName":"1 ½ cups heavy cream (360 mL)","_id":2317}
+{"createdAt":1543113161899,"updatedAt":1543113161899,"id":2318,"ingredientName":"1 cup marsala wine (240 mL)","_id":2318}
+{"createdAt":1543113161908,"updatedAt":1543113161908,"id":2319,"ingredientName":"3 cups penne pasta, uncooked (300 g)","_id":2319}
+{"createdAt":1543113161916,"updatedAt":1543113161916,"id":2320,"ingredientName":"1 cup shredded parmesan cheese (100 g)","_id":2320}
+{"createdAt":1543113161940,"updatedAt":1543113161940,"id":2321,"ingredientName":"fresh parsley, optional garnish","_id":2321}
+{"createdAt":1543113165398,"updatedAt":1543113165398,"id":2322,"ingredientName":"1 head broccoli, chopped","_id":2322}
+{"createdAt":1543113165406,"updatedAt":1543113165406,"id":2323,"ingredientName":"1 tablespoon cooking oil, of preference, or water","_id":2323}
+{"createdAt":1543113165439,"updatedAt":1543113165439,"id":2324,"ingredientName":"2 tablespoons grated parmesan cheese, plus more for garnish","_id":2324}
+{"createdAt":1543113166223,"updatedAt":1543113166223,"id":2325,"ingredientName":"1 bunch carrot, peeled and sliced","_id":2325}
+{"createdAt":1543113166265,"updatedAt":1543113166265,"id":2326,"ingredientName":"1 teaspoon smoked paprika","_id":2326}
+{"createdAt":1543113167035,"updatedAt":1543113167035,"id":2327,"ingredientName":"1 head cauliflower, chopped","_id":2327}
+{"createdAt":1543113167042,"updatedAt":1543113167042,"id":2328,"ingredientName":"1 tablespoon coconut oil, or preferred cooking oil","_id":2328}
+{"createdAt":1543113167057,"updatedAt":1543113167057,"id":2329,"ingredientName":"¼ cup coconut milk (60 mL)","_id":2329}
+{"createdAt":1543113167072,"updatedAt":1543113167072,"id":2330,"ingredientName":"1 lime, zested","_id":2330}
+{"createdAt":1543113167079,"updatedAt":1543113167079,"id":2331,"ingredientName":"fresh cilantro, for garnish","_id":2331}
+{"createdAt":1543113167834,"updatedAt":1543113167834,"id":2332,"ingredientName":"2 medium-sized sweet potatoes, peeled and chopped","_id":2332}
+{"createdAt":1543113167856,"updatedAt":1543113167856,"id":2333,"ingredientName":"2 large carrots, peeled and sliced","_id":2333}
+{"createdAt":1543113167879,"updatedAt":1543113167879,"id":2334,"ingredientName":"½ cup vegetable broth (120 mL)","_id":2334}
+{"createdAt":1543113167888,"updatedAt":1543113167888,"id":2335,"ingredientName":"½ cup pea, cooked (75 g)","_id":2335}
+{"createdAt":1543113167896,"updatedAt":1543113167896,"id":2336,"ingredientName":"2 eggs, scrambled","_id":2336}
+{"createdAt":1543113167905,"updatedAt":1543113167905,"id":2337,"ingredientName":"2 tablespoons low sodium soy sauce","_id":2337}
+{"createdAt":1543113167912,"updatedAt":1543113167912,"id":2338,"ingredientName":"green onion, chopped, for garnish","_id":2338}
+{"createdAt":1543113170030,"updatedAt":1543113170030,"id":2339,"ingredientName":"1 oz small white potato, thinly sliced","_id":2339}
+{"createdAt":1543113170038,"updatedAt":1543113170038,"id":2340,"ingredientName":"3 tablespoons butter, melted","_id":2340}
+{"createdAt":1543113170052,"updatedAt":1543113170052,"id":2341,"ingredientName":"2 tablespoons fresh parsley, chopped","_id":2341}
+{"createdAt":1543113170072,"updatedAt":1543113170072,"id":2342,"ingredientName":"6 oz skinless salmon (200 g)","_id":2342}
+{"createdAt":1543113170079,"updatedAt":1543113170079,"id":2343,"ingredientName":"parchment paper, or aluminum foil, 12×18 inches (41x46 cm)","_id":2343}
+{"createdAt":1543113170448,"updatedAt":1543113170448,"id":2344,"ingredientName":"7 oz asparagus (250 g)","_id":2344}
+{"createdAt":1543113170480,"updatedAt":1543113170480,"id":2345,"ingredientName":"3 slices white onion","_id":2345}
+{"createdAt":1543113170488,"updatedAt":1543113170488,"id":2346,"ingredientName":"2 slices lemon","_id":2346}
+{"createdAt":1543113170495,"updatedAt":1543113170495,"id":2347,"ingredientName":"1 sprig fresh dill","_id":2347}
+{"createdAt":1543113170504,"updatedAt":1543113170504,"id":2348,"ingredientName":"parchment paper, or aluminum foil, 12×18 inches (30x47cm)","_id":2348}
+{"createdAt":1543113170878,"updatedAt":1543113170878,"id":2349,"ingredientName":"3 oz green beans (85 g)","_id":2349}
+{"createdAt":1543113170904,"updatedAt":1543113170904,"id":2350,"ingredientName":"6 oz skinless salmon (170 g)","_id":2350}
+{"createdAt":1543113170910,"updatedAt":1543113170910,"id":2351,"ingredientName":"2 tablespoons pesto","_id":2351}
+{"createdAt":1543113170918,"updatedAt":1543113170918,"id":2352,"ingredientName":"10 cherry tomatoes, halved","_id":2352}
+{"createdAt":1543113171269,"updatedAt":1543113171269,"id":2353,"ingredientName":"½ cup carrot, thinly sliced (60 g)","_id":2353}
+{"createdAt":1543113171276,"updatedAt":1543113171276,"id":2354,"ingredientName":"1 cup broccoli floret (250 g)","_id":2354}
+{"createdAt":1543113171309,"updatedAt":1543113171309,"id":2355,"ingredientName":"2 tablespoons teriyaki sauce","_id":2355}
+{"createdAt":1543113174417,"updatedAt":1543113174417,"id":2356,"ingredientName":"4 cups pancake mix (480 g)","_id":2356}
+{"createdAt":1543113174432,"updatedAt":1543113174432,"id":2357,"ingredientName":"2 cups milk (480 mL)","_id":2357}
+{"createdAt":1543113174441,"updatedAt":1543113174441,"id":2358,"ingredientName":"1 cup strawberry, sliced (150 g)","_id":2358}
+{"createdAt":1543113174448,"updatedAt":1543113174448,"id":2359,"ingredientName":"½ cup blueberry (50 g)","_id":2359}
+{"createdAt":1543113174455,"updatedAt":1543113174455,"id":2360,"ingredientName":"1 cup raspberry (125 g)","_id":2360}
+{"createdAt":1543113175912,"updatedAt":1543113175912,"id":2361,"ingredientName":"6 oz cream cheese, cubed (170 g)","_id":2361}
+{"createdAt":1543113176675,"updatedAt":1543113176675,"id":2362,"ingredientName":"1 banana, sliced","_id":2362}
+{"createdAt":1543113176693,"updatedAt":1543113176693,"id":2363,"ingredientName":"¾ cup chocolate chips (130 g)","_id":2363}
+{"createdAt":1543113177511,"updatedAt":1543113177511,"id":2364,"ingredientName":"2 cups milk (470 mL)","_id":2364}
+{"createdAt":1543113177522,"updatedAt":1543113177522,"id":2365,"ingredientName":"1 peach, sliced","_id":2365}
+{"createdAt":1543113177530,"updatedAt":1543113177530,"id":2366,"ingredientName":"1 cup blueberry (100 g)","_id":2366}
+{"createdAt":1543113180971,"updatedAt":1543113180971,"id":2367,"ingredientName":"½ cup water (120 mL)","_id":2367}
+{"createdAt":1543113180979,"updatedAt":1543113180979,"id":2368,"ingredientName":"1 tablespoon cornstarch","_id":2368}
+{"createdAt":1543113180994,"updatedAt":1543113180994,"id":2369,"ingredientName":"1 tablespoon garlic, minced","_id":2369}
+{"createdAt":1543113181001,"updatedAt":1543113181001,"id":2370,"ingredientName":"1 tablespoon brown sugar","_id":2370}
+{"createdAt":1543113181009,"updatedAt":1543113181009,"id":2371,"ingredientName":"1 teaspoon white pepper","_id":2371}
+{"createdAt":1543113181016,"updatedAt":1543113181016,"id":2372,"ingredientName":"1 lb flank steak, thinly sliced (455 g)","_id":2372}
+{"createdAt":1543113181031,"updatedAt":1543113181031,"id":2373,"ingredientName":"3 tablespoons cooking oil, divided","_id":2373}
+{"createdAt":1543113181039,"updatedAt":1543113181039,"id":2374,"ingredientName":"6 oz chow mein noodle, hong kong style pan fried noodles, par cooked according to package instructions (170 g)","_id":2374}
+{"createdAt":1543113181046,"updatedAt":1543113181046,"id":2375,"ingredientName":"½ cup onion, sliced (75 g)","_id":2375}
+{"createdAt":1543113181054,"updatedAt":1543113181054,"id":2376,"ingredientName":"1 cup broccoli floret (150 g)","_id":2376}
+{"createdAt":1543113181064,"updatedAt":1543113181064,"id":2377,"ingredientName":"2 teaspoons sesame oil","_id":2377}
+{"createdAt":1543113181074,"updatedAt":1543113181074,"id":2378,"ingredientName":"scallions, sliced, for garnish","_id":2378}
+{"createdAt":1543113182143,"updatedAt":1543113182143,"id":2379,"ingredientName":"2 tablespoons cooking oil, divided","_id":2379}
+{"createdAt":1543113182151,"updatedAt":1543113182151,"id":2380,"ingredientName":"1 package chow mein noodle, hong kong style pan fried noodles, par cooked according to package instructions","_id":2380}
+{"createdAt":1543113182165,"updatedAt":1543113182165,"id":2381,"ingredientName":"½ cup bell pepper (50 g)","_id":2381}
+{"createdAt":1543113182172,"updatedAt":1543113182172,"id":2382,"ingredientName":"½ cup broccoli floret (75 g)","_id":2382}
+{"createdAt":1543113182180,"updatedAt":1543113182180,"id":2383,"ingredientName":"½ cup carrot, julienned (60 g)","_id":2383}
+{"createdAt":1543113182208,"updatedAt":1543113182208,"id":2384,"ingredientName":"½ cup cabbage, chopped (50 g)","_id":2384}
+{"createdAt":1543113182215,"updatedAt":1543113182215,"id":2385,"ingredientName":"½ cup shiitake mushroom, thinly sliced (40 g)","_id":2385}
+{"createdAt":1543113182223,"updatedAt":1543113182223,"id":2386,"ingredientName":"½ cup snow pea (75 g)","_id":2386}
+{"createdAt":1543113182230,"updatedAt":1543113182230,"id":2387,"ingredientName":"⅓ cup corn (60 g)","_id":2387}
+{"createdAt":1543113182238,"updatedAt":1543113182238,"id":2388,"ingredientName":"2 tablespoons water","_id":2388}
+{"createdAt":1543113182245,"updatedAt":1543113182245,"id":2389,"ingredientName":"2 teaspoons cornstarch","_id":2389}
+{"createdAt":1543113182252,"updatedAt":1543113182252,"id":2390,"ingredientName":"2 ½ tablespoons soy sauce","_id":2390}
+{"createdAt":1543113182259,"updatedAt":1543113182259,"id":2391,"ingredientName":"1 ½ tablespoons hoisin sauce","_id":2391}
+{"createdAt":1543113182268,"updatedAt":1543113182268,"id":2392,"ingredientName":"1 ½ tablespoons rice wine","_id":2392}
+{"createdAt":1543113182276,"updatedAt":1543113182276,"id":2393,"ingredientName":"2 teaspoons sugar","_id":2393}
+{"createdAt":1543113182289,"updatedAt":1543113182289,"id":2394,"ingredientName":"½ cup bean sprout (50 g)","_id":2394}
+{"createdAt":1543113183620,"updatedAt":1543113183620,"id":2395,"ingredientName":"2 tablespoons garlic, minced","_id":2395}
+{"createdAt":1543113183634,"updatedAt":1543113183634,"id":2396,"ingredientName":"½ cup honey (170 g)","_id":2396}
+{"createdAt":1543113183641,"updatedAt":1543113183641,"id":2397,"ingredientName":"1 lb jumbo shrimp, peeled and deveined (455 g)","_id":2397}
+{"createdAt":1543113183668,"updatedAt":1543113183668,"id":2398,"ingredientName":"1 cup white onion, sliced (150 g)","_id":2398}
+{"createdAt":1543113183689,"updatedAt":1543113183689,"id":2399,"ingredientName":"½ cup cabbage (50 g)","_id":2399}
+{"createdAt":1543113183711,"updatedAt":1543113183711,"id":2400,"ingredientName":"scallion, for garnish","_id":2400}
+{"createdAt":1543113185304,"updatedAt":1543113185304,"id":2401,"ingredientName":"1 lb chicken breast, cubed (455 g)","_id":2401}
+{"createdAt":1543113185328,"updatedAt":1543113185328,"id":2402,"ingredientName":"½ cup teriyaki sauce, divided (120 mL)","_id":2402}
+{"createdAt":1543113185335,"updatedAt":1543113185335,"id":2403,"ingredientName":"4 tablespoons cooking oil, divided","_id":2403}
+{"createdAt":1543113185343,"updatedAt":1543113185343,"id":2404,"ingredientName":"6 oz chow mein noodle, hong kong style pan fried noodles, par cooked according to package instructions (180 g)","_id":2404}
+{"createdAt":1543113185352,"updatedAt":1543113185352,"id":2405,"ingredientName":"¾ cup onion, sliced (11520 g)","_id":2405}
+{"createdAt":1543113185374,"updatedAt":1543113185374,"id":2406,"ingredientName":"1 cup cabbage (100 g)","_id":2406}
+{"createdAt":1543113185381,"updatedAt":1543113185381,"id":2407,"ingredientName":"sesame seeds, for garnish","_id":2407}
+{"createdAt":1543113188534,"updatedAt":1543113188534,"id":2408,"ingredientName":"20 oz apple pie filling, 2 cans (565 g)","_id":2408}
+{"createdAt":1543113188550,"updatedAt":1543113188550,"id":2409,"ingredientName":"1 box spice cake mix","_id":2409}
+{"createdAt":1543113188564,"updatedAt":1543113188564,"id":2410,"ingredientName":"8 oz butter (225 g)","_id":2410}
+{"createdAt":1543113188582,"updatedAt":1543113188582,"id":2411,"ingredientName":"vanilla ice cream, optional, for serving","_id":2411}
+{"createdAt":1543113189595,"updatedAt":1543113189595,"id":2412,"ingredientName":"2 cans cherry pie filling","_id":2412}
+{"createdAt":1543113189603,"updatedAt":1543113189603,"id":2413,"ingredientName":"1 box cake mix","_id":2413}
+{"createdAt":1543113189614,"updatedAt":1543113189614,"id":2414,"ingredientName":"8 oz unsalted butter (225 g)","_id":2414}
+{"createdAt":1543113190654,"updatedAt":1543113190654,"id":2415,"ingredientName":"1 can pre-made biscuit","_id":2415}
+{"createdAt":1543113190668,"updatedAt":1543113190668,"id":2416,"ingredientName":"6 cups blueberry (600 g)","_id":2416}
+{"createdAt":1543113190677,"updatedAt":1543113190677,"id":2417,"ingredientName":"½ cup brown sugar (110 g)","_id":2417}
+{"createdAt":1543113190687,"updatedAt":1543113190687,"id":2418,"ingredientName":"1 tablespoon cinnamon","_id":2418}
+{"createdAt":1543113190700,"updatedAt":1543113190700,"id":2419,"ingredientName":"2 tablespoons cornstarch","_id":2419}
+{"createdAt":1543113191633,"updatedAt":1543113191633,"id":2420,"ingredientName":"14 oz cranberry sauce (395 g)","_id":2420}
+{"createdAt":1543113191647,"updatedAt":1543113191647,"id":2421,"ingredientName":"21 oz apple pie filling, 1 can (595 g)","_id":2421}
+{"createdAt":1543113191662,"updatedAt":1543113191662,"id":2422,"ingredientName":"1 box yellow cake mix","_id":2422}
+{"createdAt":1543113192691,"updatedAt":1543113192691,"id":2423,"ingredientName":"1 cup strawberry (100 g)","_id":2423}
+{"createdAt":1543113192699,"updatedAt":1543113192699,"id":2424,"ingredientName":"1 cup blackberry (100 g)","_id":2424}
+{"createdAt":1543113192726,"updatedAt":1543113192726,"id":2425,"ingredientName":"1 package vanilla cake mix","_id":2425}
+{"createdAt":1543113192733,"updatedAt":1543113192733,"id":2426,"ingredientName":"8 tablespoons butter, cut into pieces","_id":2426}
+{"createdAt":1543113193677,"updatedAt":1543113193677,"id":2427,"ingredientName":"42 oz peach pie filling, about 2 cans (1 kg)","_id":2427}
+{"createdAt":1543113193684,"updatedAt":1543113193684,"id":2428,"ingredientName":"1 box vanilla cake mix","_id":2428}
+{"createdAt":1543113193695,"updatedAt":1543113193695,"id":2429,"ingredientName":"8 oz unsalted butter, cut into small chunks (225 g)","_id":2429}
+{"createdAt":1543113193707,"updatedAt":1543113193707,"id":2430,"ingredientName":"⅓ cup walnuts, optional (35 g)","_id":2430}
+{"createdAt":1543113197578,"updatedAt":1543113197578,"id":2431,"ingredientName":"1 lb ground beef (455 g)","_id":2431}
+{"createdAt":1543113197585,"updatedAt":1543113197585,"id":2432,"ingredientName":"1 medium onion, chopped","_id":2432}
+{"createdAt":1543113197596,"updatedAt":1543113197596,"id":2433,"ingredientName":"1 green bell pepper, chopped","_id":2433}
+{"createdAt":1543113197681,"updatedAt":1543113197681,"id":2434,"ingredientName":"3 cups tomato sauce (675 g)","_id":2434}
+{"createdAt":1543113197716,"updatedAt":1543113197716,"id":2435,"ingredientName":"½ teaspoon cayenne pepper, optional","_id":2435}
+{"createdAt":1543113197727,"updatedAt":1543113197727,"id":2436,"ingredientName":"16 oz kidney bean, 1 can (425 g)","_id":2436}
+{"createdAt":1543113197734,"updatedAt":1543113197734,"id":2437,"ingredientName":"12 oz black beans, 1 can (375 g)","_id":2437}
+{"createdAt":1543113197747,"updatedAt":1543113197747,"id":2438,"ingredientName":"sour cream, for serving","_id":2438}
+{"createdAt":1543113197756,"updatedAt":1543113197756,"id":2439,"ingredientName":"cheddar cheese, for serving","_id":2439}
+{"createdAt":1543113198609,"updatedAt":1543113198609,"id":2440,"ingredientName":"8 cloves garlic, minced","_id":2440}
+{"createdAt":1543113198616,"updatedAt":1543113198616,"id":2441,"ingredientName":"1 onion, chopped","_id":2441}
+{"createdAt":1543113198626,"updatedAt":1543113198626,"id":2442,"ingredientName":"2 heads cauliflower, riced","_id":2442}
+{"createdAt":1543113198654,"updatedAt":1543113198654,"id":2443,"ingredientName":"8 cups vegetable broth (1.9 L)","_id":2443}
+{"createdAt":1543113198663,"updatedAt":1543113198663,"id":2444,"ingredientName":"2 cups water (470 mL)","_id":2444}
+{"createdAt":1543113198673,"updatedAt":1543113198673,"id":2445,"ingredientName":"2 sprigs fresh thyme","_id":2445}
+{"createdAt":1543113198681,"updatedAt":1543113198681,"id":2446,"ingredientName":"½ cup vegetarian parmesan cheese (55 g)","_id":2446}
+{"createdAt":1543113198692,"updatedAt":1543113198692,"id":2447,"ingredientName":"¼ cup fresh chives (10 g)","_id":2447}
+{"createdAt":1543113199619,"updatedAt":1543113199619,"id":2448,"ingredientName":"8 oz dried spathetti (225 g)","_id":2448}
+{"createdAt":1543113199643,"updatedAt":1543113199643,"id":2449,"ingredientName":"½ large yellow onion, minced","_id":2449}
+{"createdAt":1543113199676,"updatedAt":1543113199676,"id":2450,"ingredientName":"2 medium carrots, sliced","_id":2450}
+{"createdAt":1543113199683,"updatedAt":1543113199683,"id":2451,"ingredientName":"1 stalk celery, sliced","_id":2451}
+{"createdAt":1543113199695,"updatedAt":1543113199695,"id":2452,"ingredientName":"4 cups white mushroom, sliced (300 g)","_id":2452}
+{"createdAt":1543113199702,"updatedAt":1543113199702,"id":2453,"ingredientName":"1 teaspoon salt, plus more to taste","_id":2453}
+{"createdAt":1543113199715,"updatedAt":1543113199715,"id":2454,"ingredientName":"1 teaspoon pepper, plus more to taste","_id":2454}
+{"createdAt":1543113199728,"updatedAt":1543113199728,"id":2455,"ingredientName":"½ cup red wine (120 mL)","_id":2455}
+{"createdAt":1543113199747,"updatedAt":1543113199747,"id":2456,"ingredientName":"28 oz diced organic tomato, 1 can (795 g)","_id":2456}
+{"createdAt":1543113199760,"updatedAt":1543113199760,"id":2457,"ingredientName":"¼ cup tomato paste (55 g)","_id":2457}
+{"createdAt":1543113199780,"updatedAt":1543113199780,"id":2458,"ingredientName":"1 cup dried brown lentil (200 g)","_id":2458}
+{"createdAt":1543113199794,"updatedAt":1543113199794,"id":2459,"ingredientName":"½ teaspoon dried basil","_id":2459}
+{"createdAt":1543113199814,"updatedAt":1543113199814,"id":2460,"ingredientName":"½ teaspoon dried rosemary","_id":2460}
+{"createdAt":1543113199824,"updatedAt":1543113199824,"id":2461,"ingredientName":"½ teaspoon baking soda","_id":2461}
+{"createdAt":1543113199832,"updatedAt":1543113199832,"id":2462,"ingredientName":"¼ cup fresh parsley, chopped, for garnish (10 g)","_id":2462}
+{"createdAt":1543113200652,"updatedAt":1543113200652,"id":2463,"ingredientName":"3 large leeks, chopped","_id":2463}
+{"createdAt":1543113200669,"updatedAt":1543113200669,"id":2464,"ingredientName":"2 lb potato, cubed (905 g)","_id":2464}
+{"createdAt":1543113200726,"updatedAt":1543113200726,"id":2465,"ingredientName":"1 bay leaf","_id":2465}
+{"createdAt":1543113200736,"updatedAt":1543113200736,"id":2466,"ingredientName":"¼ cup fresh chives, chopped (10 g)","_id":2466}
+{"createdAt":1543113200748,"updatedAt":1543113200748,"id":2467,"ingredientName":"hot sauce, to taste","_id":2467}
+{"createdAt":1543113202077,"updatedAt":1543113202077,"id":2468,"ingredientName":"3 lb chicken, cubed (1.3 kg)","_id":2468}
+{"createdAt":1543113202085,"updatedAt":1543113202085,"id":2469,"ingredientName":"¼ medium white onion, diced","_id":2469}
+{"createdAt":1543113202095,"updatedAt":1543113202095,"id":2470,"ingredientName":"¼ cup fresh scallion, chopped (25 g)","_id":2470}
+{"createdAt":1543113202121,"updatedAt":1543113202121,"id":2471,"ingredientName":"3 tablespoons curry powder","_id":2471}
+{"createdAt":1543113202131,"updatedAt":1543113202131,"id":2472,"ingredientName":"4 sprigs fresh thyme","_id":2472}
+{"createdAt":1543113202148,"updatedAt":1543113202148,"id":2473,"ingredientName":"2 teaspoons salt","_id":2473}
+{"createdAt":1543113202179,"updatedAt":1543113202179,"id":2474,"ingredientName":"½ medium white onion, diced","_id":2474}
+{"createdAt":1543113202200,"updatedAt":1543113202200,"id":2475,"ingredientName":"2 tablespoons curry powder","_id":2475}
+{"createdAt":1543113202218,"updatedAt":1543113202218,"id":2476,"ingredientName":"13.5 oz coconut milk, 1 can (890 mL)","_id":2476}
+{"createdAt":1543113202238,"updatedAt":1543113202238,"id":2477,"ingredientName":"1 ½ cups chicken broth (360 mL)","_id":2477}
+{"createdAt":1543113204318,"updatedAt":1543113204318,"id":2478,"ingredientName":"1 pita bread","_id":2478}
+{"createdAt":1543113204336,"updatedAt":1543113204336,"id":2479,"ingredientName":"1 teaspoon vegetarian parmesan cheese","_id":2479}
+{"createdAt":1543113204346,"updatedAt":1543113204346,"id":2480,"ingredientName":"1 teaspoon garlic, minced","_id":2480}
+{"createdAt":1543113204354,"updatedAt":1543113204354,"id":2481,"ingredientName":"1 teaspoon fresh parsley, chopped","_id":2481}
+{"createdAt":1543113206589,"updatedAt":1543113206589,"id":2482,"ingredientName":"2 tablespoons coconut oil","_id":2482}
+{"createdAt":1543113206607,"updatedAt":1543113206607,"id":2483,"ingredientName":"1 teaspoon sugar","_id":2483}
+{"createdAt":1543113207547,"updatedAt":1543113207547,"id":2484,"ingredientName":"½ teaspoon paprika","_id":2484}
+{"createdAt":1543113210985,"updatedAt":1543113210985,"id":2485,"ingredientName":"1 baguette, sliced in half crosswise and lengthwise (4 pieces total)","_id":2485}
+{"createdAt":1543113210996,"updatedAt":1543113210996,"id":2486,"ingredientName":"1 cup tomato (260 g)","_id":2486}
+{"createdAt":1543113211008,"updatedAt":1543113211008,"id":2487,"ingredientName":"¾ cup shredded mozzarella cheese (75 g)","_id":2487}
+{"createdAt":1543113211016,"updatedAt":1543113211016,"id":2488,"ingredientName":"cherry tomato, halved","_id":2488}
+{"createdAt":1543113211028,"updatedAt":1543113211028,"id":2489,"ingredientName":"mozzarella ball","_id":2489}
+{"createdAt":1543113211036,"updatedAt":1543113211036,"id":2490,"ingredientName":"1 tablespoon fresh basil, chopped, optional","_id":2490}
+{"createdAt":1543113211047,"updatedAt":1543113211047,"id":2491,"ingredientName":"½ tablespoon red pepper, optional","_id":2491}
+{"createdAt":1543113211059,"updatedAt":1543113211059,"id":2492,"ingredientName":"1 cup BBQ sauce (290 g)","_id":2492}
+{"createdAt":1543113211066,"updatedAt":1543113211066,"id":2493,"ingredientName":"1 cup rotisserie chicken (125 g)","_id":2493}
+{"createdAt":1543113211088,"updatedAt":1543113211088,"id":2494,"ingredientName":"½ medium red onion, thinly sliced","_id":2494}
+{"createdAt":1543113211098,"updatedAt":1543113211098,"id":2495,"ingredientName":"2 tablespoons scallion, sliced, optional","_id":2495}
+{"createdAt":1543113211524,"updatedAt":1543113211524,"id":2496,"ingredientName":"2 teaspoons kosher salt","_id":2496}
+{"createdAt":1543113211532,"updatedAt":1543113211532,"id":2497,"ingredientName":"1 teaspoon ground black pepper","_id":2497}
+{"createdAt":1543113211550,"updatedAt":1543113211550,"id":2498,"ingredientName":"1 teaspoon garlic powder","_id":2498}
+{"createdAt":1543113211569,"updatedAt":1543113211569,"id":2499,"ingredientName":"2 lb flank steak (905 g)","_id":2499}
+{"createdAt":1543113211580,"updatedAt":1543113211580,"id":2500,"ingredientName":"2 teaspoons extra virgin olive oil, divided","_id":2500}
+{"createdAt":1543113211588,"updatedAt":1543113211588,"id":2501,"ingredientName":"1 green bell pepper, seeded and sliced","_id":2501}
+{"createdAt":1543113211598,"updatedAt":1543113211598,"id":2502,"ingredientName":"1 cup mushroom, sliced (75 g)","_id":2502}
+{"createdAt":1543113211611,"updatedAt":1543113211611,"id":2503,"ingredientName":"1 red bell pepper, seeded and sliced","_id":2503}
+{"createdAt":1543113211619,"updatedAt":1543113211619,"id":2504,"ingredientName":"1 medium red onion, thinly sliced","_id":2504}
+{"createdAt":1543113211629,"updatedAt":1543113211629,"id":2505,"ingredientName":"1 head broccoli, cut into florets","_id":2505}
+{"createdAt":1543113211637,"updatedAt":1543113211637,"id":2506,"ingredientName":"12 small corn tortillas","_id":2506}
+{"createdAt":1543113211648,"updatedAt":1543113211648,"id":2507,"ingredientName":"½ cup greek yogurt (140 g)","_id":2507}
+{"createdAt":1543113211668,"updatedAt":1543113211668,"id":2508,"ingredientName":"¼ teaspoon lime zest","_id":2508}
+{"createdAt":1543113211678,"updatedAt":1543113211678,"id":2509,"ingredientName":"kosher salt, to taste","_id":2509}
+{"createdAt":1543113211687,"updatedAt":1543113211687,"id":2510,"ingredientName":"black beans","_id":2510}
+{"createdAt":1543113211699,"updatedAt":1543113211699,"id":2511,"ingredientName":"fresh cilantro, chopped","_id":2511}
+{"createdAt":1543113211711,"updatedAt":1543113211711,"id":2512,"ingredientName":"pico de gallo","_id":2512}
+{"createdAt":1543113211718,"updatedAt":1543113211718,"id":2513,"ingredientName":"corn and black bean salsa","_id":2513}
+{"createdAt":1543113211728,"updatedAt":1543113211728,"id":2514,"ingredientName":"shredded cheddar cheese","_id":2514}
+{"createdAt":1543113211736,"updatedAt":1543113211736,"id":2515,"ingredientName":"guacamole","_id":2515}
+{"createdAt":1543113211748,"updatedAt":1543113211748,"id":2516,"ingredientName":"lime wedge","_id":2516}
+{"createdAt":1543113211757,"updatedAt":1543113211757,"id":2517,"ingredientName":"hot sauce","_id":2517}
+{"createdAt":1543113213886,"updatedAt":1543113213886,"id":2518,"ingredientName":"1 english cucumber, peeled and chopped, plus more sliced into rounds, for garnish","_id":2518}
+{"createdAt":1543113213897,"updatedAt":1543113213897,"id":2519,"ingredientName":"2 medium avocados, diced","_id":2519}
+{"createdAt":1543113213907,"updatedAt":1543113213907,"id":2520,"ingredientName":"1 cup greek yogurt (285 g)","_id":2520}
+{"createdAt":1543113213915,"updatedAt":1543113213915,"id":2521,"ingredientName":"1 cup vegetable broth, or water (240 mL)","_id":2521}
+{"createdAt":1543113213934,"updatedAt":1543113213934,"id":2522,"ingredientName":"½ teaspoon apple cider vinegar","_id":2522}
+{"createdAt":1543113213945,"updatedAt":1543113213945,"id":2523,"ingredientName":"2 tablespoons scallions, sliced","_id":2523}
+{"createdAt":1543113214383,"updatedAt":1543113214383,"id":2524,"ingredientName":"5 oz tuna, 2 cans, drained (140 g)","_id":2524}
+{"createdAt":1543113214395,"updatedAt":1543113214395,"id":2525,"ingredientName":"1 large avocado, diced","_id":2525}
+{"createdAt":1543113214402,"updatedAt":1543113214402,"id":2526,"ingredientName":"1 cup carrot, finely chopped (110 g)","_id":2526}
+{"createdAt":1543113214414,"updatedAt":1543113214414,"id":2527,"ingredientName":"2 ribs celery, finely chopped","_id":2527}
+{"createdAt":1543113214422,"updatedAt":1543113214422,"id":2528,"ingredientName":"¼ cup red onion, finely chopped (35 g)","_id":2528}
+{"createdAt":1543113214436,"updatedAt":1543113214436,"id":2529,"ingredientName":"¼ cup dijon mustard (60 g)","_id":2529}
+{"createdAt":1543113214482,"updatedAt":1543113214482,"id":2530,"ingredientName":"4 whole wheat tortillas","_id":2530}
+{"createdAt":1543113214492,"updatedAt":1543113214492,"id":2531,"ingredientName":"4 leaves green leaf lettuce","_id":2531}
+{"createdAt":1543113214501,"updatedAt":1543113214501,"id":2532,"ingredientName":"1 cup cherry tomatoes, halved (200 g)","_id":2532}
+{"createdAt":1543113214919,"updatedAt":1543113214919,"id":2533,"ingredientName":"2 cups rotisserie chicken, shredded (250 g)","_id":2533}
+{"createdAt":1543113214931,"updatedAt":1543113214931,"id":2534,"ingredientName":"1 cup buffalo sauce (290 g)","_id":2534}
+{"createdAt":1543113214941,"updatedAt":1543113214941,"id":2535,"ingredientName":"½ cup celery, diced (110 g)","_id":2535}
+{"createdAt":1543113214949,"updatedAt":1543113214949,"id":2536,"ingredientName":"¼ cup red onion, diced (35 g)","_id":2536}
+{"createdAt":1543113214978,"updatedAt":1543113214978,"id":2537,"ingredientName":"2 leaves green leaf lettuce","_id":2537}
+{"createdAt":1543113214989,"updatedAt":1543113214989,"id":2538,"ingredientName":"blue cheese, crumbled, for garnish, optional","_id":2538}
+{"createdAt":1543113214998,"updatedAt":1543113214998,"id":2539,"ingredientName":"green onion, sliced, for garnish, optional","_id":2539}
+{"createdAt":1543113215008,"updatedAt":1543113215008,"id":2540,"ingredientName":"¼ cup greek yogurt (60 g)","_id":2540}
+{"createdAt":1543113215017,"updatedAt":1543113215017,"id":2541,"ingredientName":"½ teaspoon dried parsley","_id":2541}
+{"createdAt":1543113215027,"updatedAt":1543113215027,"id":2542,"ingredientName":"⅛ teaspoon garlic powder","_id":2542}
+{"createdAt":1543113215034,"updatedAt":1543113215034,"id":2543,"ingredientName":"½ teaspoon dried dill","_id":2543}
+{"createdAt":1543113215045,"updatedAt":1543113215045,"id":2544,"ingredientName":"⅛ teaspoon onion powder","_id":2544}
+{"createdAt":1543113215072,"updatedAt":1543113215072,"id":2545,"ingredientName":"½ teaspoon lemon juice","_id":2545}
+{"createdAt":1543113215486,"updatedAt":1543113215486,"id":2546,"ingredientName":"2 medium zucchinis, washed and trimmed","_id":2546}
+{"createdAt":1543113215506,"updatedAt":1543113215506,"id":2547,"ingredientName":"1 cup fresh basil leaves, plus more for garnish (40 g)","_id":2547}
+{"createdAt":1543113215515,"updatedAt":1543113215515,"id":2548,"ingredientName":"½ cup pine nuts (60 g)","_id":2548}
+{"createdAt":1543113215530,"updatedAt":1543113215530,"id":2549,"ingredientName":"¼ cup shredded parmesan cheese, plus more for garnish (25 g)","_id":2549}
+{"createdAt":1543113215550,"updatedAt":1543113215550,"id":2550,"ingredientName":"¼ cup olive oil, plus more as needed (60 mL)","_id":2550}
+{"createdAt":1543113215561,"updatedAt":1543113215561,"id":2551,"ingredientName":"2 tablespoons lemon juice","_id":2551}
+{"createdAt":1543113215598,"updatedAt":1543113215598,"id":2552,"ingredientName":"2 slices prosciutto, torn or cut into bite-size chuncks","_id":2552}
+{"createdAt":1543113215609,"updatedAt":1543113215609,"id":2553,"ingredientName":"lemon wedges, for garnish","_id":2553}
+{"createdAt":1543113218066,"updatedAt":1543113218066,"id":2554,"ingredientName":"3 lb chuck roast (1.3 kg)","_id":2554}
+{"createdAt":1543113218866,"updatedAt":1543113218866,"id":2555,"ingredientName":"1 oz dried onion soup mix (30 g)","_id":2555}
+{"createdAt":1543113218892,"updatedAt":1543113218892,"id":2556,"ingredientName":"3 gold potatoes, diced","_id":2556}
+{"createdAt":1543113218903,"updatedAt":1543113218903,"id":2557,"ingredientName":"3 large carrots, chopped","_id":2557}
+{"createdAt":1543113219385,"updatedAt":1543113219385,"id":2558,"ingredientName":"3 chicken breasts, diced","_id":2558}
+{"createdAt":1543113219420,"updatedAt":1543113219420,"id":2559,"ingredientName":"2 cups baby carrot, diced (240 g)","_id":2559}
+{"createdAt":1543113219434,"updatedAt":1543113219434,"id":2560,"ingredientName":"21 oz condensed cream of chicken soup (600 mL)","_id":2560}
+{"createdAt":1543113219445,"updatedAt":1543113219445,"id":2561,"ingredientName":"1 can refrigerated biscuit","_id":2561}
+{"createdAt":1543113219930,"updatedAt":1543113219930,"id":2562,"ingredientName":"2 lb pork shoulder, diced (905 g)","_id":2562}
+{"createdAt":1543113219944,"updatedAt":1543113219944,"id":2563,"ingredientName":"1 tablespoon seasoned salt","_id":2563}
+{"createdAt":1543113219961,"updatedAt":1543113219961,"id":2564,"ingredientName":"1 can kidney bean, drained","_id":2564}
+{"createdAt":1543113219974,"updatedAt":1543113219974,"id":2565,"ingredientName":"½ cup tomato, diced (100 g)","_id":2565}
+{"createdAt":1543113219985,"updatedAt":1543113219985,"id":2566,"ingredientName":"½ onion, diced","_id":2566}
+{"createdAt":1543113219997,"updatedAt":1543113219997,"id":2567,"ingredientName":"½ cup red enchilada sauce (120 mL)","_id":2567}
+{"createdAt":1543113220006,"updatedAt":1543113220006,"id":2568,"ingredientName":"1 box cornbread mix, prepared according to instructions","_id":2568}
+{"createdAt":1543113220016,"updatedAt":1543113220016,"id":2569,"ingredientName":"cheddar cheese, to top, optional","_id":2569}
+{"createdAt":1543113220526,"updatedAt":1543113220526,"id":2570,"ingredientName":"5 bell peppers, hollowed out","_id":2570}
+{"createdAt":1543113220539,"updatedAt":1543113220539,"id":2571,"ingredientName":"2 cups cooked rice (450 g)","_id":2571}
+{"createdAt":1543113220580,"updatedAt":1543113220580,"id":2572,"ingredientName":"1 can corn, drained","_id":2572}
+{"createdAt":1543113220602,"updatedAt":1543113220602,"id":2573,"ingredientName":"1 can black beans, drained","_id":2573}
+{"createdAt":1543113220631,"updatedAt":1543113220631,"id":2574,"ingredientName":"½ cup salsa (130 g)","_id":2574}
+{"createdAt":1543113220646,"updatedAt":1543113220646,"id":2575,"ingredientName":"2 cups shredded cheddar cheese, shredded (200 g)","_id":2575}
+{"createdAt":1543113220653,"updatedAt":1543113220653,"id":2576,"ingredientName":"½ cup chicken stock (120 mL)","_id":2576}
+{"createdAt":1543113223271,"updatedAt":1543113223271,"id":2577,"ingredientName":"1 lb potato (455 g)","_id":2577}
+{"createdAt":1543113223309,"updatedAt":1543113223309,"id":2578,"ingredientName":"3 tablespoons lemon juice","_id":2578}
+{"createdAt":1543113223331,"updatedAt":1543113223331,"id":2579,"ingredientName":"½ teaspoon onion powder","_id":2579}
+{"createdAt":1543113223383,"updatedAt":1543113223383,"id":2580,"ingredientName":"2 salmon fillets","_id":2580}
+{"createdAt":1543113223394,"updatedAt":1543113223394,"id":2581,"ingredientName":"1 bunch asparagus","_id":2581}
+{"createdAt":1543113223476,"updatedAt":1543113223476,"id":2582,"ingredientName":"6 slices lemon","_id":2582}
+{"createdAt":1543113223971,"updatedAt":1543113223971,"id":2583,"ingredientName":"fresh thyme, to taste","_id":2583}
+{"createdAt":1543113224003,"updatedAt":1543113224003,"id":2584,"ingredientName":"2 lb potato, boiled (905 g)","_id":2584}
+{"createdAt":1543113224014,"updatedAt":1543113224014,"id":2585,"ingredientName":"2 shallots, thinly sliced","_id":2585}
+{"createdAt":1543113224023,"updatedAt":1543113224023,"id":2586,"ingredientName":"5 tablespoons butter, divided","_id":2586}
+{"createdAt":1543113224035,"updatedAt":1543113224035,"id":2587,"ingredientName":"½ cup whole milk (120 mL)","_id":2587}
+{"createdAt":1543113224055,"updatedAt":1543113224055,"id":2588,"ingredientName":"½ teaspoon white pepper","_id":2588}
+{"createdAt":1543113224065,"updatedAt":1543113224065,"id":2589,"ingredientName":"1 cup porcini mushroom, trimmed (75 g)","_id":2589}
+{"createdAt":1543113224076,"updatedAt":1543113224076,"id":2590,"ingredientName":"1 bunch asparagus, ends trimmed","_id":2590}
+{"createdAt":1543113226720,"updatedAt":1543113226720,"id":2591,"ingredientName":"4 chicken breasts","_id":2591}
+{"createdAt":1543113226733,"updatedAt":1543113226733,"id":2592,"ingredientName":"4 rashers bacon, chopped","_id":2592}
+{"createdAt":1543113226743,"updatedAt":1543113226743,"id":2593,"ingredientName":"2 spring onions, chopped","_id":2593}
+{"createdAt":1543113226752,"updatedAt":1543113226752,"id":2594,"ingredientName":"½ cup cream cheese (100 g)","_id":2594}
+{"createdAt":1543113227224,"updatedAt":1543113227224,"id":2595,"ingredientName":"5 cups fresh spinach (200 g)","_id":2595}
+{"createdAt":1543113227236,"updatedAt":1543113227236,"id":2596,"ingredientName":"¾ cup artichoke heart, drained, rinsed and roughly chopped (100 g)","_id":2596}
+{"createdAt":1543113227262,"updatedAt":1543113227262,"id":2597,"ingredientName":"¼ cup cream cheese (55 g)","_id":2597}
+{"createdAt":1543113227275,"updatedAt":1543113227275,"id":2598,"ingredientName":"⅓ cup grated mozzarella cheese (35 g)","_id":2598}
+{"createdAt":1543113227768,"updatedAt":1543113227768,"id":2599,"ingredientName":"2 tablespoons red pesto","_id":2599}
+{"createdAt":1543113227780,"updatedAt":1543113227780,"id":2600,"ingredientName":"1 handful fresh basil, roughly chopped","_id":2600}
+{"createdAt":1543113227787,"updatedAt":1543113227787,"id":2601,"ingredientName":"½ cup mozzarella cheese (50 g)","_id":2601}
+{"createdAt":1543113228253,"updatedAt":1543113228253,"id":2602,"ingredientName":"½ yellow bell pepper, diced","_id":2602}
+{"createdAt":1543113228267,"updatedAt":1543113228267,"id":2603,"ingredientName":"½ red bell pepper, diced","_id":2603}
+{"createdAt":1543113228285,"updatedAt":1543113228285,"id":2604,"ingredientName":"½ green pepper, diced","_id":2604}
+{"createdAt":1543113228297,"updatedAt":1543113228297,"id":2605,"ingredientName":"2 tablespoons fajita spice mix","_id":2605}
+{"createdAt":1543113228308,"updatedAt":1543113228308,"id":2606,"ingredientName":"3 tablespoons salsa","_id":2606}
+{"createdAt":1543113228318,"updatedAt":1543113228318,"id":2607,"ingredientName":"½ cup cheddar cheese, grated (50 g)","_id":2607}
+{"createdAt":1543113230868,"updatedAt":1543113230868,"id":2608,"ingredientName":"2 tablespoons vegetable oil (30 mL)","_id":2608}
+{"createdAt":1543113230885,"updatedAt":1543113230885,"id":2609,"ingredientName":"4 spring onions, divided","_id":2609}
+{"createdAt":1543113230895,"updatedAt":1543113230895,"id":2610,"ingredientName":"2 carrots, cut into matchsticks","_id":2610}
+{"createdAt":1543113230903,"updatedAt":1543113230903,"id":2611,"ingredientName":"1 cup snap pea (100 g)","_id":2611}
+{"createdAt":1543113230915,"updatedAt":1543113230915,"id":2612,"ingredientName":"2 tablespoons brown sugar","_id":2612}
+{"createdAt":1543113230924,"updatedAt":1543113230924,"id":2613,"ingredientName":"3 tablespoons soy sauce","_id":2613}
+{"createdAt":1543113230933,"updatedAt":1543113230933,"id":2614,"ingredientName":"9 oz dried rice noodles, cooked (250 g)","_id":2614}
+{"createdAt":1543113231327,"updatedAt":1543113231327,"id":2615,"ingredientName":"2 chicken breasts","_id":2615}
+{"createdAt":1543113231353,"updatedAt":1543113231353,"id":2616,"ingredientName":"2 cloves garlic","_id":2616}
+{"createdAt":1543113231364,"updatedAt":1543113231364,"id":2617,"ingredientName":"1 red pepper","_id":2617}
+{"createdAt":1543113231379,"updatedAt":1543113231379,"id":2618,"ingredientName":"2 tablespoons soy sauce","_id":2618}
+{"createdAt":1543113231386,"updatedAt":1543113231386,"id":2619,"ingredientName":"1 tablespoon ketchup","_id":2619}
+{"createdAt":1543113231396,"updatedAt":1543113231396,"id":2620,"ingredientName":"1 tablespoon cider vinegar","_id":2620}
+{"createdAt":1543113231403,"updatedAt":1543113231403,"id":2621,"ingredientName":"9 oz noodle, cooked (250 g)","_id":2621}
+{"createdAt":1543113231815,"updatedAt":1543113231815,"id":2622,"ingredientName":"½ lb prawn (200 g)","_id":2622}
+{"createdAt":1543113231850,"updatedAt":1543113231850,"id":2623,"ingredientName":"1 green chili","_id":2623}
+{"createdAt":1543113231863,"updatedAt":1543113231863,"id":2624,"ingredientName":"⅔ cup peas (100 g)","_id":2624}
+{"createdAt":1543113231871,"updatedAt":1543113231871,"id":2625,"ingredientName":"3 tablespoons thai green curry paste","_id":2625}
+{"createdAt":1543113231892,"updatedAt":1543113231892,"id":2626,"ingredientName":"lime, to serve","_id":2626}
+{"createdAt":1543113232324,"updatedAt":1543113232324,"id":2627,"ingredientName":"9 oz beef (250 g)","_id":2627}
+{"createdAt":1543113232349,"updatedAt":1543113232349,"id":2628,"ingredientName":"1 tablespoon chinese 5 spice","_id":2628}
+{"createdAt":1543113232367,"updatedAt":1543113232367,"id":2629,"ingredientName":"1 red chili","_id":2629}
+{"createdAt":1543113232377,"updatedAt":1543113232377,"id":2630,"ingredientName":"2 tablespoons chili sauce","_id":2630}
+{"createdAt":1543113232403,"updatedAt":1543113232403,"id":2631,"ingredientName":"red chilli","_id":2631}
+{"createdAt":1543113232415,"updatedAt":1543113232415,"id":2632,"ingredientName":"spring onion","_id":2632}
+{"createdAt":1543113234547,"updatedAt":1543113234547,"id":2633,"ingredientName":"canola oil, to fry","_id":2633}
+{"createdAt":1543113234554,"updatedAt":1543113234554,"id":2634,"ingredientName":"1 lb flank steak (455 g)","_id":2634}
+{"createdAt":1543113234566,"updatedAt":1543113234566,"id":2635,"ingredientName":"1 teaspoon taco seasoning","_id":2635}
+{"createdAt":1543113234584,"updatedAt":1543113234584,"id":2636,"ingredientName":"2 teaspoons lime juice, divided","_id":2636}
+{"createdAt":1543113234598,"updatedAt":1543113234598,"id":2637,"ingredientName":"2 teaspoons salt, divided","_id":2637}
+{"createdAt":1543113234605,"updatedAt":1543113234605,"id":2638,"ingredientName":"2 avocados","_id":2638}
+{"createdAt":1543113234619,"updatedAt":1543113234619,"id":2639,"ingredientName":"1 bag frozen french fries","_id":2639}
+{"createdAt":1543113234631,"updatedAt":1543113234631,"id":2640,"ingredientName":"¼ cup mexican sour cream, 1 (52 g)","_id":2640}
+{"createdAt":1543113234638,"updatedAt":1543113234638,"id":2641,"ingredientName":"8 oz flaming hot cheetos, 1 bag (225 g)","_id":2641}
+{"createdAt":1543113235132,"updatedAt":1543113235132,"id":2642,"ingredientName":"1 lb flank steak (450 g)","_id":2642}
+{"createdAt":1543113235176,"updatedAt":1543113235176,"id":2643,"ingredientName":"¼ cup mexican sour cream (55 g)","_id":2643}
+{"createdAt":1543113235199,"updatedAt":1543113235199,"id":2644,"ingredientName":"½ cup cheddar cheese, canned (50 g)","_id":2644}
+{"createdAt":1543113235207,"updatedAt":1543113235207,"id":2645,"ingredientName":"1 canola oil, to fry","_id":2645}
+{"createdAt":1543113240235,"updatedAt":1543113240235,"id":2646,"ingredientName":"24 oz cookie dough (680 g)","_id":2646}
+{"createdAt":1543113240247,"updatedAt":1543113240247,"id":2647,"ingredientName":"8 oz chocolate, broken up into chunks (225 g)","_id":2647}
+{"createdAt":1543113240254,"updatedAt":1543113240254,"id":2648,"ingredientName":"ice cream, to taste","_id":2648}
+{"createdAt":1543113240266,"updatedAt":1543113240266,"id":2649,"ingredientName":"caramel sauce, to taste","_id":2649}
+{"createdAt":1543113240717,"updatedAt":1543113240717,"id":2650,"ingredientName":"4 bone-in, skin-on chicken thighs","_id":2650}
+{"createdAt":1543113240726,"updatedAt":1543113240726,"id":2651,"ingredientName":"2 teaspoons salt, for the chicken","_id":2651}
+{"createdAt":1543113240735,"updatedAt":1543113240735,"id":2652,"ingredientName":"1 teaspoon pepper, for the chicken","_id":2652}
+{"createdAt":1543113240754,"updatedAt":1543113240754,"id":2653,"ingredientName":"3 cloves garlic, chopped","_id":2653}
+{"createdAt":1543113240775,"updatedAt":1543113240775,"id":2654,"ingredientName":"1 tomato, diced","_id":2654}
+{"createdAt":1543113240784,"updatedAt":1543113240784,"id":2655,"ingredientName":"2 cups spinach (450 g)","_id":2655}
+{"createdAt":1543113240800,"updatedAt":1543113240800,"id":2656,"ingredientName":"2 cups heavy cream (470 mL)","_id":2656}
+{"createdAt":1543113240835,"updatedAt":1543113240835,"id":2657,"ingredientName":"2 tablespoons fresh flat-leaf parsley, chopped","_id":2657}
+{"createdAt":1543113241285,"updatedAt":1543113241285,"id":2658,"ingredientName":"1 sheet puff pastry, thawed","_id":2658}
+{"createdAt":1543113241297,"updatedAt":1543113241297,"id":2659,"ingredientName":"6 slices bacon","_id":2659}
+{"createdAt":1543113241305,"updatedAt":1543113241305,"id":2660,"ingredientName":"12 spears asparagus","_id":2660}
+{"createdAt":1543113241317,"updatedAt":1543113241317,"id":2661,"ingredientName":"1 egg, beaten","_id":2661}
+{"createdAt":1543113243390,"updatedAt":1543113243390,"id":2662,"ingredientName":"1 lb ground beef, 80% lean (455 g)","_id":2662}
+{"createdAt":1543113243432,"updatedAt":1543113243432,"id":2663,"ingredientName":"2 oz cheddar cheese, sliced into 3 square chunks (55 g)","_id":2663}
+{"createdAt":1543113243439,"updatedAt":1543113243439,"id":2664,"ingredientName":"3 hamburger buns","_id":2664}
+{"createdAt":1543113243450,"updatedAt":1543113243450,"id":2665,"ingredientName":"3 strips bacon, cooked, sliced in half","_id":2665}
+{"createdAt":1543113243457,"updatedAt":1543113243457,"id":2666,"ingredientName":"3 slices tomato","_id":2666}
+{"createdAt":1543113243471,"updatedAt":1543113243471,"id":2667,"ingredientName":"3 pieces lettuce","_id":2667}
+{"createdAt":1543113243900,"updatedAt":1543113243900,"id":2668,"ingredientName":"⅓ lb ground chorizo (150 g)","_id":2668}
+{"createdAt":1543113243926,"updatedAt":1543113243926,"id":2669,"ingredientName":"3 oz manchego cheese, sliced (85 g)","_id":2669}
+{"createdAt":1543113243938,"updatedAt":1543113243938,"id":2670,"ingredientName":"½ cup guacamole (130 g)","_id":2670}
+{"createdAt":1543113243948,"updatedAt":1543113243948,"id":2671,"ingredientName":"⅓ cup pico de gallo (70 g)","_id":2671}
+{"createdAt":1543113243955,"updatedAt":1543113243955,"id":2672,"ingredientName":"⅓ cup cotija cheese (35 g)","_id":2672}
+{"createdAt":1543113243967,"updatedAt":1543113243967,"id":2673,"ingredientName":"¼ cup sour cream (60 g)","_id":2673}
+{"createdAt":1543113244355,"updatedAt":1543113244355,"id":2674,"ingredientName":"2 cups white rice, cooked (460 g)","_id":2674}
+{"createdAt":1543113244365,"updatedAt":1543113244365,"id":2675,"ingredientName":"cooking spray","_id":2675}
+{"createdAt":1543113244382,"updatedAt":1543113244382,"id":2676,"ingredientName":"1 lb 80% lean ground beef (455 g)","_id":2676}
+{"createdAt":1543113244389,"updatedAt":1543113244389,"id":2677,"ingredientName":"½ onion, finely chopped","_id":2677}
+{"createdAt":1543113244400,"updatedAt":1543113244400,"id":2678,"ingredientName":"½ cup panko breadcrumbs (25 g)","_id":2678}
+{"createdAt":1543113244433,"updatedAt":1543113244433,"id":2679,"ingredientName":"1 cup beef gravy, or demi-glace (240 g)","_id":2679}
+{"createdAt":1543113244440,"updatedAt":1543113244440,"id":2680,"ingredientName":"3 eggs, fried","_id":2680}
+{"createdAt":1543113244451,"updatedAt":1543113244451,"id":2681,"ingredientName":"⅓ cup green onion, thinly sliced (35 g)","_id":2681}
+{"createdAt":1543113244872,"updatedAt":1543113244872,"id":2682,"ingredientName":"3 oz comté cheese, sliced (85 g)","_id":2682}
+{"createdAt":1543113244882,"updatedAt":1543113244882,"id":2683,"ingredientName":"1 cup caramelized onion (150 g)","_id":2683}
+{"createdAt":1543113244890,"updatedAt":1543113244890,"id":2684,"ingredientName":"1 cup fresh arugula (20 g)","_id":2684}
+{"createdAt":1543113244900,"updatedAt":1543113244900,"id":2685,"ingredientName":"mustard, of choice, to taste","_id":2685}
+{"createdAt":1543113247511,"updatedAt":1543113247511,"id":2686,"ingredientName":"1 lb flank steak, cubed (455 g)","_id":2686}
+{"createdAt":1543113247587,"updatedAt":1543113247587,"id":2687,"ingredientName":"2 cups broccoli, diced (300 g)","_id":2687}
+{"createdAt":1543113247601,"updatedAt":1543113247601,"id":2688,"ingredientName":"½ cup soy sauce (120 mL)","_id":2688}
+{"createdAt":1543113247628,"updatedAt":1543113247628,"id":2689,"ingredientName":"1 teaspoon ginger","_id":2689}
+{"createdAt":1543113247636,"updatedAt":1543113247636,"id":2690,"ingredientName":"1 tablespoon sesame seed","_id":2690}
+{"createdAt":1543113248022,"updatedAt":1543113248022,"id":2691,"ingredientName":"1 lb chicken, cubed (455 g)","_id":2691}
+{"createdAt":1543113248048,"updatedAt":1543113248048,"id":2692,"ingredientName":"1 cup broccoli, chopped (150 g)","_id":2692}
+{"createdAt":1543113248056,"updatedAt":1543113248056,"id":2693,"ingredientName":"1 cup bell pepper, diced (100 g)","_id":2693}
+{"createdAt":1543113248500,"updatedAt":1543113248500,"id":2694,"ingredientName":"1 lb pork loin (455 g)","_id":2694}
+{"createdAt":1543113248523,"updatedAt":1543113248523,"id":2695,"ingredientName":"1 cup asparagus, trimmed and cut (125 g)","_id":2695}
+{"createdAt":1543113248533,"updatedAt":1543113248533,"id":2696,"ingredientName":"1 cup red pepper, diced (100 g)","_id":2696}
+{"createdAt":1543113248983,"updatedAt":1543113248983,"id":2697,"ingredientName":"1 lb shrimp, peeled and deveined (455 g)","_id":2697}
+{"createdAt":1543113249014,"updatedAt":1543113249014,"id":2698,"ingredientName":"1 cup green beans (360 g)","_id":2698}
+{"createdAt":1543113249021,"updatedAt":1543113249021,"id":2699,"ingredientName":"1 cup carrot, sliced (120 g)","_id":2699}
+{"createdAt":1543113251080,"updatedAt":1543113251080,"id":2700,"ingredientName":"2 boneless, skinless chicken breasts","_id":2700}
+{"createdAt":1543113251087,"updatedAt":1543113251087,"id":2701,"ingredientName":"1 red onion, sliced","_id":2701}
+{"createdAt":1543113251104,"updatedAt":1543113251104,"id":2702,"ingredientName":"1 yellow bell pepper, seeded and sliced","_id":2702}
+{"createdAt":1543113251114,"updatedAt":1543113251114,"id":2703,"ingredientName":"1 orange bell pepper, seeded and sliced","_id":2703}
+{"createdAt":1543113251131,"updatedAt":1543113251131,"id":2704,"ingredientName":"3 tablespoons lime juice","_id":2704}
+{"createdAt":1543113251155,"updatedAt":1543113251155,"id":2705,"ingredientName":"½ teaspoon cumin","_id":2705}
+{"createdAt":1543113251167,"updatedAt":1543113251167,"id":2706,"ingredientName":"½ teaspoon chili powder","_id":2706}
+{"createdAt":1543113251636,"updatedAt":1543113251636,"id":2707,"ingredientName":"1 cup water (235 mL)","_id":2707}
+{"createdAt":1543113251647,"updatedAt":1543113251647,"id":2708,"ingredientName":"2 russet potatoes, roughly chopped","_id":2708}
+{"createdAt":1543113251654,"updatedAt":1543113251654,"id":2709,"ingredientName":"3 carrots, roughly chopped","_id":2709}
+{"createdAt":1543113251665,"updatedAt":1543113251665,"id":2710,"ingredientName":"1 yellow onion, chopped","_id":2710}
+{"createdAt":1543113251673,"updatedAt":1543113251673,"id":2711,"ingredientName":"2 lb chuck roast","_id":2711}
+{"createdAt":1543113252073,"updatedAt":1543113252073,"id":2712,"ingredientName":"1 ½ lb boneless, skinless chicken breast, cubed (680 g)","_id":2712}
+{"createdAt":1543113252091,"updatedAt":1543113252091,"id":2713,"ingredientName":"2 cups cauliflower florets (200 g)","_id":2713}
+{"createdAt":1543113252103,"updatedAt":1543113252103,"id":2714,"ingredientName":"2 carrots, thinly sliced","_id":2714}
+{"createdAt":1543113252115,"updatedAt":1543113252115,"id":2715,"ingredientName":"1 red bell pepper, diced","_id":2715}
+{"createdAt":1543113252137,"updatedAt":1543113252137,"id":2716,"ingredientName":"¼ cup honey (170 g)","_id":2716}
+{"createdAt":1543113252623,"updatedAt":1543113252623,"id":2717,"ingredientName":"4 tomatoes, diced","_id":2717}
+{"createdAt":1543113252634,"updatedAt":1543113252634,"id":2718,"ingredientName":"3 carrots, thick slices","_id":2718}
+{"createdAt":1543113252641,"updatedAt":1543113252641,"id":2719,"ingredientName":"1 zucchini, sliced","_id":2719}
+{"createdAt":1543113252652,"updatedAt":1543113252652,"id":2720,"ingredientName":"1 yellow squash, sliced","_id":2720}
+{"createdAt":1543113252661,"updatedAt":1543113252661,"id":2721,"ingredientName":"2 stalks celery, sliced","_id":2721}
+{"createdAt":1543113252671,"updatedAt":1543113252671,"id":2722,"ingredientName":"½ white onion","_id":2722}
+{"createdAt":1543113252680,"updatedAt":1543113252680,"id":2723,"ingredientName":"2 cups bean, of choice (340 g)","_id":2723}
+{"createdAt":1543113252688,"updatedAt":1543113252688,"id":2724,"ingredientName":"2 cups water, or veggie broth, needed at time of cooking (470 mL)","_id":2724}
+{"createdAt":1543113255369,"updatedAt":1543113255369,"id":2725,"ingredientName":"2 lb flap steak (905 g)","_id":2725}
+{"createdAt":1543113255420,"updatedAt":1543113255420,"id":2726,"ingredientName":"5 cloves garlic, smashed","_id":2726}
+{"createdAt":1543113255435,"updatedAt":1543113255435,"id":2727,"ingredientName":"4 tablespoons canola oil","_id":2727}
+{"createdAt":1543113255985,"updatedAt":1543113255985,"id":2728,"ingredientName":"1 ribeye steak, preferably USDA Prime, 2-inch (5 cm) thick","_id":2728}
+{"createdAt":1543113256018,"updatedAt":1543113256018,"id":2729,"ingredientName":"3 tablespoons butter","_id":2729}
+{"createdAt":1543113256032,"updatedAt":1543113256032,"id":2730,"ingredientName":"3 cloves garlic, peeled and smashed","_id":2730}
+{"createdAt":1543113256043,"updatedAt":1543113256043,"id":2731,"ingredientName":"2 sprigs fresh rosemary","_id":2731}
+{"createdAt":1543113256053,"updatedAt":1543113256053,"id":2732,"ingredientName":"3 sprigs fresh thyme","_id":2732}
+{"createdAt":1543113259118,"updatedAt":1543113259118,"id":2733,"ingredientName":"1 whole chicken, based on the size of your slow cooker - a 1.3kg chicken should just about fit into a 3.5L slow cooker - while a 6.5L would probably fit a 2kg chicken","_id":2733}
+{"createdAt":1543113259126,"updatedAt":1543113259126,"id":2734,"ingredientName":"4 lemons","_id":2734}
+{"createdAt":1543113259138,"updatedAt":1543113259138,"id":2735,"ingredientName":"10 cloves garlic, 8 whole and 2 halved","_id":2735}
+{"createdAt":1543113259150,"updatedAt":1543113259150,"id":2736,"ingredientName":"4 sprigs fresh rosemary","_id":2736}
+{"createdAt":1543113259158,"updatedAt":1543113259158,"id":2737,"ingredientName":"salt","_id":2737}
+{"createdAt":1543113259172,"updatedAt":1543113259172,"id":2738,"ingredientName":"pepper","_id":2738}
+{"createdAt":1543113259673,"updatedAt":1543113259673,"id":2739,"ingredientName":"2 lb sirloin steak, or boneless beef chuck roast, sliced thin (905 g)","_id":2739}
+{"createdAt":1543113259687,"updatedAt":1543113259687,"id":2740,"ingredientName":"1 cup beef broth (240 mL)","_id":2740}
+{"createdAt":1543113259702,"updatedAt":1543113259702,"id":2741,"ingredientName":"½ cup low sodium soy sauce (120 mL)","_id":2741}
+{"createdAt":1543113259716,"updatedAt":1543113259716,"id":2742,"ingredientName":"¼ cup brown sugar (55 g)","_id":2742}
+{"createdAt":1543113259752,"updatedAt":1543113259752,"id":2743,"ingredientName":"4 tablespoons cornstarch","_id":2743}
+{"createdAt":1543113259789,"updatedAt":1543113259789,"id":2744,"ingredientName":"white rice, cooked, for serving","_id":2744}
+{"createdAt":1543113260379,"updatedAt":1543113260379,"id":2745,"ingredientName":"4 potatoes, peeled and chopped","_id":2745}
+{"createdAt":1543113260435,"updatedAt":1543113260435,"id":2746,"ingredientName":"¾ cup onion (115 g)","_id":2746}
+{"createdAt":1543113260453,"updatedAt":1543113260453,"id":2747,"ingredientName":"4 cups chicken broth (940 g)","_id":2747}
+{"createdAt":1543113260492,"updatedAt":1543113260492,"id":2748,"ingredientName":"½ tablespoon salt","_id":2748}
+{"createdAt":1543113260523,"updatedAt":1543113260523,"id":2749,"ingredientName":"½ tablespoon pepper","_id":2749}
+{"createdAt":1543113260589,"updatedAt":1543113260589,"id":2750,"ingredientName":"4 tablespoons butter","_id":2750}
+{"createdAt":1543113260622,"updatedAt":1543113260622,"id":2751,"ingredientName":"¼ cup flour (32 g)","_id":2751}
+{"createdAt":1543113260648,"updatedAt":1543113260648,"id":2752,"ingredientName":"1 ½ cups heavy cream (355 mL)","_id":2752}
+{"createdAt":1543113260683,"updatedAt":1543113260683,"id":2753,"ingredientName":"shredded cheese, to taste","_id":2753}
+{"createdAt":1543113260705,"updatedAt":1543113260705,"id":2754,"ingredientName":"bacon, to taste","_id":2754}
+{"createdAt":1543113260722,"updatedAt":1543113260722,"id":2755,"ingredientName":"scallion, chopped","_id":2755}
+{"createdAt":1543113261267,"updatedAt":1543113261267,"id":2756,"ingredientName":"1 ½ lb baby potato, red and/or yellow (680 g)","_id":2756}
+{"createdAt":1543113261275,"updatedAt":1543113261275,"id":2757,"ingredientName":"8 small carrots, snapped in half","_id":2757}
+{"createdAt":1543113261289,"updatedAt":1543113261289,"id":2758,"ingredientName":"12 pearl onions, peeled, with ends cut off","_id":2758}
+{"createdAt":1543113261301,"updatedAt":1543113261301,"id":2759,"ingredientName":"3 ½ lb beef chuck roast (1 ½ kg)","_id":2759}
+{"createdAt":1543113261357,"updatedAt":1543113261357,"id":2760,"ingredientName":"2 tablespoons worcestershire sauce","_id":2760}
+{"createdAt":1543113261399,"updatedAt":1543113261399,"id":2761,"ingredientName":"1 baguette, cut into 5-inch (13 cm) pieces, optional","_id":2761}
+{"createdAt":1543113261913,"updatedAt":1543113261913,"id":2762,"ingredientName":"2 cups BBQ sauce (570 g)","_id":2762}
+{"createdAt":1543113261934,"updatedAt":1543113261934,"id":2763,"ingredientName":"4 tablespoons apple cider vinegar","_id":2763}
+{"createdAt":1543113261943,"updatedAt":1543113261943,"id":2764,"ingredientName":"3 teaspoons dried oregano","_id":2764}
+{"createdAt":1543113261956,"updatedAt":1543113261956,"id":2765,"ingredientName":"1 teaspoon worcestershire sauce","_id":2765}
+{"createdAt":1543113261969,"updatedAt":1543113261969,"id":2766,"ingredientName":"1 tablespoon cayenne pepper","_id":2766}
+{"createdAt":1543113261990,"updatedAt":1543113261990,"id":2767,"ingredientName":"3 lb baby back pork rib (1.3 kg)","_id":2767}
+{"createdAt":1543113264435,"updatedAt":1543113264435,"id":2768,"ingredientName":"1 green bell pepper, sliced","_id":2768}
+{"createdAt":1543113264444,"updatedAt":1543113264444,"id":2769,"ingredientName":"1 yellow bell pepper, sliced","_id":2769}
+{"createdAt":1543113264454,"updatedAt":1543113264454,"id":2770,"ingredientName":"1 red bell pepper, sliced","_id":2770}
+{"createdAt":1543113264471,"updatedAt":1543113264471,"id":2771,"ingredientName":"½ red onion, sliced","_id":2771}
+{"createdAt":1543113264517,"updatedAt":1543113264517,"id":2772,"ingredientName":"chili powder, to taste","_id":2772}
+{"createdAt":1543113264528,"updatedAt":1543113264528,"id":2773,"ingredientName":"garlic powder, to taste","_id":2773}
+{"createdAt":1543113264539,"updatedAt":1543113264539,"id":2774,"ingredientName":"cumin, to taste","_id":2774}
+{"createdAt":1543113264574,"updatedAt":1543113264574,"id":2775,"ingredientName":"8 whole grain tortillas, warmed","_id":2775}
+{"createdAt":1543113265019,"updatedAt":1543113265019,"id":2776,"ingredientName":"1 medium medium yellow onion, sliced","_id":2776}
+{"createdAt":1543113265054,"updatedAt":1543113265054,"id":2777,"ingredientName":"2 cups chicken sausage, sliced into coins (275 g)","_id":2777}
+{"createdAt":1543113265076,"updatedAt":1543113265076,"id":2778,"ingredientName":"1 ¼ tablespoons creole seasoning, divided","_id":2778}
+{"createdAt":1543113265106,"updatedAt":1543113265106,"id":2779,"ingredientName":"1 ½ cups tomato, diced (300 g)","_id":2779}
+{"createdAt":1543113265119,"updatedAt":1543113265119,"id":2780,"ingredientName":"4 cups rice, cooked, we used brown rice (920 g)","_id":2780}
+{"createdAt":1543113265656,"updatedAt":1543113265656,"id":2781,"ingredientName":"½ large yellow onion, diced","_id":2781}
+{"createdAt":1543113265674,"updatedAt":1543113265674,"id":2782,"ingredientName":"1 cup mushroom, diced (75 g)","_id":2782}
+{"createdAt":1543113265685,"updatedAt":1543113265685,"id":2783,"ingredientName":"½ cup sun-dried tomato, drained (100 g)","_id":2783}
+{"createdAt":1543113265704,"updatedAt":1543113265704,"id":2784,"ingredientName":"15 oz white bean, or cannellini beans, 2 cans, rinsed and drained (425 g)","_id":2784}
+{"createdAt":1543113265715,"updatedAt":1543113265715,"id":2785,"ingredientName":"15 oz fire-roasted tomato, 1 can (425 g)","_id":2785}
+{"createdAt":1543113265722,"updatedAt":1543113265722,"id":2786,"ingredientName":"15 oz artichoke heart, 1 can, drained (425 g)","_id":2786}
+{"createdAt":1543113265742,"updatedAt":1543113265742,"id":2787,"ingredientName":"1 tablespoon honey","_id":2787}
+{"createdAt":1543113265787,"updatedAt":1543113265787,"id":2788,"ingredientName":"fresh basil, thinly sliced, for garnish","_id":2788}
+{"createdAt":1543113266320,"updatedAt":1543113266320,"id":2789,"ingredientName":"½ cup pesto (115 g)","_id":2789}
+{"createdAt":1543113266338,"updatedAt":1543113266338,"id":2790,"ingredientName":"½ cup shredded mozzarella cheese (50 g)","_id":2790}
+{"createdAt":1543113266349,"updatedAt":1543113266349,"id":2791,"ingredientName":"fresh basil, for garnish","_id":2791}
+{"createdAt":1543113268555,"updatedAt":1543113268555,"id":2792,"ingredientName":"2 boneless, skinless chicken breasts, cubed","_id":2792}
+{"createdAt":1543113268566,"updatedAt":1543113268566,"id":2793,"ingredientName":"1 cup teriyaki sauce (240 mL)","_id":2793}
+{"createdAt":1543113268573,"updatedAt":1543113268573,"id":2794,"ingredientName":"2 teaspoons oil","_id":2794}
+{"createdAt":1543113268585,"updatedAt":1543113268585,"id":2795,"ingredientName":"½ cup onion, diced (75 g)","_id":2795}
+{"createdAt":1543113268604,"updatedAt":1543113268604,"id":2796,"ingredientName":"½ cup carrot, diced (60 g)","_id":2796}
+{"createdAt":1543113268633,"updatedAt":1543113268633,"id":2797,"ingredientName":"3 cups brown rice, cooked (690 g)","_id":2797}
+{"createdAt":1543113269139,"updatedAt":1543113269139,"id":2798,"ingredientName":"½ cup bell pepper, diced (50 g)","_id":2798}
+{"createdAt":1543113269160,"updatedAt":1543113269160,"id":2799,"ingredientName":"½ cup pea (75 g)","_id":2799}
+{"createdAt":1543113269170,"updatedAt":1543113269170,"id":2800,"ingredientName":"60 ⅓ cup corns","_id":2800}
+{"createdAt":1543113269186,"updatedAt":1543113269186,"id":2801,"ingredientName":"3 cups white rice, cooked (690 g)","_id":2801}
+{"createdAt":1543113269679,"updatedAt":1543113269679,"id":2802,"ingredientName":"½ cup ham, diced (75 g)","_id":2802}
+{"createdAt":1543113269721,"updatedAt":1543113269721,"id":2803,"ingredientName":"1 cup pineapple, diced (245 g)","_id":2803}
+{"createdAt":1543113270167,"updatedAt":1543113270167,"id":2804,"ingredientName":"1 lb flank steak, sliced into strips (455 g)","_id":2804}
+{"createdAt":1543113270174,"updatedAt":1543113270174,"id":2805,"ingredientName":"¼ cup soy sauce, plus 3 tablespoons, divided","_id":2805}
+{"createdAt":1543113270191,"updatedAt":1543113270191,"id":2806,"ingredientName":"2 tablespoons sesame oil, divided","_id":2806}
+{"createdAt":1543113270204,"updatedAt":1543113270204,"id":2807,"ingredientName":"2 tablespoons minced garlic, divided","_id":2807}
+{"createdAt":1543113270254,"updatedAt":1543113270254,"id":2808,"ingredientName":"½ cup onion (75 g)","_id":2808}
+{"createdAt":1543113270264,"updatedAt":1543113270264,"id":2809,"ingredientName":"1 cup broccoli floret","_id":2809}
+{"createdAt":1543113270281,"updatedAt":1543113270281,"id":2810,"ingredientName":"2 cups cooked white rice","_id":2810}
+{"createdAt":1543113270300,"updatedAt":1543113270300,"id":2811,"ingredientName":"sliced scallions, for garnish","_id":2811}
+{"createdAt":1543113272898,"updatedAt":1543113272898,"id":2812,"ingredientName":"6 whole carrots, or chopped (if you prefer bite-sized pieces), peeled with tips and ends cut off","_id":2812}
+{"createdAt":1543113272907,"updatedAt":1543113272907,"id":2813,"ingredientName":"2 tablespoons butter, melted","_id":2813}
+{"createdAt":1543113273392,"updatedAt":1543113273392,"id":2814,"ingredientName":"5 cups milk (1 ¼ L)","_id":2814}
+{"createdAt":1543113273404,"updatedAt":1543113273404,"id":2815,"ingredientName":"1 lb elbow macaroni, dry (455 g)","_id":2815}
+{"createdAt":1543113273415,"updatedAt":1543113273415,"id":2816,"ingredientName":"2 cups shredded cheddar cheese (200 g)","_id":2816}
+{"createdAt":1543113273827,"updatedAt":1543113273827,"id":2817,"ingredientName":"6 half ears corn, cleaned, husked","_id":2817}
+{"createdAt":1543113273837,"updatedAt":1543113273837,"id":2818,"ingredientName":"2 tablespoons butter, softened","_id":2818}
+{"createdAt":1543113273847,"updatedAt":1543113273847,"id":2819,"ingredientName":"½ cup parmesan cheese, grated (55 g)","_id":2819}
+{"createdAt":1543113274255,"updatedAt":1543113274255,"id":2820,"ingredientName":"4 oz salmon, 3 fillets (110 g)","_id":2820}
+{"createdAt":1543113274266,"updatedAt":1543113274266,"id":2821,"ingredientName":"½ cup chili sauce (130 g)","_id":2821}
+{"createdAt":1543113274273,"updatedAt":1543113274273,"id":2822,"ingredientName":"¼ cup fresh scallions, chopped (25 g)","_id":2822}
+{"createdAt":1543113274752,"updatedAt":1543113274752,"id":2823,"ingredientName":"3 crowns broccoli","_id":2823}
+{"createdAt":1543113274759,"updatedAt":1543113274759,"id":2824,"ingredientName":"1 ¾ cups shredded cheddar cheese (175 g)","_id":2824}
+{"createdAt":1543113274769,"updatedAt":1543113274769,"id":2825,"ingredientName":"3 cloves garlic, crushed","_id":2825}
+{"createdAt":1543113275242,"updatedAt":1543113275242,"id":2826,"ingredientName":"2 lb chicken thighs, sliced into chunks (910 g)","_id":2826}
+{"createdAt":1543113275252,"updatedAt":1543113275252,"id":2827,"ingredientName":"1 cup soy sauce (240 mL)","_id":2827}
+{"createdAt":1543113280124,"updatedAt":1543113280124,"id":2828,"ingredientName":"1 lb boneless, skinless chicken thighs, cut into 1-inch cubes (455 g)","_id":2828}
+{"createdAt":1543113280134,"updatedAt":1543113280134,"id":2829,"ingredientName":"1 cup BBQ sauce (286 g)","_id":2829}
+{"createdAt":1543113280158,"updatedAt":1543113280158,"id":2830,"ingredientName":"4 strips bacon","_id":2830}
+{"createdAt":1543113280171,"updatedAt":1543113280171,"id":2831,"ingredientName":"4 skewers bamboo skewer, soaked in water for 20 minutes","_id":2831}
+{"createdAt":1543113280674,"updatedAt":1543113280674,"id":2832,"ingredientName":"¼ cup olive oil (60 mL)","_id":2832}
+{"createdAt":1543113280719,"updatedAt":1543113280719,"id":2833,"ingredientName":"2 zucchinis, sliced into rounds","_id":2833}
+{"createdAt":1543113280726,"updatedAt":1543113280726,"id":2834,"ingredientName":"3 cups cremini mushroom (225 g)","_id":2834}
+{"createdAt":1543113280737,"updatedAt":1543113280737,"id":2835,"ingredientName":"2 medium red onions, cut into 1-inch pieces","_id":2835}
+{"createdAt":1543113280744,"updatedAt":1543113280744,"id":2836,"ingredientName":"2 red bell peppers, cut into 1-inch pieces","_id":2836}
+{"createdAt":1543113280755,"updatedAt":1543113280755,"id":2837,"ingredientName":"2 yellow bell peppers, cut into 1-inch pieces","_id":2837}
+{"createdAt":1543113280766,"updatedAt":1543113280766,"id":2838,"ingredientName":"8 skewers bamboo skewer, soaked in water for 20 minutes","_id":2838}
+{"createdAt":1543113281290,"updatedAt":1543113281290,"id":2839,"ingredientName":"¾ cup brown sugar (165 g)","_id":2839}
+{"createdAt":1543113281307,"updatedAt":1543113281307,"id":2840,"ingredientName":"¼ cup green onion, chopped (25 g)","_id":2840}
+{"createdAt":1543113281320,"updatedAt":1543113281320,"id":2841,"ingredientName":"1 pineapple, diced into 1-inch cubes","_id":2841}
+{"createdAt":1543113281761,"updatedAt":1543113281761,"id":2842,"ingredientName":"2 lb sirloin steak, cut into 1-inch cubes (900 g)","_id":2842}
+{"createdAt":1543113281814,"updatedAt":1543113281814,"id":2843,"ingredientName":"2 green bell peppers, cut into 1-inch pieces","_id":2843}
+{"createdAt":1543113281831,"updatedAt":1543113281831,"id":2844,"ingredientName":"1 large white onion, cut into 1-inch pieces","_id":2844}
+{"createdAt":1543113284615,"updatedAt":1543113284615,"id":2845,"ingredientName":"½ rack baby back ribs","_id":2845}
+{"createdAt":1543113284622,"updatedAt":1543113284622,"id":2846,"ingredientName":"3 tablespoons cajun seasoning","_id":2846}

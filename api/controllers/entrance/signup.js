@@ -68,10 +68,12 @@ the account verification message.)`,
 
     // Build up data for the new user record and save it to the database.
     // (Also use `fetch` to retrieve the new ID so that we can use it below.)
+    let newUserProfileRecord = await UserProfile.create().fetch();
     var newUserRecord = await User.create(Object.assign({
       emailAddress: newEmailAddress,
       password: await sails.helpers.passwords.hashPassword(inputs.password),
       fullName: inputs.fullName,
+      userProfile: newUserProfileRecord.id,
       tosAcceptedByIp: this.req.ip
     }, sails.config.custom.verifyEmailAddresses? {
       emailProofToken: await sails.helpers.strings.random('url-friendly'),
@@ -81,6 +83,8 @@ the account verification message.)`,
     .intercept('E_UNIQUE', 'emailAlreadyInUse')
     .intercept({name: 'UsageError'}, 'invalid')
     .fetch();
+
+    UserProfile.addToCollection(newUserProfileRecord.id, 'user').members([newUserRecord.id]);
 
     // If billing feaures are enabled, save a new customer entry in the Stripe API.
     // Then persist the Stripe customer id in the database.

@@ -23,7 +23,7 @@
     <!--STYLES END-->
   </head>
 
-  <body>
+  <body class="<%= typeof pageName === 'undefined' ? '' : pageName %>">
     <%- partial('../navbar.ejs') %>
     <div id="server-side-content">
       <div id="react"></div>

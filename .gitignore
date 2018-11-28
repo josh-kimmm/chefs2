@@ -1,6 +1,7 @@
 node_modules
-**/public
-*.map
 assets/jsx-converted/*
-*.ppk
 *.pem
+*.ppk
+*.map
+.tmp/public
+.tmp/bootsrap-version.json

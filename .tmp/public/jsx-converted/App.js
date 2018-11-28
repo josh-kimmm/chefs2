@@ -28,6 +28,7 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: 'render',
     value: function render() {
+<<<<<<< HEAD
       return React.createElement(
         'div',
         null,
@@ -38,6 +39,9 @@ var App = function (_React$Component) {
           React.createElement(Route, { exact: true, path: '/', component: Home })
         )
       );
+=======
+      return React.createElement('div', null);
+>>>>>>> ingredient-and-recipe-creation-for-web-scraper
     }
   }]);
 
@@ -45,7 +49,11 @@ var App = function (_React$Component) {
 }(React.Component);
 
 var domContainer = document.querySelector('#react');
+<<<<<<< HEAD
 ReactDOM.render(React.createElement(App, null), domContainer);
 
 export default App;
 //# sourceMappingURL=App.js.map
+=======
+ReactDOM.render(React.createElement(App, null), domContainer);
+>>>>>>> ingredient-and-recipe-creation-for-web-scraper
