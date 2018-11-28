@@ -1,24 +1,44 @@
-<<<<<<< HEAD
 import SearchEngine from './SearchEngine.js';
 import Filter from './Filter.js';
 
 
 const Router = ReactRouterDOM.Router;
-=======
->>>>>>> ingredient-and-recipe-creation-for-web-scraper
 
 class Home extends React.Component {
+
+	constructor(props) {
+		super(props);
+
+		this.handleClick = this.handleClick.bind(this);
+	}
+
+	handleClick() {
+		var opts = {
+                  method: "POST",
+                  body: JSON.stringify({
+                    email: "josh_kimmm@yahoo.com",
+                    password: "test",
+                  })
+                };
+		fetch('http://localhost:2000/test', opts).then(function(res){
+			console.log('wassup');
+			return res.json();
+		}).then(function(res) {
+			console.log('yas');
+			return res;
+		});
+	}
   
-  render() {
+  	render() {
     return (
     	<div id="wrap">
 	        <img src="/images/chefs-logo-red.png" alt="" class="center" />
-
-<<<<<<< HEAD
 	        <SearchEngine />
 
 	        <Filter />  
-=======
+
+	        <button onClick={this.handleClick}> TESTTERERSDFDSF </button>
+
 	        <div class="input-group">
 	            <input type="text" class="form-control" id="searchinput" placeholder="Search Recipes"></input>
 	            <div class="input-group-btn">
@@ -70,18 +90,9 @@ class Home extends React.Component {
 	                </form>
 	            </div>
 	        </div>  
->>>>>>> ingredient-and-recipe-creation-for-web-scraper
     	</div>
     );
   }
 
 }
-
-<<<<<<< HEAD
 export default Home;
-=======
-export default Home;
-
-
-ReactDOM.render(<Home />, document.getElementById('homepage'));
->>>>>>> ingredient-and-recipe-creation-for-web-scraper
