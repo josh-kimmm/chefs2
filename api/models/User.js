@@ -165,16 +165,6 @@ email status until they click the link in the confirmation email.`
     userProfile: {
       collection: 'UserProfile',
       via: 'user',
-    },
-    
-    userProfileFollowingList: {
-      collection: 'UserProfile',
-      via: 'followingList',
-    },
-    
-    userProfileFollowerList: {
-      collection: 'UserProfile',
-      via: 'followerList',
     }
 
   },
