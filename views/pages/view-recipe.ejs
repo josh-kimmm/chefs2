@@ -1,34 +1,50 @@
 <div class="recipe-details">
+    <a href="#" class="back-btn btn btn-primary">Back</a>
     <div class="row recipe-row">
+
         <div class="col-md-6 col-12 recipe-media-column">
             <img src="<%= image %>" class="img-fluid recipe-media" alt="<%= recipeName %>"/>
         </div>
         <div class="col-md-6 col-12 recipe-details-column">
             <h1><%= recipeName %></h1>
-            <p><%= review.length %> user ratings</p>
+            <p class="user-ratings"><%= review.length %> user ratings</p>
             <% if (!saved) { %>
                 <a href="/save-recipe/<%= id %>" class="btn btn-primary">Save Recipe</a>
             <% } else { %>
                 <a href="/unsave-recipe/<%= id %>" class="btn btn-primary">Unsave Recipe</a>
             <% } %>
-            <p>Diet Type: <%= dietType == '' ? 'N/A' : dietType %></p>
-            <p>Prep Time: <%= prepTime == '' ? 'N/A' : prepTime %></p>
-            <p>Cooking Method: <%= cookingMethod == '' ? 'N/A' : cookingMethod %></p>
-            <p>Ingredients</p>
-            <ul>
-                <% for (let i = 0; i < ingredients.length; i++) { %>
-                    <li><%= ingredients[i].ingredientName %></li>
-                <% } %>
-            </ul>
-            <p>Instructions</p>
-            <ol>
-                <% 
-                instructionsArray = instructions.split('||');
-                for (let i = 0; i < instructionsArray.length; i++) { 
-                %>
-                    <li><%= instructionsArray[i] %></li>
-                <% } %>
-            </ol>
+
+            <div class="description">
+                <p class="recipe-description"><span class="general-info">Diet Type: </span><%= dietType == '' ? 'N/A' : dietType %></p>
+                <p class="recipe-description"><span class="general-info">Prep Time: </span><%= prepTime == '' ? 'N/A' : prepTime %></p>
+                <p class="recipe-description"><span class="general-info">Cooking Method: </span><%= cookingMethod == '' ? 'N/A' : cookingMethod %></p>
+            </div>
+        </div>
+        <div class="recipe-ingredients-instructions">
+            <div class="ingredients">
+                <p class="details-title">Ingredients</p>
+                <ul>
+                    <% for (let i = 0; i < ingredients.length; i++) { %>
+                        <li class="ingredients-list"><%= ingredients[i].ingredientName %></li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="instructions">
+                <p class="details-title">Instructions</p>
+                <ol class="instructions-num">
+                    <%
+                    instructionsArray = instructions.split('||');
+                    for (let i = 0; i < instructionsArray.length; i++) {
+                    %>
+                        <li class="instructions-list"><span class="instructions-text"><%= instructionsArray[i] %></span></li>
+                    <% } %>
+                </ol>
+            </div>
+        </div>
+        <div class="reviews">
+            <span class="details-title review-title">Reviews</span>
+            <a href="#" class="btn btn-primary">Review This Recipe</a>
+
         </div>
     </div>
 </div>

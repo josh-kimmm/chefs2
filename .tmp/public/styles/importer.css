@@ -472,11 +472,79 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+.recipe-details .back-btn {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background-color: #A2AD7E;
+  border: 0;
+}
+.recipe-details .back-btn:hover {
+  background-color: #8b9c53;
+}
 .recipe-details .recipe-row {
-  margin: 90px;
+  margin: 0rem 8rem 4rem 8rem;
 }
 .recipe-details .recipe-row .recipe-media {
   margin: 0;
+}
+.recipe-details .recipe-row .recipe-details-column .user-ratings {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.recipe-details .recipe-row .recipe-details-column .description {
+  margin-top: 3rem;
+}
+.recipe-details .recipe-row .recipe-details-column .description .recipe-description {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+}
+.recipe-details .recipe-row .recipe-details-column .general-info {
+  font-weight: bold;
+}
+.recipe-details .recipe-row .details-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.recipe-details .recipe-row .btn-primary {
+  background-color: #A2AD7E;
+  border: 0;
+}
+.recipe-details .recipe-row .btn-primary:hover {
+  background-color: #8b9c53;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions {
+  display: flex;
+  margin-top: 3rem;
+  padding-left: 15px;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .ingredients {
+  width: auto;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .ingredients .ingredients-list {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .instructions {
+  width: 70%;
+  margin-left: 1rem;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .instructions .instructions-list {
+  font-weight: bold;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .instructions .instructions-list .instructions-text {
+  font-weight: normal;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .instructions .instructions-list {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.recipe-details .recipe-row .reviews {
+  margin-top: 2rem;
+}
+.recipe-details .recipe-row .reviews .review-title {
+  margin-right: 5rem;
 }
 .user-details {
   padding: 100px;

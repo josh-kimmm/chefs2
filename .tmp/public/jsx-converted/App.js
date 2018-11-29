@@ -8,14 +8,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-import Home from './Home.js';
-import NavBar from './NavBar.js';
-// import SignUp from './Signup.js';
-// import Login from './Login.js';
-
-var Route = ReactRouterDOM.Route;
-var Router = ReactRouterDOM.BrowserRouter;
-
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -28,20 +20,7 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: 'render',
     value: function render() {
-<<<<<<< HEAD
-      return React.createElement(
-        'div',
-        null,
-        React.createElement(NavBar, null),
-        React.createElement(
-          Router,
-          null,
-          React.createElement(Route, { exact: true, path: '/', component: Home })
-        )
-      );
-=======
       return React.createElement('div', null);
->>>>>>> ingredient-and-recipe-creation-for-web-scraper
     }
   }]);
 
@@ -49,11 +28,5 @@ var App = function (_React$Component) {
 }(React.Component);
 
 var domContainer = document.querySelector('#react');
-<<<<<<< HEAD
 ReactDOM.render(React.createElement(App, null), domContainer);
-
-export default App;
 //# sourceMappingURL=App.js.map
-=======
-ReactDOM.render(React.createElement(App, null), domContainer);
->>>>>>> ingredient-and-recipe-creation-for-web-scraper
