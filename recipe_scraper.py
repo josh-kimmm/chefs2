@@ -9,6 +9,7 @@ import json
 
 # create a set to make sure there are no duplicate recipe entries
 recipe_set = set()
+prepTimes = []
 
 url2 = 'https://tasty.co/topic/one-pot'
 uclient2 = ureq(url2) # opens up connection, grabs web page
@@ -51,8 +52,19 @@ for i in range(20):
 			ingredients = recipe.findAll('div',{'class':'ingredients__section'})
 			for ingredient in ingredients:
 				for li in ingredient.findAll('li'):
+					whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+					ingredientName = ' '.join(''.join([i for i in li.get_text().partition(',')[0] if i in whitelist]).split())
+					ingredientMeasurements = ['cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ']
+					for measurement in ingredientMeasurements:
+						if measurement in ingredientName:
+							ingredientName = ingredientName.partition(measurement)[2]
+					if ingredientName[-2:] == ' g' or ingredientName[-2:] == ' L':
+						ingredientName = ingredientName[:-2]
+					if ingredientName[-3:] == ' mL':
+						ingredientName = ingredientName[:-3]
+					print ingredientName
 					toPost = {
-						'ingredientName': ' '.join(li.get_text().split()).encode('utf-8'),
+						'ingredientName': ' '.join(ingredientName.split()),
 					}
 					r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
 					ingredientsToPost.append(json.loads(r.content)['id'])
@@ -73,6 +85,8 @@ for i in range(20):
 			prep = recipe.findAll('div', {'class':'prep'})[0].findAll('div')[0].findAll('div')
 			if len(prep) > 0:
 				data['prepTime'] = prep[0].findAll('h3')[0].get_text()
+				if data['prepTime'] not in prepTimes:
+					prepTimes.append(data['prepTime'])
 
 			# get the diet type from the lag list
 			data['dietType'] = 'vegetarian' if len(recipe.findAll('a', {'class':'tag-list--item', 'data-vars-object-name':'vegetarian'})) > 0 else ''
@@ -125,8 +139,19 @@ for i in range(20):
 			ingredients = recipe.findAll('div',{'class':'ingredients__section'})
 			for ingredient in ingredients:
 				for li in ingredient.findAll('li'):
+					whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+					ingredientName = ' '.join(''.join([i for i in li.get_text().partition(',')[0] if i in whitelist]).split())
+					ingredientMeasurements = ['cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ']
+					for measurement in ingredientMeasurements:
+						if measurement in ingredientName:
+							ingredientName = ingredientName.partition(measurement)[2]
+					if ingredientName[-2:] == ' g' or ingredientName[-2:] == ' L':
+						ingredientName = ingredientName[:-2]
+					if ingredientName[-3:] == ' mL':
+						ingredientName = ingredientName[:-3]
+					print ingredientName
 					toPost = {
-						'ingredientName': ' '.join(li.get_text().split()).encode('utf-8'),
+						'ingredientName': ' '.join(ingredientName.split()),
 					}
 					r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
 					ingredientsToPost.append(json.loads(r.content)['id'])
@@ -148,6 +173,8 @@ for i in range(20):
 			prep = recipe.findAll('div', {'class':'prep'})[0].findAll('div')[0].findAll('div')
 			if len(prep) > 0:
 				data['prepTime'] = prep[0].findAll('h3')[0].get_text()
+				if data['prepTime'] not in prepTimes:
+					prepTimes.append(data['prepTime'])
 
 			# get the diet type from the lag list
 			data['dietType'] = 'vegan' if len(recipe.findAll('a', {'class':'tag-list--item', 'data-vars-object-name':'vegan'})) > 0 else ''
