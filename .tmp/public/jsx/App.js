@@ -1,6 +1,5 @@
 'use strict';
 import Home from './Home.js';
-import NavBar from './NavBar.js';
 // import SignUp from './Signup.js';
 // import Login from './Login.js';
 
@@ -12,7 +11,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
         <Router>
           <Route exact path="/" component={Home} />
         </Router>

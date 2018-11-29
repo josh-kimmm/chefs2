@@ -4,4 +4,4 @@ assets/jsx-converted/*
 *.ppk
 *.map
 .tmp/public
-.tmp/bootsrap-version.json
+.tmp/bootstrap-version.json

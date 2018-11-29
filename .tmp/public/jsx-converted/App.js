@@ -8,6 +8,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+import Home from './Home.js';
+// import SignUp from './Signup.js';
+// import Login from './Login.js';
+
+var Route = ReactRouterDOM.Route;
+var Router = ReactRouterDOM.BrowserRouter;
+
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -20,7 +27,15 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: 'render',
     value: function render() {
-      return React.createElement('div', null);
+      return React.createElement(
+        'div',
+        null,
+        React.createElement(
+          Router,
+          null,
+          React.createElement(Route, { exact: true, path: '/', component: Home })
+        )
+      );
     }
   }]);
 
@@ -29,4 +44,5 @@ var App = function (_React$Component) {
 
 var domContainer = document.querySelector('#react');
 ReactDOM.render(React.createElement(App, null), domContainer);
-//# sourceMappingURL=App.js.map
+
+export default App;
