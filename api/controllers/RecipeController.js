@@ -1,5 +1,45 @@
 
 module.exports= {
+
+    search: async function(res, req) {
+        // ingredient id & key words should be extracted from req
+        var ingredientId = [1,3,4,5,6];
+        var keyWords = ['fish', 'apple','beef'];
+
+        var keyWordConditions = [];
+        for (var i = 0; i < keyWords.length; i++) {
+            keyWordConditions.push({recipeName: {contains: keyWords[i]}});
+            keyWordConditions.push({instructions: {contains: keyWords[i]}});
+        }
+        var recipes = await Recipe.find({
+            or: keyWordConditions,
+        }).populateAll();
+        var ingredientIdSet = new Set(ingredientId);
+        var selectedRecipes = [];
+        for (var i = 0; i < recipes.length; i++) {
+            for (var j = 0; j < recipes[i].ingredients.length; j++) {
+                if (ingredientIdSet.has(recipes[i].ingredients[j].id)) {
+                    selectedRecipes.push(recipes[i]);
+                    break;
+                }
+            }
+        }
+        return req.json(selectedRecipes);
+    },
+
+    searchByKeyWords: async function (req, res) {
+        var keyWords = ['fish', 'apple','beef'];
+        var keyWordConditions = [];
+        for (var i = 0; i < keyWords.length; i++) {
+            keyWordConditions.push({recipeName: {contains: keyWords[i]}});
+            keyWordConditions.push({instructions: {contains: keyWords[i]}});
+        }
+        var recipes = await Recipe.find({
+            or: keyWordConditions,
+        }).populateAll();
+        return res.json(recipes);
+    },
+
     createIngredient: async function(req, res) {
         let ingredientName = req.param('ingredientName');
         let existingIngredient = await Ingredient.findOne({
@@ -63,7 +103,7 @@ module.exports= {
         let recipe = await Recipe.findOne({
             id: recipeId,
         }).populateAll();
-        
+
         if (!recipe) {
             return res.notFound();
         }
@@ -88,7 +128,7 @@ module.exports= {
 
     saveRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
-        
+
         if (!recipeId || !req.session.userId) {
             return res.notFound();
         }
@@ -117,7 +157,7 @@ module.exports= {
 
     unsaveRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
-        
+
         if (!recipeId || !req.session.userId) {
             return res.notFound();
         }
