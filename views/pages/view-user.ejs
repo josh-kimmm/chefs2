@@ -1,25 +1,48 @@
 <div class="user-details">
-    <h1><%= fullName %></h1>
-    <p>
-        <%= userProfile.followerList ? userProfile.followerList.length : 0 %> followers
-        <%= userProfile.followingList ? userProfile.followingList.length : 0 %> following
-    </p>
-    <h2>MY COOKBOOK</h2>
-    <% 
-    let cookbook = userProfile.cookbook ? userProfile.cookbook : [];
+    <!--Name, edit profile, settings button-->
+    <div class="row">
+        <div class="col-md-8">
+            <h1><%= fullName %></h1>
+        </div>
+            
+        <div class="col-md-4">
+            <div class="float-right">
+                <a href="/account/profile"><button class="profile">Edit Profile</button></a>
+                <a href="/account/password"><button class="settings"><i class="fa fa-cog fa-2x"></i></button></a>
+            </div>
+            
+        </div>
+        
+    </div>
 
-    for (let i = 0; i < cookbook.length; i++) {
-    %>
-        <a href="/recipe/<%= cookbook[i].id %>" class="row recipe-row">
-            <div class="col-4">
-                <img src="<%= cookbook[i].image %>" class="img-fluid" alt="<%= cookbook[i].recipeName %>"/>
-            </div>
-            <div class="col-8">
-                <h3><%= cookbook[i].recipeName %></h3>
-                <p><%= cookbook[i].prepTime %></p>
-                <p><%= cookbook[i].dietType %></p>
-                <p><%= cookbook[i].cookingMethod %></p>
-            </div>
-        </a>
-    <% } %>
+    <!--followers row-->
+    <div class="row">
+        <p>
+            <span class="number"><%= userProfile.followerList ? userProfile.followerList.length : 0 %></span><span class="label"> followers</span>
+            <span class="number"><%= userProfile.followingList ? userProfile.followingList.length : 0 %></span><span class="label"> following</span> 
+        </p>
+    </div>
+    
+    <!--my cookbook-->
+    <div class="row">
+        <h2>MY COOKBOOK</h2>
+        <% 
+        let cookbook = userProfile.cookbook ? userProfile.cookbook : [];
+    
+        for (let i = 0; i < cookbook.length; i++) {
+        %>
+            <a href="/recipe/<%= cookbook[i].id %>" class="row recipe-row">
+                <div class="col-4">
+                    <img src="<%= cookbook[i].image %>" class="img-fluid" alt="<%= cookbook[i].recipeName %>"/>
+                </div>
+                <div class="col-8">
+                    <h3><%= cookbook[i].recipeName %></h3>
+                    <p> Prep Time: <%= cookbook[i].prepTime %></p>
+                    <p>Diet Type: <%= cookbook[i].dietType %></p>
+                    <p>Cooking Method: <%= cookbook[i].cookingMethod %></p>
+                </div>
+            </a>
+        <% } %>
+    </div>
+    
 </div>

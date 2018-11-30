@@ -554,6 +554,30 @@ a:active {
 .user-details .recipe-row img {
   margin: 0;
 }
+.user-details .number {
+  font-weight: bold;
+  padding: 15px;
+}
+.user-details .label {
+  padding-right: 1.5rem;
+}
+.user-details .profile {
+  background: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.user-details .settings {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.user-details .fa {
+  position: relative;
+  top: 6px;
+  margin: 0 0 0 2rem;
+}
 #homepage a:not(.btn) {
   color: #14acc2;
   border-bottom: 1px solid #000;
