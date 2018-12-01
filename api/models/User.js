@@ -29,12 +29,20 @@ module.exports = {
       example: '2$28a8eabna301089103-13948134nad'
     },
 
-    fullName: {
+    firstName: {
       type: 'string',
       required: true,
-      description: 'Full representation of the user\'s name',
+      description: 'The user\'s first name',
       maxLength: 120,
-      example: 'Lisa Microwave van der Jenny'
+      example: 'John'
+    },
+
+    lastName: {
+      type: 'string',
+      required: true,
+      description: 'The user\'s last name',
+      maxLength: 120,
+      example: 'Doe'
     },
 
     isSuperAdmin: {
