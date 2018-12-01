@@ -1321,6 +1321,30 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+.edit-dietary-preferences {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.edit-dietary-preferences .container {
+  background: white;
+  padding: 2rem;
+}
+.edit-dietary-preferences .container .sidebar {
+  border-right: 1px solid black;
+}
+.edit-dietary-preferences .container .sidebar a h5 {
+  color: black;
+  margin: 2rem;
+}
+.edit-dietary-preferences .container .sidebar .active {
+  color: #A2AD7E;
+}
+.edit-dietary-preferences .container .dietary-preferences {
+  padding: 2rem;
+}
+.edit-dietary-preferences .container .dietary-preferences label {
+  margin-left: 1rem;
+}
 #terms {
   padding-top: 75px;
   padding-bottom: 75px;
