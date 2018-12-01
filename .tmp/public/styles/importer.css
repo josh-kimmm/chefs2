@@ -1258,28 +1258,47 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-#edit-password .form-control {
+#edit-password .container {
+  background: white;
+  padding: 2rem;
+}
+#edit-password .container .sidebar {
+  border-right: 1px solid black;
+}
+#edit-password .container .sidebar a h5 {
+  color: black;
+  margin: 2rem;
+}
+#edit-password .container .sidebar .active {
+  color: #A2AD7E;
+}
+#edit-password .container .ajax-form {
+  margin: 2rem;
+}
+#edit-password .container .ajax-form .form-control {
   border: solid 1px #AEB0AE;
   border-radius: 5px;
 }
-#edit-password .btn-dark {
+#edit-password .container .ajax-form .btn-dark {
   background: #A2AD7E;
   color: white;
   border: 1px solid #A2AD7E;
   padding: 0.75rem 1rem;
+  margin-left: 0.5rem;
 }
-#edit-password .btn-outline-info {
+#edit-password .container .ajax-form .btn-outline-info {
   border: 1px solid black;
   color: black;
   padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
 }
-#edit-password .btn-outline-info:hover {
+#edit-password .container .ajax-form .btn-outline-info:hover {
   border: 1px solid black;
   background: black;
   color: white;
   padding: 0.75rem 1rem;
 }
-#edit-password label {
+#edit-password .container .ajax-form label {
   font-weight: bold;
 }
 #edit-profile {
