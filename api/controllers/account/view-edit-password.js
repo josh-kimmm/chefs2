@@ -20,6 +20,7 @@ module.exports = {
 
     return exits.success({
       user: await User.findOne(this.req.me.id),
+      pageName: 'editPassword',
     });
 
   }

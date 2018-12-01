@@ -336,7 +336,7 @@ body {
   background-color: #e2dbd4;
 }
 body.homepage {
-  background-image: url("/images/background2.png");
+  background-image: url("/images/background.jpg");
 }
 img {
   width: auto;
@@ -387,13 +387,6 @@ header p {
 .jumbotron h2 {
   font-size: 100px;
 }
-/*input {
-padding: 10px;
-padding-left: 20px;
-margin-top: 30px;
-width: 600px;
-border: none;
-}*/
 .form-control,
 body {
   border: 0px;
@@ -410,7 +403,10 @@ body {
   border-radius: 0 3px 3px 0;
   color: white;
 }
-.form-control::-webkit-input-placeholder {
+#searchit:hover {
+  background-color: #CE422D;
+}
+.search::-webkit-input-placeholder {
   font-weight: bold;
 }
 .input-group {
@@ -433,27 +429,44 @@ body {
   padding: 30px;
   padding-right: 30px;
 }
+#filter:focus,
+#searchit:focus,
+input[type="text"]:focus {
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0) inset, 0 0 8px rgba(0, 0, 0, 0);
+  outline: 0 none;
+}
 #filter {
   background-color: #CD5E4E;
   border: none;
   font-weight: bold;
   width: 120px;
   height: 40px;
+  border: 0px;
+}
+#filter:hover {
+  background-color: #CE422D;
 }
 #diet {
   background-color: white;
-  color: black;
-  width: 220px;
+  width: 210px;
   height: 35px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+#cooking-method {
+  background-color: white;
+  width: 200px;
+  height: 35px;
+  padding: 0px;
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 20px;
 }
 #hours {
-  width: 50px;
-}
-#minutes {
-  width: 70px;
+  width: 130px;
 }
 .dropdown {
   float: right;
@@ -464,6 +477,15 @@ body {
   width: 700px;
   border-width: 3px;
   border-color: #CD5E4E;
+}
+.dropdown-item {
+  color: #808080;
+}
+.dietary-dropdown {
+  list-style-type: none;
+}
+.filter-label {
+  font-weight: bold;
 }
 a:link {
   text-decoration: none;
@@ -1320,6 +1342,49 @@ a:active {
 #edit-profile {
   padding-top: 75px;
   padding-bottom: 75px;
+}
+#edit-profile .container {
+  background: white;
+  padding: 2rem;
+}
+#edit-profile .container .sidebar {
+  border-right: 1px solid black;
+}
+#edit-profile .container .sidebar a h5 {
+  color: black;
+  margin: 2rem;
+}
+#edit-profile .container .sidebar .active {
+  color: #A2AD7E;
+}
+#edit-profile .container .ajax-form {
+  margin: 2rem;
+}
+#edit-profile .container .ajax-form .form-control {
+  border: solid 1px #AEB0AE;
+  border-radius: 5px;
+}
+#edit-profile .container .ajax-form .btn-dark {
+  background: #A2AD7E;
+  color: white;
+  border: 1px solid #A2AD7E;
+  padding: 0.75rem 1rem;
+  margin-left: 0.5rem;
+}
+#edit-profile .container .ajax-form .btn-outline-info {
+  border: 1px solid black;
+  color: black;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+}
+#edit-profile .container .ajax-form .btn-outline-info:hover {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 0.75rem 1rem;
+}
+#edit-profile .container .ajax-form label {
+  font-weight: bold;
 }
 #edit-dietary-restrictions {
   padding-top: 75px;
