@@ -1321,29 +1321,40 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-.edit-dietary-preferences {
+#edit-dietary-restrictions {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-.edit-dietary-preferences .container {
+#edit-dietary-restrictions .container {
   background: white;
   padding: 2rem;
 }
-.edit-dietary-preferences .container .sidebar {
+#edit-dietary-restrictions .container .sidebar {
   border-right: 1px solid black;
 }
-.edit-dietary-preferences .container .sidebar a h5 {
+#edit-dietary-restrictions .container .sidebar a h5 {
   color: black;
   margin: 2rem;
 }
-.edit-dietary-preferences .container .sidebar .active {
+#edit-dietary-restrictions .container .sidebar .active {
   color: #A2AD7E;
 }
-.edit-dietary-preferences .container .dietary-preferences {
+#edit-dietary-restrictions .container .dietary-preferences {
   padding: 2rem;
 }
-.edit-dietary-preferences .container .dietary-preferences label {
+#edit-dietary-restrictions .container .dietary-preferences h5 {
+  color: black;
+  margin: 0 0 2rem 0;
+}
+#edit-dietary-restrictions .container .dietary-preferences label {
   margin-left: 1rem;
+}
+#edit-dietary-restrictions .container .dietary-preferences .btn {
+  background: #A2AD7E;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0 0 0;
 }
 #terms {
   padding-top: 75px;
