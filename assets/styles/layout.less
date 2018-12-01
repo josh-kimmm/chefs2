@@ -94,7 +94,7 @@ body {
 }
 
 body.homepage {
-  background-image: url("/images/background2.png");
+  background-image: url("/images/background.jpg");
 }
 
 img {
@@ -153,14 +153,6 @@ header p {
   font-size: 100px;
 }
 
-/*input {
-padding: 10px;
-padding-left: 20px;
-margin-top: 30px;
-width: 600px;
-border: none;
-}*/
-
 .form-control, body{
   border: 0px;
   height: 50px;
@@ -178,7 +170,11 @@ border: none;
   color: white;
 }
 
-.form-control::-webkit-input-placeholder {
+#searchit:hover{
+  background-color: #CE422D;
+}
+
+.search::-webkit-input-placeholder {
   font-weight:bold;
 }
 
@@ -207,30 +203,47 @@ border: none;
   padding-right: 30px;
 }
 
+#filter:focus, #searchit:focus, input[type="text"]:focus{
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0) inset, 0 0 8px rgba(0, 0, 0, 0);
+  outline: 0 none;
+}
+
 #filter {
   background-color: #CD5E4E;
   border: none;
   font-weight: bold;
   width: 120px;
   height: 40px;
+  border: 0px;
+}
+
+#filter:hover{
+  background-color: #CE422D;
 }
 
 #diet {
   background-color: white;
-  color: black;
-  width: 220px;
+  width: 210px;
   height: 35px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+#cooking-method{
+  background-color: white;
+  width: 200px;
+  height: 35px;
+  padding: 0px;
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
 #hours {
-  width: 50px;
-}
-
-#minutes {
-  width: 70px;
+  width: 130px;
 }
 
 .dropdown {
@@ -243,6 +256,18 @@ border: none;
   width: 700px;
   border-width: 3px;
   border-color: #CD5E4E;
+}
+
+.dropdown-item{
+  color: 	#808080;
+}
+
+.dietary-dropdown{
+  list-style-type:none;
+}
+
+.filter-label{
+  font-weight: bold;
 }
 
 a:link {
