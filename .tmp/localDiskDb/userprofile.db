@@ -1,2 +1,9 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"createdAt":1543535283617,"updatedAt":1543535283617,"id":1,"followingList":"","followerList":"","dietaryPreferences":"","emailNotification":"","cookedRecipes":"","_id":1}
+{"createdAt":1543701664152,"updatedAt":1543701664152,"id":1,"dietaryPreferences":"","emailNotification":"","cookedRecipes":"","_id":1}
+{"createdAt":1543701664152,"updatedAt":1543702032619,"id":1,"dietaryPreferences":"vegan","emailNotification":"","cookedRecipes":"","_id":1}
+{"createdAt":1543701664152,"updatedAt":1543702133080,"id":1,"dietaryPreferences":"vegan,vegetarian","emailNotification":"","cookedRecipes":"","_id":1}
+{"createdAt":1543701664152,"updatedAt":1543702136005,"id":1,"dietaryPreferences":"","emailNotification":"","cookedRecipes":"","_id":1}
+{"createdAt":1543701664152,"updatedAt":1543702137605,"id":1,"dietaryPreferences":"vegan","emailNotification":"","cookedRecipes":"","_id":1}
+{"createdAt":1543701664152,"updatedAt":1543702139797,"id":1,"dietaryPreferences":"vegetarian","emailNotification":"","cookedRecipes":"","_id":1}
+{"createdAt":1543701664152,"updatedAt":1543702141474,"id":1,"dietaryPreferences":"vegetarian","emailNotification":"","cookedRecipes":"","_id":1}
+{"createdAt":1543701664152,"updatedAt":1543702143252,"id":1,"dietaryPreferences":"","emailNotification":"","cookedRecipes":"","_id":1}
