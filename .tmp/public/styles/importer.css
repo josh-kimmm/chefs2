@@ -327,7 +327,7 @@ body {
 body {
   background-repeat: no-repeat;
   background-size: 110%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1076,6 +1076,7 @@ a:active {
 #signup {
   padding-top: 75px;
   padding-bottom: 75px;
+  font-family: 'Open Sans', sans-serif;
 }
 #signup .container {
   background: white;
@@ -1113,6 +1114,7 @@ a:active {
 #confirmed-email {
   padding-top: 75px;
   padding-bottom: 75px;
+  font-family: 'Open Sans', sans-serif;
 }
 #confirmed-email .container {
   background: white;
@@ -1140,6 +1142,7 @@ a:active {
 #login {
   padding-top: 75px;
   padding-bottom: 75px;
+  font-family: 'Open Sans', sans-serif;
 }
 #login .container {
   background: white;
@@ -1173,6 +1176,7 @@ a:active {
 #forgot-password {
   padding-top: 75px;
   padding-bottom: 75px;
+  font-family: 'Open Sans', sans-serif;
 }
 #forgot-password .container {
   background: white;
@@ -1228,6 +1232,7 @@ a:active {
 #new-password {
   padding-top: 75px;
   padding-bottom: 75px;
+  font-family: 'Open Sans', sans-serif;
 }
 #new-password .container {
   background: white;
@@ -1277,6 +1282,7 @@ a:active {
 #edit-password .container {
   background: white;
   padding: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 #edit-password .container .sidebar {
   border-right: 1px solid black;
@@ -1284,12 +1290,16 @@ a:active {
 #edit-password .container .sidebar a h5 {
   color: black;
   margin: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 #edit-password .container .sidebar .active {
   color: #A2AD7E;
 }
 #edit-password .container .ajax-form {
   margin: 2rem;
+}
+#edit-password .container .ajax-form h3 {
+  margin: 0 0 2rem 0;
 }
 #edit-password .container .ajax-form .form-control {
   border: solid 1px #AEB0AE;
