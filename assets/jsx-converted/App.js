@@ -46,3 +46,4 @@ var domContainer = document.querySelector('#react');
 ReactDOM.render(React.createElement(App, null), domContainer);
 
 export default App;
+//# sourceMappingURL=App.js.map
