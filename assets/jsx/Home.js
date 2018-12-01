@@ -1,5 +1,5 @@
 import SearchEngine from './SearchEngine.js';
-import Filter from './Filter.js';
+
 
 
 const Router = ReactRouterDOM.Router;
@@ -13,7 +13,6 @@ class Home extends React.Component {
 
 	        <SearchEngine />
 
-	        <Filter />  
     	</div>
     );
   }
