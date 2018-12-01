@@ -22,4 +22,39 @@ module.exports= {
 
         return res.view('pages/view-user', user);
     },
+
+    showEditDietaryPreferencesPage: async function(req, res) {
+        if (!req.session.userId) {
+            return res.notFound();
+        }
+
+        let userId = req.session.userId;
+        let userProfile = UserProfile.find({
+            user: userId,
+        }).populateAll();
+
+        return res.view('pages/account/edit-dietary-preferences', {
+            pageName: 'userDietaryPreferences',
+            dietaryPreferences: userProfile.dietaryPreferences ? userProfile.dietaryPreferences.split(',') : []
+        });
+    },
+
+    processEditDietaryPreferencesPage: async function(req, res) {
+        if (!req.session.userId) {
+            return res.notFound();
+        }
+
+        let userId = req.session.userId;
+        let userProfile = UserProfile.find({
+            user: userId,
+        }).populateAll();
+
+        let vegan = req.param('vegan');
+        let vegetarian = req.param('vegetarian');
+
+        let dietaryPreferences = [];
+        if (vegan) dietaryPreferences.push('vegan')
+
+        return res.redirect('/account/dietary-preferences');
+    },
 };

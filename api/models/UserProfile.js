@@ -34,13 +34,8 @@ module.exports = {
       type: 'string',
     },
 
-    /**
-     * foreign key: Ingredient
-     * many to many
-     */
-    dietaryRestriction: {
-      collection: 'Ingredient',
-      via: 'userProfileDietaryRestriction',
+    dietaryPreferences: {
+      type: 'string',
     },
 
     /**

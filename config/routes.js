@@ -55,6 +55,8 @@ module.exports.routes = {
   '/save-recipe/:recipeId': 'RecipeController.saveRecipe',
   '/unsave-recipe/:recipeId': 'RecipeController.unsaveRecipe',
   '/user/:userId': 'UserController.viewUserProfile',
+  'GET /account/dietary-preferences': 'UserController.showEditDietaryPreferencesPage',
+  'POST /account/dietary-preferences': 'UserController.processEditDietaryPreferencesPage',
 
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗

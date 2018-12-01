@@ -1,2 +1,2 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"user_userProfile":29,"userprofile_user":1,"id":1,"_id":1}
+{"id":1,"user_userProfile":29,"userprofile_user":1,"_id":1}
