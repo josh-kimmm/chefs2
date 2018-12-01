@@ -1,6 +1,28 @@
-<div class="edit-dietary-preferences">
-    <label for="vegan">Vegan</label>
-    <input type="checkbox" name="vegan" id="vegan" value="<%= dietaryPreferences.indexOf('vegan') != -1 ? true : false %>">
-    <label for="vegan">Vegetarian</label>
-    <input type="checkbox" name="vegetarian" id="vegetarian" value="<%= dietaryPreferences.indexOf('vegetarian') != -1 ? true : false %>">
+<div id="edit-dietary-restrictions">
+    <%= user.fullName %>
+    <div class="container">
+        <h1>User Settings</h1>
+        <hr/>
+        <div class="row">
+        <!--Side navbar-->
+        <div class="col-sm-3 sidebar">
+            <a href="/account/profile"><h5>Edit Profile</h5></a>
+            <a href="#"><h5 class="active">Change Password</h5></a>
+            <a href="/account/dietary-preferences"><h5>Dietary Preferences</h5></a>
+            <a href="#"><h5>Email & Notifications</h5></a>
+        </div>
+        
+        <div class="col-sm-9">
+            <form method="post" action="/account/dietary-preferences">
+                <label for="vegan">Vegan</label>
+                <input type="checkbox" name="vegan" id="vegan" value="<%= dietaryPreferences.indexOf('vegan') != -1 ? true : false %>">
+                <label for="vegan">Vegetarian</label>
+                <input type="checkbox" name="vegetarian" id="vegetarian" value="<%= dietaryPreferences.indexOf('vegetarian') != -1 ? true : false %>">
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+        </div>
+        
+    </div>
 </div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>

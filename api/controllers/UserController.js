@@ -34,6 +34,7 @@ module.exports= {
         }).populateAll();
 
         return res.view('pages/account/edit-dietary-preferences', {
+            user: await User.findOne(req.session.userId),
             pageName: 'userDietaryPreferences',
             dietaryPreferences: userProfile.dietaryPreferences ? userProfile.dietaryPreferences.split(',') : []
         });
@@ -44,16 +45,18 @@ module.exports= {
             return res.notFound();
         }
 
-        let userId = req.session.userId;
-        let userProfile = UserProfile.find({
-            user: userId,
-        }).populateAll();
-
         let vegan = req.param('vegan');
         let vegetarian = req.param('vegetarian');
 
         let dietaryPreferences = [];
-        if (vegan) dietaryPreferences.push('vegan')
+        if (vegan) dietaryPreferences.push('vegan');
+        if (vegetarian) dietaryPreferences.push('vegetarian');
+
+        await UserProfile.update({
+            user: req.session.userId,
+        }, {
+            dietaryPreferences: dietaryPreferences.join(','),
+        });
 
         return res.redirect('/account/dietary-preferences');
     },
