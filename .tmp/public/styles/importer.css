@@ -1114,12 +1114,28 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-#confirmed-email .confirmation-message {
+#confirmed-email .container {
+  background: white;
+  padding: 2rem;
+}
+#confirmed-email .container .confirmation-message {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+#confirmed-email .container .btn-outline-info {
+  border: 1px solid black;
+  color: black;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+}
+#confirmed-email .container .btn-outline-info:hover {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 0.75rem 1rem;
 }
 #login {
   padding-top: 75px;
