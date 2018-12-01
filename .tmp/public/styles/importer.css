@@ -1300,6 +1300,8 @@ a:active {
 }
 #edit-password .container .ajax-form h3 {
   margin: 0 0 2rem 0;
+  font-size: 40px;
+  letter-spacing: 0.03em;
 }
 #edit-password .container .ajax-form .form-control {
   border: solid 1px #AEB0AE;
