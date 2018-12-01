@@ -1321,6 +1321,49 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+#edit-profile .container {
+  background: white;
+  padding: 2rem;
+}
+#edit-profile .container .sidebar {
+  border-right: 1px solid black;
+}
+#edit-profile .container .sidebar a h5 {
+  color: black;
+  margin: 2rem;
+}
+#edit-profile .container .sidebar .active {
+  color: #A2AD7E;
+}
+#edit-profile .container .ajax-form {
+  margin: 2rem;
+}
+#edit-profile .container .ajax-form .form-control {
+  border: solid 1px #AEB0AE;
+  border-radius: 5px;
+}
+#edit-profile .container .ajax-form .btn-dark {
+  background: #A2AD7E;
+  color: white;
+  border: 1px solid #A2AD7E;
+  padding: 0.75rem 1rem;
+  margin-left: 0.5rem;
+}
+#edit-profile .container .ajax-form .btn-outline-info {
+  border: 1px solid black;
+  color: black;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+}
+#edit-profile .container .ajax-form .btn-outline-info:hover {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 0.75rem 1rem;
+}
+#edit-profile .container .ajax-form label {
+  font-weight: bold;
+}
 #terms {
   padding-top: 75px;
   padding-bottom: 75px;
