@@ -78,6 +78,8 @@ class Filter extends React.Component {
     render() {
         var ingredientNameInput = this.state.ingredientNameInput;
         var autoCompleteDropdown = this.state.autoCompleteList;
+        var ingredientBubbleList = this.props.searchedIngredients;
+        
 
         return (
             <div className="dropdown">
@@ -89,6 +91,8 @@ class Filter extends React.Component {
                         <div className="form-group col-sm-6">
                             <label className="filter-label" for="ingredientsInput">Add Ingredients</label>
                             
+                            <IngredientBubbleChain list={ingredientBubbleList} />
+
                             <input type="ingredient" className="form-control" value={ingredientNameInput} onChange={this.handleIngredientInput} onKeyDown={this.handleIngredientSelection} id="ingredientsInput" placeholder="Type to search and add ingredients" />
                             <AutoCompleteList list={autoCompleteDropdown} selector={this.state.selectedIngredientIndex} />
 
@@ -163,5 +167,33 @@ function ListItem(props) {
 
     return <p className="result">{props.ingredientName}</p>;
 }
+
+
+function IngredientBubbleChain(props){
+    var list = props.list;
+
+    if(!list.length) return null;
+
+    //iterate thru list and return bubble
+    list = _(list).map(function(ingredient) {
+        return <IngredientBubble ingredientName={ingredient.ingredientName}/>
+    }).value();
+
+    //bubbles to append to html
+    return(
+        <div className="ingredientBubbleChain">
+            {list}
+        </div>
+    );
+}
+
+function IngredientBubble(props){
+    return (
+        <div class="bubble">
+            {props.ingredientName}<button class="bubble-delete"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+    );
+}
+
 
 export default Filter;
