@@ -38,7 +38,10 @@ class Filter extends React.Component {
                         <div class="form-group col-sm-6">
                             <label class="filter-label" for="ingredientsInput">Add Ingredients</label>
                             <input type="ingredient" class="form-control" value={ingredientNameInput} onChange={this.handleIngredientInput} id="ingredientsInput" placeholder="Type to search and add ingredients" />
-
+                            <div class="result-container">
+                                <p class="result">apple</p>
+                                <p class="result">applet</p>
+                            </div>
                             <label class="filter-label" for="cookingMethods">Add Cooking Methods</label>
                             <button class="btn btn-secondary dropdown-item dropdown-toggle" type="button" id="cooking-method" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Choose Cooking Method
