@@ -10,7 +10,8 @@ class Home extends React.Component {
 		super(props);
 
 		this.state = {
-			showSearchResults: false
+			showSearchResults: false,
+			searchResultList: []
 		}
 
 		this.changeSearchResults = this.changeSearchResults.bind(this);
@@ -35,7 +36,10 @@ class Home extends React.Component {
 
 }
 
-function SearchResults() {
+function SearchResults(props) {
+	
+
+
 	return(
 		<div>
 		<h3 id="show-results-label">Showing search results for '<span id="keyword">boop</span>'</h3>
@@ -52,6 +56,20 @@ function SearchResults() {
 	                                this is a description. this is a description. this is a description. this is a description. this is a description. 
 	                                this is a description. this is a description. this is a description. this is a description. this is a description. 
 	                                this is a description.
+	                        </p>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	        <section id="search-results">
+	            <div class="result">
+	                <div class="row">
+	                    <div class="col-md-4">            
+	                        <img class="recipe-img" src="https://raw.githubusercontent.com/josh-kimmm/chefs2/search-results/assets/images/search-result-test.jpg" />
+	                    </div>
+	                    <div class="col-md-8">
+	                        <h2 class="recipe-title">Recipe Title</h2>
+	                        <p class="recipe-description"> blahhhasfasdfafdsjzkvhzvhgewahgjr
 	                        </p>
 	                    </div>
 	                </div>
