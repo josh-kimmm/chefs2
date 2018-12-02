@@ -5,6 +5,13 @@ class SearchEngine extends React.Component {
     constructor(props){
         super(props);
 
+        this.state = {
+            recipeNameInput: null,
+            ingredientNames: []
+
+
+        };
+
         this.handleSearchInput = this.handleSearchInput.bind(this);
         this.startSearchQuery = this.startSearchQuery.bind(this);
     }
@@ -17,11 +24,21 @@ class SearchEngine extends React.Component {
         
     }
 
+    addNewIngredientFilter(ingredient) {
+
+        var ingredientArr = this.state.ingredientNames;
+        ingredientArr.push(ingredient);
+
+        this.setState({ingredientNames: ingredientArr})
+    }
+
     startSearchQuery() {
 
     }
 
     render() {
+
+
         return (
             <div>
                 <div class="input-group">
@@ -34,7 +51,7 @@ class SearchEngine extends React.Component {
                     </div>
                 </div>
 
-                <Filter />
+                <Filter addIngredient={this.state.addNewIngredientFilter}/>
             </div>
 
         );

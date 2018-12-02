@@ -10,7 +10,7 @@ class Home extends React.Component {
     return (
     	<div id="wrap">
 	        <img src="/images/chefs-logo-red.png" alt="" class="center" />
-
+	        
 	        <SearchEngine />
 
     	</div>
