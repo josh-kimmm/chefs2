@@ -8,7 +8,8 @@ class SearchEngine extends React.Component {
         this.state = {
             recipeNameInput: "",
             ingredientSearchList: [],
-            totalIngredientList: []
+            totalIngredientList: [],
+            searchResults: false
 
 
         };
@@ -91,6 +92,7 @@ class SearchEngine extends React.Component {
         var totalIngredientList = this.state.totalIngredientList;
         var addNewIngredientFilter = this.state.addNewIngredientFilter;
         var recipeNameInput = this.state.recipeNameInput;
+        
 
         return (
             <div>
@@ -109,7 +111,6 @@ class SearchEngine extends React.Component {
 
         );
     }
-
 }
 
 export default SearchEngine;
