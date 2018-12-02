@@ -92,25 +92,35 @@ class SearchEngine extends React.Component {
         var totalIngredientList = this.state.totalIngredientList;
         var addNewIngredientFilter = this.state.addNewIngredientFilter;
         var recipeNameInput = this.state.recipeNameInput;
-        
+        var ingredientSearchList = this.state.ingredientSearchList;
+        var searchBar = this.state.searchResults ? 
+        (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
+                   startSearchQuery={this.startSearchQuery} style="blah" />) :
+        (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
+                   startSearchQuery={this.startSearchQuery} />);
 
         return (
             <div>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="searchinput" placeholder="Search Recipes" 
-                           value={recipeNameInput} onChange={this.updateSearchInput} onKeyDown={this.handleSearchInput}></input>
-                    <div class="input-group-btn">
-                        <button class="btn" type="button" onClick={this.startSearchQuery} id="searchit">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList}/>
+                {searchBar}
+                <Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList}/>
             </div>
 
         );
     }
+}
+
+function SearchBar(props) {
+    return(
+        <div class="input-group">
+            <input type="text" class="form-control" id="searchinput" placeholder="Search Recipes" 
+                   value={props.recipeNameInput} onChange={props.updateSearchInput} onKeyDown={props.handleSearchInput}></input>
+            <div class="input-group-btn">
+                <button class="btn" type="button" onClick={props.startSearchQuery} id="searchit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    );
 }
 
 export default SearchEngine;
