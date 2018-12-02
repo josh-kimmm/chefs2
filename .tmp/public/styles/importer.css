@@ -327,7 +327,7 @@ body {
 body {
   background-repeat: no-repeat;
   background-size: 110%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1385,6 +1385,41 @@ a:active {
 }
 #edit-profile .container .ajax-form label {
   font-weight: bold;
+}
+#edit-dietary-restrictions {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+#edit-dietary-restrictions .container {
+  background: white;
+  padding: 2rem;
+}
+#edit-dietary-restrictions .container .sidebar {
+  border-right: 1px solid black;
+}
+#edit-dietary-restrictions .container .sidebar a h5 {
+  color: black;
+  margin: 2rem;
+}
+#edit-dietary-restrictions .container .sidebar .active {
+  color: #A2AD7E;
+}
+#edit-dietary-restrictions .container .dietary-preferences {
+  padding: 2rem;
+}
+#edit-dietary-restrictions .container .dietary-preferences h5 {
+  color: black;
+  margin: 0 0 2rem 0;
+}
+#edit-dietary-restrictions .container .dietary-preferences label {
+  margin-left: 1rem;
+}
+#edit-dietary-restrictions .container .dietary-preferences .btn {
+  background: #A2AD7E;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0 0 0;
 }
 #terms {
   padding-top: 75px;

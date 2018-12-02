@@ -18,15 +18,6 @@ module.exports = {
      * foreign key: UserProfile
      * many to many
      */
-    userProfileDietaryRestriction: {
-      collection: 'UserProfile',
-      via: 'dietaryRestriction',
-    },
-
-    /**
-     * foreign key: UserProfile
-     * many to many
-     */
     userProfileIngredientPreference: {
       collection: 'UserProfile',
       via: 'ingredientPreference',
