@@ -56,7 +56,7 @@ module.exports= {
     viewRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
 
-        if (!recipeId) {
+        if (!recipeId || isNaN(recipeId)) {
             return res.notFound();
         }
 
@@ -82,6 +82,10 @@ module.exports= {
             recipe.saved = savedRecipe.cookbook.length > 0 ? true : false;
         }
         recipe.pageName = 'viewRecipe';
+
+        recipe.reviews = await Review.find({
+            recipe: recipeId,
+        }).populateAll();
 
         return res.view('pages/view-recipe', recipe);
     },
@@ -158,5 +162,45 @@ module.exports= {
         recipe.pageName = 'viewRecipe';
 
         return res.redirect('/recipe/' + recipe.id);
-    }
+    },
+
+    createReview: async function(req, res) {
+        let recipeId = req.param('recipeId');
+        let rating = req.param('rating');
+        let review = req.param('review');
+
+        if (!req.session.userId) {
+            return res.notFound();
+        }
+
+        if (!recipeId) {
+            return res.notFound();
+        }
+
+        if (typeof rating == 'undefined' || rating > 5 || rating < 1 || review == '') {
+            return res.notFound();
+        }
+
+        await Review.create({
+            user: req.session.userId,
+            rating: rating,
+            reviewBody: review,
+            recipe: recipeId,
+        });
+
+        let recipe = await Recipe.findOne(recipeId);
+        
+        let allReviews = await Review.find({
+            recipe: recipeId,
+        });
+
+        let newRating = recipe.rating == 0 ? rating : ((Number(recipe.rating) * (Number(allReviews.length) - 1)) + Number(rating)) / Number(allReviews.length);
+
+        await Recipe.update(recipeId, {
+            rating: newRating,
+        });
+
+        return res.redirect('/recipe/' + recipeId);
+
+    },
 }
