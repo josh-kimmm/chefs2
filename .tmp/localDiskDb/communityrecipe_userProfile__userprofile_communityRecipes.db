@@ -1,7 +1,1 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"id":1,"communityrecipe_userProfile":1,"userprofile_communityRecipes":1,"_id":1}
-{"id":2,"communityrecipe_userProfile":2,"userprofile_communityRecipes":1,"_id":2}
-{"id":3,"communityrecipe_userProfile":1,"userprofile_communityRecipes":1,"_id":3}
-{"id":4,"communityrecipe_userProfile":2,"userprofile_communityRecipes":1,"_id":4}
-{"communityrecipe_userProfile":1,"userprofile_communityRecipes":3,"id":5,"_id":5}
-{"communityrecipe_userProfile":2,"userprofile_communityRecipes":3,"id":6,"_id":6}

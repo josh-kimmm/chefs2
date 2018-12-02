@@ -55,16 +55,17 @@ for i in range(20):
 				for li in ingredient.findAll('li'):
 					whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 					ingredientName = li.get_text()
+					ingredientName = ingredientName.lower()
 					ingredientName = ' '.join(ingredientName.split('boneless, '))
 					ingredientName = ' '.join(ingredientName.split('bone-in, '))
 					ingredientName = ' '.join(''.join([i for i in ingredientName.partition(',')[0] if i in whitelist]).split())
-					ingredientMeasurements = ['skewers ', 'sheets ', 'bags ', 'sticks ', 'leaves ', 'crowns ', 'pts ', 'handfuls ', 'spears ', 'wedges ', 'cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'stalks ', 'pieces ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ', 'wedge ', 'chopped ', 'Chopped ', 'half ears ', 'shredded ', 'stalk ', 'spear ', 'handful ', 'pt ', 'piece ', 'medium ', 'crown ', 'stick ', 'bag ', 'sheet ', 'skewer ']
+					ingredientMeasurements = ['allpurpose ', 'all purpose ', 'skewers ', 'sheets ', 'bags ', 'sticks ', 'leaves ', 'crowns ', 'pts ', 'handfuls ', 'spears ', 'wedges ', 'cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'stalks ', 'pieces ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ', 'wedge ', 'chopped ', 'Chopped ', 'half ears ', 'shredded ', 'stalk ', 'spear ', 'handful ', 'pt ', 'piece ', 'medium ', 'crown ', 'stick ', 'bag ', 'sheet ', 'skewer ', 'mediumsized ']
 					for measurement in ingredientMeasurements:
 						if measurement in ingredientName:
 							ingredientName = ingredientName.split(measurement, True)[1]
-					if ingredientName[-2:] == ' g' or ingredientName[-2:] == ' L':
+					if ingredientName[-2:] == ' g' or ingredientName[-2:] == ' l':
 						ingredientName = ingredientName[:-2]
-					if ingredientName[-3:] == ' mL':
+					if ingredientName[-3:] == ' ml':
 						ingredientName = ingredientName[:-3]
 					if ingredientName[-7:] == ' cloves':
 						ingredientName = ingredientName[:-7]
@@ -76,11 +77,30 @@ for i in range(20):
 						ingredientName = ingredientName[:-3]
 					if ingredientName[-15:] == ' in adobo sauce':
 						ingredientName = ingredientName[:-15]
-					ingredientName = singularize(ingredientName)
+					if ingredientName != 'asparagus' and 'pasta' not in ingredientName:
+						ingredientName = singularize(ingredientName)
 					if ingredientName[-6:] == ' leafe':
 						ingredientName = ingredientName[:-1]
-					print ingredientName
+					if 'skinon' in ingredientName:
+						ingredientName = 'skin-on'.join(ingredientName.split('skinon'))
+					if 'aspargu' in ingredientName:
+						ingredientName = 'asparagus'.join(ingredientName.split('aspargu'))
+					if 'chilli' in ingredientName:
+						ingredientName = 'chili'.join(ingredientName.split('chilli'))
+					if 'jalapeo' in ingredientName:
+						ingredientName = 'jalapeno'.join(ingredientName.split('jalapeo'))
+					if 'spathetti' in ingredientName:
+						ingredientName = 'spaghetti'.join(ingredientName.split('spathetti'))
+					if 'flatleaf' in ingredientName:
+						ingredientName = 'flat-leaf'.join(ingredientName.split('flatleaf'))
+					if 'comt' in ingredientName:
+						ingredientName = 'comte'.join(ingredientName.split('comt'))
+					if 'sundried' in ingredientName:
+						ingredientName = 'sun-dried'.join(ingredientName.split('sundried'))
+					if 'fireroasted' in ingredientName:
+						ingredientName = 'fire-roasted'.join(ingredientName.split('fireroasted'))
 					if ingredientName != '' and len(ingredientName) > 2:
+						print ingredientName
 						toPost = {
 							'ingredientName': ' '.join(ingredientName.split()),
 						}
@@ -160,16 +180,17 @@ for i in range(20):
 				for li in ingredient.findAll('li'):
 					whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 					ingredientName = li.get_text()
+					ingredientName = ingredientName.lower()
 					ingredientName = ' '.join(ingredientName.split('boneless, '))
 					ingredientName = ' '.join(ingredientName.split('bone-in, '))
 					ingredientName = ' '.join(''.join([i for i in ingredientName.partition(',')[0] if i in whitelist]).split())
-					ingredientMeasurements = ['skewers ', 'sheets ', 'bags ', 'sticks ', 'leaves ', 'crowns ', 'pts ', 'handfuls ', 'spears ', 'wedges ', 'cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'stalks ', 'pieces ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ', 'wedge ', 'chopped ', 'Chopped ', 'half ears ', 'shredded ', 'stalk ', 'spear ', 'handful ', 'pt ', 'piece ', 'medium ', 'crown ', 'stick ', 'bag ', 'sheet ', 'skewer ']
+					ingredientMeasurements = ['allpurpose ', 'all purpose ', 'skewers ', 'sheets ', 'bags ', 'sticks ', 'leaves ', 'crowns ', 'pts ', 'handfuls ', 'spears ', 'wedges ', 'cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'stalks ', 'pieces ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ', 'wedge ', 'chopped ', 'Chopped ', 'half ears ', 'shredded ', 'stalk ', 'spear ', 'handful ', 'pt ', 'piece ', 'medium ', 'crown ', 'stick ', 'bag ', 'sheet ', 'skewer ', 'mediumsized ']
 					for measurement in ingredientMeasurements:
 						if measurement in ingredientName:
 							ingredientName = ingredientName.split(measurement, True)[1]
-					if ingredientName[-2:] == ' g' or ingredientName[-2:] == ' L':
+					if ingredientName[-2:] == ' g' or ingredientName[-2:] == ' l':
 						ingredientName = ingredientName[:-2]
-					if ingredientName[-3:] == ' mL':
+					if ingredientName[-3:] == ' ml':
 						ingredientName = ingredientName[:-3]
 					if ingredientName[-7:] == ' cloves':
 						ingredientName = ingredientName[:-7]
@@ -181,11 +202,30 @@ for i in range(20):
 						ingredientName = ingredientName[:-3]
 					if ingredientName[-15:] == ' in adobo sauce':
 						ingredientName = ingredientName[:-15]
-					ingredientName = singularize(ingredientName)
+					if ingredientName != 'asparagus' and 'pasta' not in ingredientName:
+						ingredientName = singularize(ingredientName)
 					if ingredientName[-6:] == ' leafe':
 						ingredientName = ingredientName[:-1]
-					print ingredientName
+					if 'skinon' in ingredientName:
+						ingredientName = 'skin-on'.join(ingredientName.split('skinon'))
+					if 'aspargu' in ingredientName:
+						ingredientName = 'asparagus'.join(ingredientName.split('aspargu'))
+					if 'chilli' in ingredientName:
+						ingredientName = 'chili'.join(ingredientName.split('chilli'))
+					if 'jalapeo' in ingredientName:
+						ingredientName = 'jalapeno'.join(ingredientName.split('jalapeo'))
+					if 'spathetti' in ingredientName:
+						ingredientName = 'spaghetti'.join(ingredientName.split('spathetti'))
+					if 'flatleaf' in ingredientName:
+						ingredientName = 'flat-leaf'.join(ingredientName.split('flatleaf'))
+					if 'comt' in ingredientName:
+						ingredientName = 'comte'.join(ingredientName.split('comt'))
+					if 'sundried' in ingredientName:
+						ingredientName = 'sun-dried'.join(ingredientName.split('sundried'))
+					if 'fireroasted' in ingredientName:
+						ingredientName = 'fire-roasted'.join(ingredientName.split('fireroasted'))
 					if ingredientName != '' and len(ingredientName) > 2:
+						print ingredientName
 						toPost = {
 							'ingredientName': ' '.join(ingredientName.split()),
 						}

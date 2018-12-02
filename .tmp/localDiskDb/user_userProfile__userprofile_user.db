@@ -1,4 +1,1 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"id":1,"user_userProfile":1,"userprofile_user":1,"_id":1}
-{"id":2,"user_userProfile":2,"userprofile_user":2,"_id":2}
-{"user_userProfile":3,"userprofile_user":3,"id":3,"_id":3}
