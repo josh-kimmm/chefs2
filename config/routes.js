@@ -59,6 +59,7 @@ module.exports.routes = {
   'POST /account/dietary-preferences': 'UserController.processEditDietaryPreferencesPage',
   '/follow-user/:userId': 'UserController.followUser',
   '/unfollow-user/:userId': 'UserController.unfollowUser',
+  '/community': 'UserController.showCommunityPage',
 
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
