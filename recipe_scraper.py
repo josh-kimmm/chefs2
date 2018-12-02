@@ -134,7 +134,7 @@ for i in range(20):
 			video = recipe.findAll('amp-ima-video', {'id':'tasty-video-desktop'})[0]
 			data['image'] = video['data-poster']
 
-			#r = requests.post('http://localhost:1337/create-recipe', data=data)
+			r = requests.post('http://localhost:1337/create-recipe', data=data)
 
 
 url = 'https://tasty.co/topic/easy-dinner'
@@ -260,6 +260,6 @@ for i in range(20):
 			video = recipe.findAll('amp-ima-video', {'id':'tasty-video-desktop'})[0]
 			data['image'] = video['data-poster']
 
-			#r = requests.post('http://localhost:1337/create-recipe', data=data)
+			r = requests.post('http://localhost:1337/create-recipe', data=data)
 
 print prepTimes
