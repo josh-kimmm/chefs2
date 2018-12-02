@@ -14,26 +14,26 @@ prepTimes = []
 
 url2 = 'https://tasty.co/topic/one-pot'
 uclient2 = ureq(url2) # opens up connection, grabs web page
-page_html = uclient2.read() 
+page_html = uclient2.read()
 uclient2.close() # close the client
 parent_page = BeautifulSoup(page_html, 'html.parser') # html parsing
 
 # Put links to recipe pages in a list
-links_container = parent_page.findAll('a',{'class':'feed-item analyt-unit-tap'}) 
+links_container = parent_page.findAll('a',{'class':'feed-item analyt-unit-tap'})
 
 
 # First 20 links are on the page. The rest are loaded after clicking "Show more"
 for i in range(20):
 	# Parse page from <a> tag
 	#print(links_container[i].get("href"))
-	url_child = links_container[i].get('href') 
+	url_child = links_container[i].get('href')
 	ch_client = ureq(url_child) # opens up connection, grabs web page
 	source = ch_client.read() # read the page
 	ch_client.close() # close client
 	child_page = BeautifulSoup(source, 'html.parser') # parse html
 	obj_name = links_container[i].get('data-vars-object-name')
 	more_links = child_page.findAll('a',{'data-vars-content-name':obj_name})
-	
+
 	# navigate to recipe page from more_links array
 	for j in range( len(more_links) ):
 		recipe_url = more_links[j].get('href')
@@ -95,14 +95,15 @@ for i in range(20):
 			for step in instructions.findAll('li'):
 				instructionsArray.append(step.get_text())
 			data['instructions'] = '||'.join(instructionsArray)
-			
+
 			# cooking method is one-pot cause it's in the one-pot category on Tasty
 			data['cookingMethod'] = 'one-pot'
-			
+
 			# get the prep time if exists
-			prep = recipe.findAll('div', {'class':'prep'})[0].findAll('div')[0].findAll('div')
+			prep = recipe.findAll('div', {'class':'recipe-time-container'})
 			if len(prep) > 0:
-				data['prepTime'] = prep[0].findAll('h3')[0].get_text()
+				data['prepTime'] = prep[0].findAll('p')[0].get_text()
+				print data['prepTime']
 				if data['prepTime'] not in prepTimes:
 					prepTimes.append(data['prepTime'])
 
@@ -113,31 +114,31 @@ for i in range(20):
 			video = recipe.findAll('amp-ima-video', {'id':'tasty-video-desktop'})[0]
 			data['image'] = video['data-poster']
 
-			r = requests.post('http://localhost:1337/create-recipe', data=data)
+			#r = requests.post('http://localhost:1337/create-recipe', data=data)
 
 
 url = 'https://tasty.co/topic/easy-dinner'
 uclient = ureq(url) # opens up connection, grabs web page
-page_html = uclient.read() 
+page_html = uclient.read()
 uclient.close() # close the client
 parent_page = BeautifulSoup(page_html, 'html.parser') # html parsing
 
 # Put links to recipe pages in a list
-links_container = parent_page.findAll('a',{'class':'feed-item analyt-unit-tap'}) 
+links_container = parent_page.findAll('a',{'class':'feed-item analyt-unit-tap'})
 
 
 # First 20 links are on the page. The rest are loaded after clicking "Show more"
 for i in range(20):
 	# Parse page from <a> tag
 	#print(links_container[i].get("href"))
-	url_child = links_container[i].get('href') 
+	url_child = links_container[i].get('href')
 	ch_client = ureq(url_child) # opens up connection, grabs web page
 	source = ch_client.read() # read the page
 	ch_client.close() # close client
 	child_page = BeautifulSoup(source, 'html.parser') # parse html
 	obj_name = links_container[i].get('data-vars-object-name')
 	more_links = child_page.findAll('a',{'data-vars-content-name':obj_name})
-	
+
 	# navigate to recipe page from more_links array
 	for j in range( len(more_links) ):
 		recipe_url = more_links[j].get('href')
@@ -199,15 +200,16 @@ for i in range(20):
 			for step in instructions.findAll('li'):
 				instructionsArray.append(step.get_text())
 			data['instructions'] = '||'.join(instructionsArray)
-			
+
 			# get the cooking method by searching through instructions. if contains 'oven', then cooking
 			# method is 'bake'
 			data['cookingMethod'] = 'oven' if 'oven' in data['instructions'] else ''
-			
+
 			# get the prep time if exists
-			prep = recipe.findAll('div', {'class':'prep'})[0].findAll('div')[0].findAll('div')
+			prep = recipe.findAll('div', {'class':'recipe-time-container'})
 			if len(prep) > 0:
-				data['prepTime'] = prep[0].findAll('h3')[0].get_text()
+				data['prepTime'] = prep[0].findAll('p')[0].get_text()
+				print data['prepTime']
 				if data['prepTime'] not in prepTimes:
 					prepTimes.append(data['prepTime'])
 
@@ -218,4 +220,6 @@ for i in range(20):
 			video = recipe.findAll('amp-ima-video', {'id':'tasty-video-desktop'})[0]
 			data['image'] = video['data-poster']
 
-			r = requests.post('http://localhost:1337/create-recipe', data=data)
+			#r = requests.post('http://localhost:1337/create-recipe', data=data)
+
+print prepTimes

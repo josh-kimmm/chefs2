@@ -1,0 +1,5 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"createdAt":1543723153254,"updatedAt":1543723153254,"id":1,"recipeId":1050,"savedBy":2,"_id":1}
+{"createdAt":1543723157097,"updatedAt":1543723157097,"id":2,"recipeId":1051,"savedBy":2,"_id":2}
+{"recipeId":1050,"savedBy":3,"createdAt":1543782673848,"updatedAt":1543782673848,"id":3,"_id":3}
+{"recipeId":1056,"savedBy":3,"createdAt":1543786617879,"updatedAt":1543786617879,"id":4,"_id":4}

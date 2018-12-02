@@ -65,6 +65,11 @@ module.exports = {
       collection: 'Review',
       via: 'userProfile',
     },
+
+    communityRecipes: {
+      collection: 'CommunityRecipe',
+      via: 'userProfile',
+    },
   },
 
 };

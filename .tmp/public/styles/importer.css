@@ -1095,6 +1095,43 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+.community-page {
+  margin: 3rem 20rem 3rem 20rem;
+}
+.community-page .col-13 h1 {
+  padding-left: 0;
+}
+.community-page .col-13 h6 {
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+}
+.community-page .saved-recipe {
+  margin-bottom: 4rem;
+}
+.community-page .saved-recipe .col-8 {
+  color: black;
+}
+.community-page .saved-recipe .col-8:hover {
+  color: #CD5E4E;
+}
+.community-page .saved-recipe h5 {
+  margin-bottom: 1rem;
+}
+.community-page .saved-recipe img {
+  margin-top: 0;
+  height: 100%;
+  width: auto;
+  margin-left: 0;
+}
+.community-page .saved-recipe .row {
+  height: 14rem;
+}
+.community-page .saved-recipe p {
+  font-size: 1.2rem;
+}
+.community-page .saved-recipe h3 {
+  margin-bottom: 2rem;
+}
 #signup {
   padding-top: 75px;
   padding-bottom: 75px;

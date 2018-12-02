@@ -9,6 +9,11 @@ module.exports= {
         let user = await User.findOne({
             id: userId,
         }).populateAll();
+
+        if (typeof user == 'undefined' || !user) {
+            return res.notFound();
+        }
+
         let userProfileId = user.userProfile[0].id;
         user.userProfile = await UserProfile.findOne({
             id: userProfileId,
@@ -88,6 +93,14 @@ module.exports= {
         await UserProfile.addToCollection(currentUser.userProfile[0].id, 'followingList').members([userToFollow.id]);
         await UserProfile.addToCollection(userToFollow.userProfile[0].id, 'followerList').members([currentUser.id]);
 
+        let communityRecipes = await CommunityRecipe.find({
+            select: 'id',
+            where: {
+                savedBy: userToFollow.id,
+            },
+        });
+        await CommunityRecipe.addToCollection(communityRecipes.map((obj) => obj.id), 'userProfile').members([currentUser.id]);
+
         return res.redirect('/user/' + userToFollow.id);
     },
 
@@ -116,9 +129,34 @@ module.exports= {
 
         await UserProfile.removeFromCollection(currentUser.userProfile[0].id, 'followingList').members([userToFollow.id]);
         await UserProfile.removeFromCollection(userToFollow.userProfile[0].id, 'followerList').members([currentUser.id]);
+        let communityRecipes = await CommunityRecipe.find({
+            select: 'id',
+            where: {
+                savedBy: userToFollow.id,
+            },
+        });
+        await CommunityRecipe.removeFromCollection(communityRecipes.map((obj) => obj.id), 'userProfile').members([currentUser.id]);
 
         return res.redirect('/user/' + userToFollow.id);
     },
 
+    showCommunityPage: async function(req, res) {
+        if (!req.session.userId) {
+            return res.notFound();
+        }
 
+        let user = await User.findOne(req.session.userId).populateAll();
+
+        console.log((await UserProfile.findOne(user.userProfile[0].id).populateAll()).followingList)
+        console.log(await CommunityRecipe.find().where({
+            savedBy: ((await UserProfile.findOne(user.userProfile[0].id).populateAll()).followingList).map((obj) => obj.id),
+        }).populateAll())
+
+        return res.view('pages/community', {
+            pageName: 'community',
+            recipes: await CommunityRecipe.find().where({
+                savedBy: ((await UserProfile.findOne(user.userProfile[0].id).populateAll()).followingList).map((obj) => obj.id),
+            }).populateAll(),
+        });
+    }
 };
