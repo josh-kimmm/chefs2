@@ -9,7 +9,7 @@
             <% } %>
             <div>
                 <% if (req.session.userId) { %>
-                    <a href="#"><p>COMMUNITY</p></a>
+                    <a href="/community"><p>COMMUNITY</p></a>
                     <a href="/user/<%= req.session.userId %>"><p style="color: #A2AD7E;">MY PROFILE</p></a>
                 <% } else { %>
                     <a href="/login"><p>LOG IN</p></a>

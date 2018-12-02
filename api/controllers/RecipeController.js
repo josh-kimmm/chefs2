@@ -110,6 +110,17 @@ module.exports= {
         }
 
         await UserProfile.addToCollection(currentUser.userProfile[0].id, 'cookbook').members([recipe.id]);
+
+        let followers = await UserProfile.findOne({
+            id: currentUser.userProfile[0].id
+        });
+
+        await CommunityRecipe.create({
+            userProfile: followers.followerList,
+            recipeId: recipe.id,
+            savedBy: currentUser.id,
+        });
+
         recipe.pageName = 'viewRecipe';
 
         return res.redirect('/recipe/' + recipe.id);
@@ -137,6 +148,11 @@ module.exports= {
         if (!recipe) {
             return res.notFound();
         }
+
+        await CommunityRecipe.destroy({
+            recipeId: recipe.id,
+            savedBy: currentUser.id,
+        });
 
         await UserProfile.removeFromCollection(currentUser.userProfile[0].id, 'cookbook').members([recipe.id]);
         recipe.pageName = 'viewRecipe';

@@ -1,0 +1,18 @@
+<div class="community-page">
+    <% for (let i = 0; i < recipes.length; i++) { %>
+        <div>
+            <p><%= recipes[i].savedBy.fullName %> saved</p>
+            <a href="/recipe/<%= recipes[i].recipeId.id %>" class="row recipe-row">
+                <div class="col-4">
+                    <img src="<%= recipes[i].recipeId.image %>" class="img-fluid" alt="<%= recipes[i].recipeId.recipeName %>"/>
+                </div>
+                <div class="col-8">
+                    <h3><%= recipes[i].recipeId.recipeName %></h3>
+                    <p> Prep Time: <%= recipes[i].recipeId.prepTime %></p>
+                    <p>Diet Type: <%= recipes[i].recipeId.dietType %></p>
+                    <p>Cooking Method: <%= recipes[i].recipeId.cookingMethod %></p>
+                </div>
+            </a>
+        </div>
+    <% } %>
+</div>

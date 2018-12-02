@@ -62,12 +62,12 @@ for i in range(20):
 						ingredientName = ingredientName[:-2]
 					if ingredientName[-3:] == ' mL':
 						ingredientName = ingredientName[:-3]
-					print ingredientName
+					#print ingredientName
 					toPost = {
 						'ingredientName': ' '.join(ingredientName.split()),
 					}
-					r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
-					ingredientsToPost.append(json.loads(r.content)['id'])
+					#r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
+					#ingredientsToPost.append(json.loads(r.content)['id'])
 
 			data['ingredients'] = ingredientsToPost
 
@@ -82,9 +82,10 @@ for i in range(20):
 			data['cookingMethod'] = 'one-pot'
 			
 			# get the prep time if exists
-			prep = recipe.findAll('div', {'class':'prep'})[0].findAll('div')[0].findAll('div')
+			prep = recipe.findAll('div', {'class':'recipe-time-container'})
 			if len(prep) > 0:
-				data['prepTime'] = prep[0].findAll('h3')[0].get_text()
+				data['prepTime'] = prep[0].findAll('p')[0].get_text()
+				print data['prepTime']
 				if data['prepTime'] not in prepTimes:
 					prepTimes.append(data['prepTime'])
 
@@ -95,7 +96,7 @@ for i in range(20):
 			video = recipe.findAll('amp-ima-video', {'id':'tasty-video-desktop'})[0]
 			data['image'] = video['data-poster']
 
-			r = requests.post('http://localhost:1337/create-recipe', data=data)
+			#r = requests.post('http://localhost:1337/create-recipe', data=data)
 
 
 url = 'https://tasty.co/topic/easy-dinner'
@@ -149,12 +150,12 @@ for i in range(20):
 						ingredientName = ingredientName[:-2]
 					if ingredientName[-3:] == ' mL':
 						ingredientName = ingredientName[:-3]
-					print ingredientName
+					#print ingredientName
 					toPost = {
 						'ingredientName': ' '.join(ingredientName.split()),
 					}
-					r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
-					ingredientsToPost.append(json.loads(r.content)['id'])
+					#r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
+					#ingredientsToPost.append(json.loads(r.content)['id'])
 
 			data['ingredients'] = ingredientsToPost
 
@@ -170,9 +171,10 @@ for i in range(20):
 			data['cookingMethod'] = 'oven' if 'oven' in data['instructions'] else ''
 			
 			# get the prep time if exists
-			prep = recipe.findAll('div', {'class':'prep'})[0].findAll('div')[0].findAll('div')
+			prep = recipe.findAll('div', {'class':'recipe-time-container'})
 			if len(prep) > 0:
-				data['prepTime'] = prep[0].findAll('h3')[0].get_text()
+				data['prepTime'] = prep[0].findAll('p')[0].get_text()
+				print data['prepTime']
 				if data['prepTime'] not in prepTimes:
 					prepTimes.append(data['prepTime'])
 
@@ -183,4 +185,6 @@ for i in range(20):
 			video = recipe.findAll('amp-ima-video', {'id':'tasty-video-desktop'})[0]
 			data['image'] = video['data-poster']
 
-			r = requests.post('http://localhost:1337/create-recipe', data=data)
+			#r = requests.post('http://localhost:1337/create-recipe', data=data)
+
+print prepTimes
