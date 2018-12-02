@@ -27,20 +27,17 @@ module.exports = {
     },
 
     followingList: {
-      type: 'string',
+      collection: 'User',
+      via: 'userProfileFollowingList',
     },
 
     followerList: {
-      type: 'string',
+      collection: 'User',
+      via: 'userProfileFollowerList',
     },
 
-    /**
-     * foreign key: Ingredient
-     * many to many
-     */
-    dietaryRestriction: {
-      collection: 'Ingredient',
-      via: 'userProfileDietaryRestriction',
+    dietaryPreferences: {
+      type: 'string',
     },
 
     /**

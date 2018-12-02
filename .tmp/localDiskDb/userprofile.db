@@ -1,3 +1,2 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"createdAt":1543535283617,"updatedAt":1543535283617,"id":1,"followingList":"","followerList":"","emailNotification":"","cookedRecipes":"","_id":1}
-{"createdAt":1543700755948,"updatedAt":1543700755948,"id":2,"followingList":"","followerList":"","emailNotification":"","cookedRecipes":"","_id":2}
+{"createdAt":1543701664152,"updatedAt":1543702143252,"id":1,"dietaryPreferences":"","emailNotification":"","cookedRecipes":"","_id":1}
