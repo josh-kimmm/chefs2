@@ -72,4 +72,5 @@ module.exports.routes = {
 
     '/t':                     'IngredientController.findAllIngredients',
     '/p':                     'RecipeController.search',
+    '/q':                     'RecipeController.searchPriority',
 };
