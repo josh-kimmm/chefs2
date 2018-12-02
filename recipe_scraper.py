@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 import io
 import json
+from inflection import singularize
 
 # Change csrf in security.js to false to use the script. Remember to change it back to true.
 
@@ -53,21 +54,38 @@ for i in range(20):
 			for ingredient in ingredients:
 				for li in ingredient.findAll('li'):
 					whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-					ingredientName = ' '.join(''.join([i for i in li.get_text().partition(',')[0] if i in whitelist]).split())
-					ingredientMeasurements = ['cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ']
+					ingredientName = li.get_text()
+					ingredientName = ' '.join(ingredientName.split('boneless, '))
+					ingredientName = ' '.join(ingredientName.split('bone-in, '))
+					ingredientName = ' '.join(''.join([i for i in ingredientName.partition(',')[0] if i in whitelist]).split())
+					ingredientMeasurements = ['skewers ', 'sheets ', 'bags ', 'sticks ', 'leaves ', 'crowns ', 'pts ', 'handfuls ', 'spears ', 'wedges ', 'cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'stalks ', 'pieces ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ', 'wedge ', 'chopped ', 'Chopped ', 'half ears ', 'shredded ', 'stalk ', 'spear ', 'handful ', 'pt ', 'piece ', 'medium ', 'crown ', 'stick ', 'bag ', 'sheet ', 'skewer ']
 					for measurement in ingredientMeasurements:
 						if measurement in ingredientName:
-							ingredientName = ingredientName.partition(measurement)[2]
+							ingredientName = ingredientName.split(measurement, True)[1]
 					if ingredientName[-2:] == ' g' or ingredientName[-2:] == ' L':
 						ingredientName = ingredientName[:-2]
 					if ingredientName[-3:] == ' mL':
 						ingredientName = ingredientName[:-3]
+					if ingredientName[-7:] == ' cloves':
+						ingredientName = ingredientName[:-7]
+					if ingredientName[-8:] == ' florets':
+						ingredientName = ingredientName[:-8]
+					if ingredientName[-7:] == ' floret':
+						ingredientName = ingredientName[:-7]
+					if ingredientName[-3:] == ' kg':
+						ingredientName = ingredientName[:-3]
+					if ingredientName[-15:] == ' in adobo sauce':
+						ingredientName = ingredientName[:-15]
+					ingredientName = singularize(ingredientName)
+					if ingredientName[-6:] == ' leafe':
+						ingredientName = ingredientName[:-1]
 					print ingredientName
-					toPost = {
-						'ingredientName': ' '.join(ingredientName.split()),
-					}
-					r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
-					ingredientsToPost.append(json.loads(r.content)['id'])
+					if ingredientName != '' and len(ingredientName) > 2:
+						toPost = {
+							'ingredientName': ' '.join(ingredientName.split()),
+						}
+						r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
+						ingredientsToPost.append(json.loads(r.content)['id'])
 
 			data['ingredients'] = ingredientsToPost
 
@@ -140,21 +158,38 @@ for i in range(20):
 			for ingredient in ingredients:
 				for li in ingredient.findAll('li'):
 					whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-					ingredientName = ' '.join(''.join([i for i in li.get_text().partition(',')[0] if i in whitelist]).split())
-					ingredientMeasurements = ['cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ']
+					ingredientName = li.get_text()
+					ingredientName = ' '.join(ingredientName.split('boneless, '))
+					ingredientName = ' '.join(ingredientName.split('bone-in, '))
+					ingredientName = ' '.join(''.join([i for i in ingredientName.partition(',')[0] if i in whitelist]).split())
+					ingredientMeasurements = ['skewers ', 'sheets ', 'bags ', 'sticks ', 'leaves ', 'crowns ', 'pts ', 'handfuls ', 'spears ', 'wedges ', 'cups ', 'tablespoons ', 'cloves ', 'pinches ', 'lbs ', 'teaspoons ', 'heads ', 'bunches ', 'slices ', 'sprigs ', 'packages ', 'links ', 'ozs ', 'stalks ', 'pieces ', 'oz ', 'cup ', 'tablespoon ', 'clove ', 'pinch ', 'lb ', 'teaspoon ', 'head ', 'bunch ', 'slice ', 'sprig ', 'package ', 'link ', 'wedge ', 'chopped ', 'Chopped ', 'half ears ', 'shredded ', 'stalk ', 'spear ', 'handful ', 'pt ', 'piece ', 'medium ', 'crown ', 'stick ', 'bag ', 'sheet ', 'skewer ']
 					for measurement in ingredientMeasurements:
 						if measurement in ingredientName:
-							ingredientName = ingredientName.partition(measurement)[2]
+							ingredientName = ingredientName.split(measurement, True)[1]
 					if ingredientName[-2:] == ' g' or ingredientName[-2:] == ' L':
 						ingredientName = ingredientName[:-2]
 					if ingredientName[-3:] == ' mL':
 						ingredientName = ingredientName[:-3]
+					if ingredientName[-7:] == ' cloves':
+						ingredientName = ingredientName[:-7]
+					if ingredientName[-8:] == ' florets':
+						ingredientName = ingredientName[:-8]
+					if ingredientName[-7:] == ' floret':
+						ingredientName = ingredientName[:-7]
+					if ingredientName[-3:] == ' kg':
+						ingredientName = ingredientName[:-3]
+					if ingredientName[-15:] == ' in adobo sauce':
+						ingredientName = ingredientName[:-15]
+					ingredientName = singularize(ingredientName)
+					if ingredientName[-6:] == ' leafe':
+						ingredientName = ingredientName[:-1]
 					print ingredientName
-					toPost = {
-						'ingredientName': ' '.join(ingredientName.split()),
-					}
-					r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
-					ingredientsToPost.append(json.loads(r.content)['id'])
+					if ingredientName != '' and len(ingredientName) > 2:
+						toPost = {
+							'ingredientName': ' '.join(ingredientName.split()),
+						}
+						r = requests.post('http://localhost:1337/create-ingredient', data=toPost)
+						ingredientsToPost.append(json.loads(r.content)['id'])
 
 			data['ingredients'] = ingredientsToPost
 
