@@ -55,10 +55,13 @@ module.exports.routes = {
   '/save-recipe/:recipeId': 'RecipeController.saveRecipe',
   '/unsave-recipe/:recipeId': 'RecipeController.unsaveRecipe',
   '/user/:userId': 'UserController.viewUserProfile',
+  '/allingredients':             'IngredientController.findAllIngredients',
+  '/search':                     'RecipeController.search',
   'GET /account/dietary-preferences': 'UserController.showEditDietaryPreferencesPage',
   'POST /account/dietary-preferences': 'UserController.processEditDietaryPreferencesPage',
   '/follow-user/:userId': 'UserController.followUser',
   '/unfollow-user/:userId': 'UserController.unfollowUser',
+
 
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗

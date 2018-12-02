@@ -1,67 +1,121 @@
+
 class Filter extends React.Component {
 
     constructor(props){
         super(props);
 
         this.state = {
-            ingredientNameInput: null
-        }
+            ingredientNameInput: null,
+            autoCompleteList: [],
+            selectedIngredientIndex: 0
+        };
 
         this.handleIngredientInput = this.handleIngredientInput.bind(this);
-    }
-
-    componentDidMount() {
-
+        this.handleIngredientSelection = this.handleIngredientSelection.bind(this);
     }
 
     handleIngredientInput(e) {
 
-        console.log(e);
-        this.props.ingredientNameInput = e.target.value;
+        var inputVal = e.target.value === "" ? null : e.target.value;
+        var ingredientList = this.props.ingredientList;
+        var index = -1;
+        var newIndex = 0;
+        var autocompletelist = this.state.autoCompleteList;
 
+
+        if(inputVal !== this.state.ingredientNameInput){
+            autocompletelist = _.chain(ingredientList).filter(function(ingredient) {
+                return ingredient.ingredientName.includes(inputVal);
+            }).sortBy('ingredientName').slice(0,8).map(function(ingredient){
+                ingredient.selectorIndex = ++index;
+                return ingredient;
+            }).value();
+        }
+
+        if(_(autocompletelist).isEqual(this.state.autoCompleteList))
+            newIndex = this.state.selectedIngredientIndex;            
+
+
+        this.setState({
+            ingredientNameInput: inputVal,
+            autoCompleteList: autocompletelist,
+            selectedIngredientIndex: newIndex
+        });
+    } 
+
+    handleIngredientSelection(e) {
+        var newIndex = this.state.selectedIngredientIndex;
+        var autocompletelist = this.state.autoCompleteList;
+        var ingredientNameInput = this.state.ingredientNameInput;
+        var autoCompleteList = this.state.autoCompleteList;
+
+        if((autocompletelist.length === 0) || (e.key !== "ArrowUp" && e.key !== "ArrowDown" && e.key !== "Enter")) return;
+        
+        if(e.key === "ArrowDown")
+            newIndex = newIndex + 1 === autocompletelist.length ? 0 : newIndex + 1;
+        else if(e.key === "ArrowUp")
+            newIndex = newIndex - 1 === -1 ? autocompletelist.length - 1 : newIndex - 1;
+        else if(e.key === "Enter"){
+            var newIngredient = _(autocompletelist).find(function(ingredient){
+                return ingredient.selectorIndex === newIndex;
+            });
+            this.props.addIngredientHandler(newIngredient);
+            ingredientNameInput = "";
+            autoCompleteList = [];
+            newIndex = 0;
+        }
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        this.setState({
+            selectedIngredientIndex: newIndex,
+            ingredientNameInput: ingredientNameInput,
+            autoCompleteList: autoCompleteList
+        });
     }
 
     render() {
-
-        var testIngredients = ["apple", "applet", "app"];
         var ingredientNameInput = this.state.ingredientNameInput;
-
+        var autoCompleteDropdown = this.state.autoCompleteList;
         
 
         return (
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div className="dropdown">
+                <button className="btn btn-secondary dropdown-toggle" type="button" id="filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Filters
                 </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="filter">
-                    <form class="px-4 py-3 row">
-                        <div class="form-group col-sm-6">
-                            <label class="filter-label" for="ingredientsInput">Add Ingredients</label>
-                            <input type="ingredient" class="form-control" value={ingredientNameInput} onChange={this.handleIngredientInput} id="ingredientsInput" placeholder="Type to search and add ingredients" />
+                <div className="dropdown-menu dropdown-menu-right" aria-labelledby="filter">
+                    <form className="px-4 py-3 row">
+                        <div className="form-group col-sm-6">
+                            <label className="filter-label" for="ingredientsInput">Add Ingredients</label>
+                            
+                            <input type="ingredient" className="form-control" value={ingredientNameInput} onChange={this.handleIngredientInput} onKeyDown={this.handleIngredientSelection} id="ingredientsInput" placeholder="Type to search and add ingredients" />
+                            <AutoCompleteList list={autoCompleteDropdown} selector={this.state.selectedIngredientIndex} />
 
-                            <label class="filter-label" for="cookingMethods">Add Cooking Methods</label>
-                            <button class="btn btn-secondary dropdown-item dropdown-toggle" type="button" id="cooking-method" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <label className="filter-label" for="cookingMethods">Add Cooking Methods</label>
+                            <button className="btn btn-secondary dropdown-item dropdown-toggle" type="button" id="cooking-method" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Choose Cooking Method
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="diet">
+                            <ul className="dropdown-menu" aria-labelledby="diet">
                                 <li><input type="checkbox"/>Oven Bake</li>
                             </ul>
                         </div>
-                        <div class="col-sm-6">
+                        <div className="col-sm-6">
 
-                            <label class="filter-label" for="diet">Add Dietary Restrictions</label>
-                            <button class="btn btn-secondary dropdown-item dropdown-toggle" type="button" id="diet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <label className="filter-label" for="diet">Add Dietary Restrictions</label>
+                            <button className="btn btn-secondary dropdown-item dropdown-toggle" type="button" id="diet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Choose Dietary Restriction
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="diet">
+                            <ul className="dropdown-menu" aria-labelledby="diet">
                                 <li><input type="checkbox"/>Vegetarian</li>
                                 <li><input type="checkbox"/>Vegan</li>
                             </ul>
 
 
-                            <label class="filter-label">Add Time Limit</label>
+                            <label className="filter-label">Add Time Limit</label>
                             <div>
-                                <select name="hrs" class="custom-select" id="hours">
+                                <select name="hrs" className="custom-select" id="hours">
                                     <option selected>0 hr 0 min</option>
                                     <option>0 hr 10 min</option>
                                     <option>0 hr 30 min</option>
@@ -79,6 +133,36 @@ class Filter extends React.Component {
         );
     }
 
+}
+
+function AutoCompleteList(props) {
+    var list = props.list;
+    var selectedIndex = props.selector;
+
+
+    if(!list.length) return null;
+
+    // alphabetize the autocompletelist and show only first 7 results
+    list = _(list).map(function(ingredient) {
+        var showSelection = false;
+        if(selectedIndex === ingredient.selectorIndex)
+            showSelection = true;
+
+        return <ListItem key={ingredient.id} ingredientName={ingredient.ingredientName} showselection={showSelection} />
+    }).value();
+
+    return(
+        <div className="result-container">
+            {list}
+        </div>
+    );
+}
+
+function ListItem(props) {
+    if(props.showselection)
+        return <p className="result selected">{props.ingredientName}</p>
+
+    return <p className="result">{props.ingredientName}</p>;
 }
 
 export default Filter;

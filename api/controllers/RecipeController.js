@@ -1,5 +1,34 @@
 
 module.exports= {
+    search: async function(req, res) {
+        // ingredient id & key words should be extracted from req
+        //var ingredientId = [1,3,4,5,6];
+        //var keyWords = ['fish', 'apple','beef'];
+        var ingredientId = req.param('ingredients');
+        // .split(/[^a-zA-Z0-9]/).filter(Boolean).map(x => Number(x));
+        var keyWords = req.param('keyWords').split(/[^a-zA-Z0-9]/).filter(Boolean);
+
+        var keyWordConditions = [];
+        for (var i = 0; i < keyWords.length; i++) {
+            keyWordConditions.push({recipeName: {contains: keyWords[i]}});
+            keyWordConditions.push({instructions: {contains: keyWords[i]}});
+        }
+        var recipes = await Recipe.find({
+            or: keyWordConditions,
+        }).populateAll();
+        var ingredientIdSet = new Set(ingredientId);
+        var selectedRecipes = [];
+        for (var i = 0; i < recipes.length; i++) {
+            for (var j = 0; j < recipes[i].ingredients.length; j++) {
+                if (ingredientIdSet.has(recipes[i].ingredients[j].id)) {
+                    selectedRecipes.push(recipes[i]);
+                    break;
+                }
+            }
+        }
+        return res.json(selectedRecipes);
+    },
+
     createIngredient: async function(req, res) {
         let ingredientName = req.param('ingredientName');
         let existingIngredient = await Ingredient.findOne({
