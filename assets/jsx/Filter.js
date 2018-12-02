@@ -78,7 +78,6 @@ class Filter extends React.Component {
     render() {
         var ingredientNameInput = this.state.ingredientNameInput;
         var autoCompleteDropdown = this.state.autoCompleteList;
-        
 
         return (
             <div className="dropdown">
