@@ -42,5 +42,13 @@ module.exports = {
     },
   },
 
+  /**
+     * Get all ingredients
+     * @returns {Promise<*>} full info for all ingredients
+     */
+    findAll: async function () {
+        return await Ingredient.find();
+    },
+
 };
 
