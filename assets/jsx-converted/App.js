@@ -8,6 +8,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+import Home from './Home.js';
+// import SignUp from './Signup.js';
+// import Login from './Login.js';
+
+var Route = ReactRouterDOM.Route;
+var Router = ReactRouterDOM.BrowserRouter;
+
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -18,116 +25,15 @@ var App = function (_React$Component) {
   }
 
   _createClass(App, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return React.createElement(
-        "div",
-        { id: "wrap" },
+        'div',
+        null,
         React.createElement(
-          "nav",
-          { "class": "navbar navbar-default navbar-fixed-top" },
-          React.createElement(
-            "div",
-            { "class": "container-fluid" },
-            React.createElement(
-              "div",
-              { "class": "navbar-header" },
-              React.createElement(
-                "button",
-                { type: "button", "class": "navbar-toggle collapsed", "data-toggle": "collapse", "data-target": "#navbar", "aria-expanded": "false", "aria-controls": "navbar" },
-                React.createElement(
-                  "span",
-                  { "class": "sr-only" },
-                  "Toggle navigation"
-                ),
-                React.createElement("span", { "class": "icon-bar" }),
-                React.createElement("span", { "class": "icon-bar" }),
-                React.createElement("span", { "class": "icon-bar" })
-              ),
-              React.createElement(
-                "a",
-                { "class": "navbar-brand", href: "#" },
-                React.createElement("img", { src: logo })
-              )
-            ),
-            React.createElement(
-              "div",
-              { id: "navbar", "class": "navbar-collapse collapse" },
-              React.createElement(
-                "ul",
-                { "class": "nav navbar-nav navbar-right" },
-                React.createElement(
-                  "li",
-                  null,
-                  React.createElement(
-                    "a",
-                    { href: "login.html" },
-                    "LOG IN"
-                  )
-                ),
-                React.createElement(
-                  "li",
-                  null,
-                  React.createElement(
-                    "a",
-                    { href: "#" },
-                    React.createElement(
-                      "div",
-                      { id: "signup" },
-                      "SIGN UP"
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        React.createElement(
-          "div",
-          { id: "maincontent" },
-          React.createElement(
-            "div",
-            { "class": "center" },
-            React.createElement(
-              "div",
-              { "class": "input-group" },
-              React.createElement("input", { type: "text", "class": "form-control", placeholder: "Search Recipes" }),
-              React.createElement(
-                "div",
-                { "class": "input-group-btn" },
-                React.createElement(
-                  "button",
-                  { "class": "btn", type: "button" },
-                  React.createElement("i", { "class": "glyphicon glyphicon-search" })
-                )
-              )
-            ),
-            React.createElement(
-              "form",
-              { action: "http://localhost:1337/signup", method: "post" },
-              React.createElement("input", { name: "email", placeholder: "email" }),
-              React.createElement("input", { name: "password", type: "password", placeholder: "password" }),
-              React.createElement("input", { name: "confirmPassword", type: "password", placeholder: "confirmPassword" }),
-              React.createElement("input", { name: "firstName", placeholder: "firstName" }),
-              React.createElement("input", { name: "lastName", placeholder: "lastName" }),
-              React.createElement(
-                "button",
-                { "class": "btn" },
-                "Registerrr"
-              )
-            ),
-            React.createElement(
-              "form",
-              { action: "http://localhost:1337/login", method: "post" },
-              React.createElement("input", { name: "email", placeholder: "email" }),
-              React.createElement("input", { name: "password", type: "password", placeholder: "password" }),
-              React.createElement(
-                "button",
-                null,
-                "Login"
-              )
-            )
-          )
+          Router,
+          null,
+          React.createElement(Route, { exact: true, path: '/', component: Home })
         )
       );
     }
@@ -136,4 +42,8 @@ var App = function (_React$Component) {
   return App;
 }(React.Component);
 
+var domContainer = document.querySelector('#react');
+ReactDOM.render(React.createElement(App, null), domContainer);
+
 export default App;
+//# sourceMappingURL=App.js.map

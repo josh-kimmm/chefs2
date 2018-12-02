@@ -1,2 +1,7 @@
 node_modules
-node_modules
+assets/jsx-converted/*
+*.pem
+*.ppk
+*.map
+.tmp/public
+.tmp/bootstrap-version.json

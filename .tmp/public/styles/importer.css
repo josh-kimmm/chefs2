@@ -325,15 +325,18 @@ body {
   }
 }
 body {
-  background-image: url("/images/background2.png");
   background-repeat: no-repeat;
   background-size: 110%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: #e2dbd4;
+}
+body.homepage {
+  background-image: url("/images/background.jpg");
 }
 img {
   width: auto;
@@ -349,6 +352,10 @@ header {
   background-color: white;
   padding: 20px 0;
 }
+header .nav-logo {
+  height: 20px;
+  margin: 0;
+}
 header .row,
 footer .row {
   background-color: white;
@@ -363,7 +370,11 @@ header h1 {
 header nav {
   background-color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+header nav div {
+  display: inline-flex;
+  align-items: center;
 }
 header p {
   color: black;
@@ -376,13 +387,6 @@ header p {
 .jumbotron h2 {
   font-size: 100px;
 }
-/*input {
-padding: 10px;
-padding-left: 20px;
-margin-top: 30px;
-width: 600px;
-border: none;
-}*/
 .form-control,
 body {
   border: 0px;
@@ -396,9 +400,13 @@ body {
   height: 50px;
   padding: 0px;
   border: 0px;
+  border-radius: 0 3px 3px 0;
   color: white;
 }
-.form-control::-webkit-input-placeholder {
+#searchit:hover {
+  background-color: #CE422D;
+}
+.search::-webkit-input-placeholder {
   font-weight: bold;
 }
 .input-group {
@@ -421,26 +429,44 @@ body {
   padding: 30px;
   padding-right: 30px;
 }
+#filter:focus,
+#searchit:focus,
+input[type="text"]:focus {
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0) inset, 0 0 8px rgba(0, 0, 0, 0);
+  outline: 0 none;
+}
 #filter {
   background-color: #CD5E4E;
+  border: none;
   font-weight: bold;
   width: 120px;
   height: 40px;
+  border: 0px;
+}
+#filter:hover {
+  background-color: #CE422D;
 }
 #diet {
   background-color: white;
-  color: black;
-  width: 220px;
+  width: 210px;
   height: 35px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+#cooking-method {
+  background-color: white;
+  width: 200px;
+  height: 35px;
+  padding: 0px;
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 20px;
 }
 #hours {
-  width: 50px;
-}
-#minutes {
-  width: 70px;
+  width: 130px;
 }
 .dropdown {
   float: right;
@@ -452,6 +478,15 @@ body {
   border-width: 3px;
   border-color: #CD5E4E;
 }
+.dropdown-item {
+  color: #808080;
+}
+.dietary-dropdown {
+  list-style-type: none;
+}
+.filter-label {
+  font-weight: bold;
+}
 a:link {
   text-decoration: none;
 }
@@ -460,6 +495,116 @@ a:hover {
 }
 a:active {
   text-decoration: none;
+}
+.recipe-details .back-btn {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background-color: #A2AD7E;
+  border: 0;
+}
+.recipe-details .back-btn:hover {
+  background-color: #8b9c53;
+}
+.recipe-details .recipe-row {
+  margin: 0rem 8rem 4rem 8rem;
+}
+.recipe-details .recipe-row .recipe-media {
+  margin: 0;
+}
+.recipe-details .recipe-row .recipe-details-column .user-ratings {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.recipe-details .recipe-row .recipe-details-column .description {
+  margin-top: 3rem;
+}
+.recipe-details .recipe-row .recipe-details-column .description .recipe-description {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+}
+.recipe-details .recipe-row .recipe-details-column .general-info {
+  font-weight: bold;
+}
+.recipe-details .recipe-row .details-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.recipe-details .recipe-row .btn-primary {
+  background-color: #A2AD7E;
+  border: 0;
+}
+.recipe-details .recipe-row .btn-primary:hover {
+  background-color: #8b9c53;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions {
+  display: flex;
+  margin-top: 3rem;
+  padding-left: 15px;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .ingredients {
+  width: auto;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .ingredients .ingredients-list {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .instructions {
+  width: 70%;
+  margin-left: 1rem;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .instructions .instructions-list {
+  font-weight: bold;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .instructions .instructions-list .instructions-text {
+  font-weight: normal;
+}
+.recipe-details .recipe-row .recipe-ingredients-instructions .instructions .instructions-list {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.recipe-details .recipe-row .reviews {
+  margin-top: 2rem;
+}
+.recipe-details .recipe-row .reviews .review-title {
+  margin-right: 5rem;
+}
+.user-details {
+  padding: 100px;
+}
+.user-details .recipe-row img {
+  margin: 0;
+}
+.user-details p {
+  margin-top: 1rem;
+}
+.user-details .number {
+  font-weight: bold;
+  padding: 15px;
+}
+.user-details .label {
+  padding-right: 1.5rem;
+}
+.user-details .profile {
+  background: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.user-details .settings {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.user-details .fa {
+  position: relative;
+  top: 6px;
+  margin: 0 0 0 2rem;
+}
+.user-details h2 {
+  margin-top: 2rem;
 }
 #homepage a:not(.btn) {
   color: #14acc2;
@@ -954,11 +1099,31 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+#signup .container {
+  background: white;
+  padding: 4rem 1rem;
+}
 #signup .signup-form {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+#signup .signup-form .form-control {
+  border: 1px solid #AEB0AE;
+}
+#signup .signup-form .ajax-button {
+  background: #A2AD7E;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem;
+}
+#signup .signup-form a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#signup .signup-form a:hover {
+  text-decoration: underline;
 }
 #signup .success-message {
   width: 100%;
@@ -971,16 +1136,39 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-#confirmed-email .confirmation-message {
+#confirmed-email .container {
+  background: white;
+  padding: 2rem;
+}
+#confirmed-email .container .confirmation-message {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+#confirmed-email .container .btn-outline-info {
+  border: 1px solid black;
+  color: black;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+}
+#confirmed-email .container .btn-outline-info:hover {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 0.75rem 1rem;
+}
 #login {
   padding-top: 75px;
   padding-bottom: 75px;
+}
+#login .container {
+  background: white;
+  padding: 4rem 1rem;
+}
+#login .container h1 {
+  margin: 1rem 0;
 }
 #login .login-form-container {
   width: 100%;
@@ -988,32 +1176,106 @@ a:active {
   margin-left: auto;
   margin-right: auto;
 }
+#login .login-form-container .form-control {
+  border: 1px solid #AEB0AE;
+}
+#login .login-form-container button {
+  background: #A2AD7E;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem;
+}
+#login .login-form-container p a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#login .login-form-container p a:hover {
+  text-decoration: underline;
+}
 #forgot-password {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-#forgot-password .forgot-form {
+#forgot-password .container {
+  background: white;
+  padding: 4rem 2rem;
+}
+#forgot-password .container h1 {
+  margin: 1rem 0;
+}
+#forgot-password .container .forgot-form {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
-#forgot-password .success-message {
+#forgot-password .container .forgot-form .form-control {
+  border: 1px solid #AEB0AE;
+}
+#forgot-password .container .forgot-form .ajax-button {
+  background: #A2AD7E;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem;
+}
+#forgot-password .container .forgot-form p a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#forgot-password .container .forgot-form p a:hover {
+  text-decoration: underline;
+}
+#forgot-password .container .success-message {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+#forgot-password .container .success-message a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#forgot-password .container .success-message a:hover {
+  text-decoration: underline;
+}
+#forgot-password .container .success-message .btn.btn-outline-primary {
+  border: 1px solid #A2AD7E !important;
+}
+#forgot-password .container .success-message a .btn.btn-outline-primary:hover {
+  background: #A2AD7E;
+  color: white;
+  text-decoration: none;
+}
 #new-password {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-#new-password .new-password-form {
+#new-password .container {
+  background: white;
+  padding: 4rem 2rem;
+}
+#new-password .container .new-password-form {
   width: 100%;
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+#new-password .container .new-password-form .form-control {
+  border: 1px solid #AEB0AE;
+}
+#new-password .container .new-password-form .ajax-button {
+  background: #A2AD7E;
+  border: none;
+  border-radius: 3px;
+  padding: 1rem;
+}
+#new-password .container .new-password-form p a {
+  color: #A2AD7E;
+  font-weight: bold;
+}
+#new-password .container .new-password-form p a:hover {
+  text-decoration: underline;
 }
 #account-overview {
   padding-top: 75px;
@@ -1034,9 +1296,130 @@ a:active {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+#edit-password .container {
+  background: white;
+  padding: 2rem;
+}
+#edit-password .container .sidebar {
+  border-right: 1px solid black;
+}
+#edit-password .container .sidebar a h5 {
+  color: black;
+  margin: 2rem;
+}
+#edit-password .container .sidebar .active {
+  color: #A2AD7E;
+}
+#edit-password .container .ajax-form {
+  margin: 2rem;
+}
+#edit-password .container .ajax-form .form-control {
+  border: solid 1px #AEB0AE;
+  border-radius: 5px;
+}
+#edit-password .container .ajax-form .btn-dark {
+  background: #A2AD7E;
+  color: white;
+  border: 1px solid #A2AD7E;
+  padding: 0.75rem 1rem;
+  margin-left: 0.5rem;
+}
+#edit-password .container .ajax-form .btn-outline-info {
+  border: 1px solid black;
+  color: black;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+}
+#edit-password .container .ajax-form .btn-outline-info:hover {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 0.75rem 1rem;
+}
+#edit-password .container .ajax-form label {
+  font-weight: bold;
+}
 #edit-profile {
   padding-top: 75px;
   padding-bottom: 75px;
+}
+#edit-profile .container {
+  background: white;
+  padding: 2rem;
+}
+#edit-profile .container .sidebar {
+  border-right: 1px solid black;
+}
+#edit-profile .container .sidebar a h5 {
+  color: black;
+  margin: 2rem;
+}
+#edit-profile .container .sidebar .active {
+  color: #A2AD7E;
+}
+#edit-profile .container .ajax-form {
+  margin: 2rem;
+}
+#edit-profile .container .ajax-form .form-control {
+  border: solid 1px #AEB0AE;
+  border-radius: 5px;
+}
+#edit-profile .container .ajax-form .btn-dark {
+  background: #A2AD7E;
+  color: white;
+  border: 1px solid #A2AD7E;
+  padding: 0.75rem 1rem;
+  margin-left: 0.5rem;
+}
+#edit-profile .container .ajax-form .btn-outline-info {
+  border: 1px solid black;
+  color: black;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+}
+#edit-profile .container .ajax-form .btn-outline-info:hover {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 0.75rem 1rem;
+}
+#edit-profile .container .ajax-form label {
+  font-weight: bold;
+}
+#edit-dietary-restrictions {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+#edit-dietary-restrictions .container {
+  background: white;
+  padding: 2rem;
+}
+#edit-dietary-restrictions .container .sidebar {
+  border-right: 1px solid black;
+}
+#edit-dietary-restrictions .container .sidebar a h5 {
+  color: black;
+  margin: 2rem;
+}
+#edit-dietary-restrictions .container .sidebar .active {
+  color: #A2AD7E;
+}
+#edit-dietary-restrictions .container .dietary-preferences {
+  padding: 2rem;
+}
+#edit-dietary-restrictions .container .dietary-preferences h5 {
+  color: black;
+  margin: 0 0 2rem 0;
+}
+#edit-dietary-restrictions .container .dietary-preferences label {
+  margin-left: 1rem;
+}
+#edit-dietary-restrictions .container .dietary-preferences .btn {
+  background: #A2AD7E;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0 0 0;
 }
 #terms {
   padding-top: 75px;

@@ -162,7 +162,20 @@ email status until they click the link in the confirmation email.`
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    // n/a
+    userProfile: {
+      collection: 'UserProfile',
+      via: 'user',
+    },
+    
+    userProfileFollowingList: {
+      collection: 'UserProfile',
+      via: 'followingList',
+    },
+    
+    userProfileFollowerList: {
+      collection: 'UserProfile',
+      via: 'followerList',
+    }
 
   },
 
