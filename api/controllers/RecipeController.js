@@ -1,10 +1,12 @@
 
 module.exports= {
 
-    search: async function(res, req) {
+    search: async function(req, res) {
         // ingredient id & key words should be extracted from req
-        var ingredientId = [1,3,4,5,6];
-        var keyWords = ['fish', 'apple','beef'];
+        //var ingredientId = [1,3,4,5,6];
+        //var keyWords = ['fish', 'apple','beef'];
+        var ingredientId = req.param('ingredients').split(/[^a-zA-Z0-9]/).filter(Boolean).map(x => Number(x));
+        var keyWords = req.param('keyWords').split(/[^a-zA-Z0-9]/).filter(Boolean);
 
         var keyWordConditions = [];
         for (var i = 0; i < keyWords.length; i++) {
@@ -24,7 +26,7 @@ module.exports= {
                 }
             }
         }
-        return req.json(selectedRecipes);
+        return res.json(selectedRecipes);
     },
 
     searchByKeyWords: async function (req, res) {

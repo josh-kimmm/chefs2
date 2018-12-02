@@ -70,6 +70,6 @@ module.exports.routes = {
   '/terms':                   '/legal/terms',
   '/logout':                  '/api/v1/account/logout',
 
-    '/t':                     'RecipeController.searchByKeyWords',
+    '/t':                     'IngredientController.findAllIngredients',
     '/p':                     'RecipeController.search',
 };
