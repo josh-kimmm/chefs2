@@ -1,7 +1,13 @@
 <div class="community-page">
+    <div class="row">
+      <div class="col-13">
+          <h1>Community Feed</h1>
+          <h6>Discover new recipes and find out what your friends are cooking!</h6>
+      </div>
+    </div>
     <% for (let i = 0; i < recipes.length; i++) { %>
-        <div>
-            <p><%= recipes[i].savedBy.fullName %> saved</p>
+        <div class="saved-recipe">
+            <h5><%= recipes[i].savedBy.fullName %> saved:</h5>
             <a href="/recipe/<%= recipes[i].recipeId.id %>" class="row recipe-row">
                 <div class="col-4">
                     <img src="<%= recipes[i].recipeId.image %>" class="img-fluid" alt="<%= recipes[i].recipeId.recipeName %>"/>
