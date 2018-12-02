@@ -5,7 +5,6 @@ module.exports= {
         //var ingredientId = [1,3,4,5,6];
         //var keyWords = ['fish', 'apple','beef'];
         var ingredientId = req.param('ingredients');
-        // .split(/[^a-zA-Z0-9]/).filter(Boolean).map(x => Number(x));
         var keyWords = req.param('keyWords').split(/[^a-zA-Z0-9]/).filter(Boolean);
 
         var keyWordConditions = [];

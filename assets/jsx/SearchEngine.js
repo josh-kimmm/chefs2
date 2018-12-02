@@ -84,6 +84,7 @@ class SearchEngine extends React.Component {
         .then(function (res) {
             window.blah = res;
             console.log(res);
+            this.props.changeSearchResults(true);
         }.bind(this));
     }
 
@@ -93,16 +94,25 @@ class SearchEngine extends React.Component {
         var addNewIngredientFilter = this.state.addNewIngredientFilter;
         var recipeNameInput = this.state.recipeNameInput;
         var ingredientSearchList = this.state.ingredientSearchList;
-        var searchBar = this.state.searchResults ? 
-        (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
-                   startSearchQuery={this.startSearchQuery} style="blah" />) :
-        (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
-                   startSearchQuery={this.startSearchQuery} />);
-
+        
+        var searchBar = this.props.showSearchResults ? 
+            (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
+                       startSearchQuery={this.startSearchQuery} positionStyle="blah" />) :
+            (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
+                       startSearchQuery={this.startSearchQuery} />);
+        
+        var filterButton = this.props.showSearchResults ?
+            (<Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList} positionStyle="blah"/>) :
+            (<Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList}/>);
+        
+        var logo = this.props.showSearchResults ? null :
+            (<img src="/images/chefs-logo-red.png" alt="" class="center" />);        
+        
         return (
             <div>
+                {logo}
                 {searchBar}
-                <Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList}/>
+                {filterButton}              
             </div>
 
         );
