@@ -185,12 +185,14 @@ function IngredientBubbleChain(props){
             {list}
         </div>
     );
-
-
 }
 
 function IngredientBubble(props){
-    return <div class="bubble">{props.ingredientName}<button class="bubble-delete"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+    return (
+        <div class="bubble">
+            {props.ingredientName}<button class="bubble-delete"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+    );
 }
 
 
