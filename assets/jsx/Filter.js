@@ -79,11 +79,13 @@ class Filter extends React.Component {
         var ingredientNameInput = this.state.ingredientNameInput;
         var autoCompleteDropdown = this.state.autoCompleteList;
         var ingredientBubbleList = this.props.searchedIngredients;
+
+        var positionStyle = this.props.positionStyle ? this.props.positionStyle : "filter";
         
 
         return (
             <div className="dropdown">
-                <button className="btn btn-secondary dropdown-toggle" type="button" id="filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button className="btn btn-secondary dropdown-toggle" type="button" id={positionStyle} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Filters
                 </button>
                 <div className="dropdown-menu dropdown-menu-right" aria-labelledby="filter">

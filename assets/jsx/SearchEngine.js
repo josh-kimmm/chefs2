@@ -104,7 +104,7 @@ class SearchEngine extends React.Component {
                        startSearchQuery={this.startSearchQuery} />);
         
         var filterButton = this.props.showSearchResults ?
-            (<Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList} positionStyle="blah"/>) :
+            (<Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList} positionStyle="filter-in-result"/>) :
             (<Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList}/>);
         
         var logo = this.props.showSearchResults ? null :
@@ -122,7 +122,9 @@ class SearchEngine extends React.Component {
 }
 
 function SearchBar(props) {
+    
     return(
+
         <div class="input-group">
             <input type="text" class="form-control" id="searchinput" placeholder="Search Recipes" 
                    value={props.recipeNameInput} onChange={props.updateSearchInput} onKeyDown={props.handleSearchInput}></input>

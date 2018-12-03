@@ -337,6 +337,8 @@ body {
 }
 body.homepage {
   background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 img {
   width: auto;
@@ -1428,6 +1430,36 @@ label.filter-label {
 .bubble .bubble-delete .fa-times {
   color: white;
 }
+.recipe-img {
+  width: 100%;
+  margin: 0;
+}
+#show-results-label {
+  margin-top: 6rem;
+  margin: 6rem 10rem 1rem 10rem;
+}
+#search-results {
+  margin: 1rem 10rem 3rem 10rem;
+}
+#filter-in-result {
+  position: relative;
+  top: -90px;
+  right: -150px;
+  height: 50px;
+  background: #CE422D;
+  border: none;
+  font-weight: bold;
+  width: 120px;
+}
+/*
+.search-in-result{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    position: relative;
+    left: -130px;
+}*/
 #edit-dietary-restrictions {
   padding-top: 75px;
   padding-bottom: 75px;
