@@ -1461,7 +1461,7 @@ label.filter-label {
 }
 #filter-in-result {
   position: relative;
-  top: -90px;
+  top: -4.1rem;
   right: -150px;
   height: 50px;
   background: #CE422D;
