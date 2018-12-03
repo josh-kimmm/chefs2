@@ -19,7 +19,9 @@ var Home = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
 		_this.state = {
-			showSearchResults: false
+			showSearchResults: false,
+			searchResultList: [],
+			searchInput: ""
 		};
 
 		_this.changeSearchResults = _this.changeSearchResults.bind(_this);
@@ -28,14 +30,18 @@ var Home = function (_React$Component) {
 
 	_createClass(Home, [{
 		key: "changeSearchResults",
-		value: function changeSearchResults(val) {
-			this.setState({ showSearchResults: val });
+		value: function changeSearchResults(showResults, recipeList, input) {
+			this.setState({
+				showSearchResults: showResults,
+				searchResultList: recipeList,
+				searchInput: input
+			});
 		}
 	}, {
 		key: "render",
 		value: function render() {
 
-			var searchresults = this.state.showSearchResults ? React.createElement(SearchResults, null) : null;
+			var searchresults = this.state.showSearchResults ? React.createElement(SearchResults, { list: this.state.searchResultList, searchInput: this.state.searchInput }) : null;
 
 			return React.createElement(
 				"div",
@@ -49,7 +55,13 @@ var Home = function (_React$Component) {
 	return Home;
 }(React.Component);
 
-function SearchResults() {
+function SearchResults(props) {
+
+	var list = props.list;
+	list = _(list).map(function (recipe) {
+		return React.createElement(SearchResultItem, { key: recipe.id, recipe: recipe });
+	}).value();
+
 	return React.createElement(
 		"div",
 		null,
@@ -60,36 +72,87 @@ function SearchResults() {
 			React.createElement(
 				"span",
 				{ id: "keyword" },
-				"boop"
+				props.searchInput
 			),
 			"'"
 		),
+		list
+	);
+}
+
+function SearchResultItem(props) {
+
+	var recipe = props.recipe;
+
+	var cookingmethod = recipe.cookingMethod === "" ? "None" : recipe.cookingMethod;
+	var diettype = recipe.dietType === "" ? "N/A" : recipe.dietType;
+	var preptime = recipe.prepTime === "" ? "N/A" : recipe.prepTime;
+
+	var recipeURL = "/recipe/" + recipe.id;
+
+	return React.createElement(
+		"section",
+		{ id: "search-results" },
 		React.createElement(
-			"section",
-			{ id: "search-results" },
+			"div",
+			{ "class": "result" },
 			React.createElement(
 				"div",
-				{ "class": "result" },
+				{ "class": "row" },
 				React.createElement(
 					"div",
-					{ "class": "row" },
+					{ "class": "col-md-4" },
 					React.createElement(
-						"div",
-						{ "class": "col-sm-6" },
-						React.createElement("img", { "class": "recipe-img", src: "https://raw.githubusercontent.com/josh-kimmm/chefs2/search-results/assets/images/search-result-test.jpg" })
-					),
+						"a",
+						{ href: recipeURL },
+						React.createElement("img", { "class": "recipe-img", src: recipe.image })
+					)
+				),
+				React.createElement(
+					"div",
+					{ "class": "col-md-8" },
 					React.createElement(
-						"div",
-						{ "class": "col-sm-6" },
+						"a",
+						{ href: recipeURL },
 						React.createElement(
 							"h2",
 							{ "class": "recipe-title" },
-							"Recipe Title"
+							recipe.recipeName
+						)
+					),
+					React.createElement(
+						"p",
+						{ "class": "recipe-description" },
+						React.createElement(
+							"p",
+							null,
+							React.createElement(
+								"span",
+								{ className: "bold-it" },
+								"Cooking Methods: "
+							),
+							cookingmethod
 						),
 						React.createElement(
 							"p",
-							{ "class": "recipe-description" },
-							" this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description."
+							null,
+							React.createElement(
+								"span",
+								{ className: "bold-it" },
+								"Dietary Restrictions: "
+							),
+							diettype
+						),
+						React.createElement(
+							"p",
+							null,
+							React.createElement(
+								"span",
+								{ className: "bold-it" },
+								"Cooking Time: "
+							),
+							preptime,
+							" "
 						)
 					)
 				)
