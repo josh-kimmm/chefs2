@@ -485,6 +485,9 @@ input[type="text"]:focus {
   border-width: 3px;
   border-color: #CD5E4E;
 }
+.dropdown-menu {
+  transform: translate3d(-580px, 33px, 0px) !important;
+}
 .dropdown-item {
   color: #808080;
 }
