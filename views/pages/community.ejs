@@ -14,9 +14,9 @@
                 </div>
                 <div class="col-8">
                     <h3><%= recipes[i].recipeId.recipeName %></h3>
-                    <p> Prep Time: <%= recipes[i].recipeId.prepTime %></p>
-                    <p>Diet Type: <%= recipes[i].recipeId.dietType %></p>
-                    <p>Cooking Method: <%= recipes[i].recipeId.cookingMethod %></p>
+                    <p> Prep Time: <%= recipes[i].recipeId.prepTime == '' ? 'N/A' : recipes[i].recipeId.prepTime%></p>
+                    <p>Diet Type: <%= recipes[i].recipeId.dietType == '' ? 'N/A' : recipes[i].recipeId.dietType%></p>
+                    <p>Cooking Method: <%= recipes[i].recipeId.cookingMethod == '' ? 'N/A' : recipes[i].recipeId.cookingMethod%></p>
                 </div>
             </a>
         </div>
