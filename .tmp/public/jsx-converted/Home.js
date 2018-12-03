@@ -7,34 +7,96 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 import SearchEngine from './SearchEngine.js';
-import Filter from './Filter.js';
 
 var Router = ReactRouterDOM.Router;
 
 var Home = function (_React$Component) {
-  _inherits(Home, _React$Component);
+	_inherits(Home, _React$Component);
 
-  function Home() {
-    _classCallCheck(this, Home);
+	function Home(props) {
+		_classCallCheck(this, Home);
 
-    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
-  }
+		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
-  _createClass(Home, [{
-    key: 'render',
-    value: function render() {
-      return React.createElement(
-        'div',
-        { id: 'wrap' },
-        React.createElement('img', { src: '/images/chefs-logo-red.png', alt: '', 'class': 'center' }),
-        React.createElement(SearchEngine, null),
-        React.createElement(Filter, null)
-      );
-    }
-  }]);
+		_this.state = {
+			showSearchResults: false
+		};
 
-  return Home;
+		_this.changeSearchResults = _this.changeSearchResults.bind(_this);
+		return _this;
+	}
+
+	_createClass(Home, [{
+		key: "changeSearchResults",
+		value: function changeSearchResults(val) {
+			this.setState({ showSearchResults: val });
+		}
+	}, {
+		key: "render",
+		value: function render() {
+
+			var searchresults = this.state.showSearchResults ? React.createElement(SearchResults, null) : null;
+
+			return React.createElement(
+				"div",
+				{ id: "wrap" },
+				React.createElement(SearchEngine, { changeSearchResults: this.changeSearchResults, showSearchResults: this.state.showSearchResults }),
+				searchresults
+			);
+		}
+	}]);
+
+	return Home;
 }(React.Component);
+
+function SearchResults() {
+	return React.createElement(
+		"div",
+		null,
+		React.createElement(
+			"h3",
+			{ id: "show-results-label" },
+			"Showing search results for '",
+			React.createElement(
+				"span",
+				{ id: "keyword" },
+				"boop"
+			),
+			"'"
+		),
+		React.createElement(
+			"section",
+			{ id: "search-results" },
+			React.createElement(
+				"div",
+				{ "class": "result" },
+				React.createElement(
+					"div",
+					{ "class": "row" },
+					React.createElement(
+						"div",
+						{ "class": "col-sm-6" },
+						React.createElement("img", { "class": "recipe-img", src: "https://raw.githubusercontent.com/josh-kimmm/chefs2/search-results/assets/images/search-result-test.jpg" })
+					),
+					React.createElement(
+						"div",
+						{ "class": "col-sm-6" },
+						React.createElement(
+							"h2",
+							{ "class": "recipe-title" },
+							"Recipe Title"
+						),
+						React.createElement(
+							"p",
+							{ "class": "recipe-description" },
+							" this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description. this is a description."
+						)
+					)
+				)
+			)
+		)
+	);
+}
 
 export default Home;
 //# sourceMappingURL=Home.js.map

@@ -1,5 +1,60 @@
 
 module.exports= {
+
+    searchPriority: async function (req, res) {
+        var ingredientId = req.param('ingredients');
+        var keyWords = req.param('keyWords').split(/[^a-zA-Z0-9]/).filter(Boolean);
+
+        var ingredientIdSet = new Set(ingredientId);
+        var PriorityQueue = require('js-priority-queue');
+        var priorityQueue = new PriorityQueue({comparator: (r1, r2) => r2[1] - r1[1]});
+
+        console.log(ingredientIdSet);
+
+        var recipes = await Recipe.find().populateAll();
+        var regExps = []
+        for (var i = 0; i < keyWords.length; i++) {
+            regExps.push(new RegExp(keyWords[i].toLowerCase(), "gi"));
+        }
+        for (var i = 0; i < recipes.length; i++) {
+            var rate = 0;
+            // count frequencies of each key word appearing in recipe name
+            for (var j = 0; j < regExps.length; j++) {
+                rate += (recipes[i]["recipeName"].toLowerCase().match(regExps[j]) || []).length;
+            }
+            // count how many ingredients matches to the searching query
+            for (var j = 0; j < recipes[i].ingredients.length; j++) {
+                if (ingredientIdSet.has(Number(recipes[i].ingredients[j].id))) {
+                    rate++;
+                }
+            }
+            if (rate > 0) {
+                priorityQueue.queue([recipes[i], rate]);
+            }
+        }
+
+        var sortedRecipes = [];
+        while (priorityQueue.length > 0) {
+            var t = priorityQueue.dequeue();
+            console.log(t[0].recipeName + "," + t[1]);
+            sortedRecipes.push(t[0]);
+        }
+        return res.json(sortedRecipes);
+    },
+
+    searchByKeyWords: async function (req, res) {
+        var keyWords = ['fish', 'apple','beef'];
+        var keyWordConditions = [];
+        for (var i = 0; i < keyWords.length; i++) {
+            keyWordConditions.push({recipeName: {contains: keyWords[i]}});
+            keyWordConditions.push({instructions: {contains: keyWords[i]}});
+        }
+        var recipes = await Recipe.find({
+            or: keyWordConditions,
+        }).populateAll();
+        return res.json(recipes);
+    },
+
     createIngredient: async function(req, res) {
         let ingredientName = req.param('ingredientName');
         let existingIngredient = await Ingredient.findOne({
@@ -63,7 +118,7 @@ module.exports= {
         let recipe = await Recipe.findOne({
             id: recipeId,
         }).populateAll();
-        
+
         if (!recipe) {
             return res.notFound();
         }
@@ -88,7 +143,7 @@ module.exports= {
 
     saveRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
-        
+
         if (!recipeId || !req.session.userId) {
             return res.notFound();
         }
@@ -128,7 +183,7 @@ module.exports= {
 
     unsaveRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
-        
+
         if (!recipeId || !req.session.userId) {
             return res.notFound();
         }
@@ -159,4 +214,5 @@ module.exports= {
 
         return res.redirect('/recipe/' + recipe.id);
     }
+
 }
