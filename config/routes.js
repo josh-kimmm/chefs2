@@ -56,7 +56,7 @@ module.exports.routes = {
   '/unsave-recipe/:recipeId': 'RecipeController.unsaveRecipe',
   '/user/:userId': 'UserController.viewUserProfile',
   '/allingredients':             'IngredientController.findAllIngredients',
-  '/search':                     'RecipeController.search',
+  '/search':                     'RecipeController.searchPriority',
   'GET /account/dietary-preferences': 'UserController.showEditDietaryPreferencesPage',
   'POST /account/dietary-preferences': 'UserController.processEditDietaryPreferencesPage',
   '/follow-user/:userId': 'UserController.followUser',
