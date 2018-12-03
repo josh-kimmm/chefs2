@@ -12,9 +12,8 @@ module.exports = {
      * foreign key: UserProfile
      * many to one
      */
-    userProfile: {
-      collection: 'UserProfile',
-      via: 'reviews',
+    user: {
+      model: 'User',
     },
 
     rating: {
