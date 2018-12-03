@@ -97,7 +97,7 @@ class SearchEngine extends React.Component {
         
         var searchBar = this.props.showSearchResults ? 
             (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
-                       startSearchQuery={this.startSearchQuery} positionStyle="filter-in-result" />) :
+                       startSearchQuery={this.startSearchQuery} positionStyle="blah" />) :
             (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
                        startSearchQuery={this.startSearchQuery} />);
         
