@@ -337,6 +337,8 @@ body {
 }
 body.homepage {
   background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 img {
   width: auto;
