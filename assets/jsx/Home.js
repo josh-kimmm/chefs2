@@ -42,10 +42,10 @@ function SearchResults() {
 	        <section id="search-results">
 	            <div class="result">
 	                <div class="row">
-	                    <div class="col-md-4">            
+	                    <div class="col-sm-6">            
 	                        <img class="recipe-img" src="https://raw.githubusercontent.com/josh-kimmm/chefs2/search-results/assets/images/search-result-test.jpg" />
 	                    </div>
-	                    <div class="col-md-8">
+	                    <div class="col-sm-6">
 	                        <h2 class="recipe-title">Recipe Title</h2>
 	                        <p class="recipe-description"> this is a description. this is a description. this is a description. this is a description.
 	                                this is a description. this is a description. this is a description. this is a description. this is a description.
