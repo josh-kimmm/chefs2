@@ -52,15 +52,6 @@ module.exports = {
       collection: 'UserProfile',
       via: 'cookbook',
     },
-
-    /**
-     * foreign key: Review
-     * one to many
-     */
-    review: {
-      collection: 'Review',
-      via: 'recipe',
-    },
   },
 
   /**

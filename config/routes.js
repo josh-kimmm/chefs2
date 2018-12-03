@@ -62,6 +62,7 @@ module.exports.routes = {
   '/follow-user/:userId': 'UserController.followUser',
   '/unfollow-user/:userId': 'UserController.unfollowUser',
   '/community': 'UserController.showCommunityPage',
+  'POST /recipe/create-review': 'RecipeController.createReview',
 
 
 

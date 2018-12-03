@@ -57,15 +57,6 @@ module.exports = {
       type: 'string',
     },
 
-    /**
-     * foreign key: Review
-     * one to many
-     */
-    reviews: {
-      collection: 'Review',
-      via: 'userProfile',
-    },
-
     communityRecipes: {
       collection: 'CommunityRecipe',
       via: 'userProfile',

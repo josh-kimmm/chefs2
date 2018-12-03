@@ -7,7 +7,8 @@
         </div>
         <div class="col-md-6 col-12 recipe-details-column">
             <h1><%= recipeName %></h1>
-            <p class="user-ratings"><%= review.length %> user ratings</p>
+            <p class="rating"><span class="avg">Rating: </span><%= rating %>/5</p>
+            <p class="user-ratings"><%= reviews.length %> user reviews</p>
             <% if (!saved) { %>
                 <a href="/save-recipe/<%= id %>" class="btn btn-primary">Save Recipe</a>
             <% } else { %>
@@ -43,8 +44,30 @@
         </div>
         <div class="reviews">
             <span class="details-title review-title">Reviews</span>
-            <a href="#" class="btn btn-primary">Review This Recipe</a>
-
+            <form class="review" method="post" action="/recipe/create-review">
+                <h5>Review This Recipe</h5>
+                <input type="hidden" value="<%= id %>" name="recipeId">
+                <label for="rating1">1</label>
+                <input type="radio" name="rating" id="rating1" value="1" checked>
+                <label for="rating2">2</label>
+                <input type="radio" name="rating" id="rating2" value="2">
+                <label for="rating3">3</label>
+                <input type="radio" name="rating" id="rating3" value="3">
+                <label for="rating4">4</label>
+                <input type="radio" name="rating" id="rating4" value="4">
+                <label for="rating5">5</label>
+                <input type="radio" name="rating" id="rating5" value="5">
+                <br>
+                <input name="review" placeholder="Write your one line review here...">
+                <button class="submit btn">Submit Review</button>
+            </form>
+            <% for (let i = 0; i < reviews.length; i++) { %>
+                <div class="past-reviews">
+                    <h3 class="name"><%= reviews[i].user.fullName %></h3>
+                    <p><span class="txt-title">Rating: </span><%= reviews[i].rating %></p>
+                    <p><span class="txt-title">Review: </span><%= reviews[i].reviewBody %></p>
+                </div>
+            <% } %>
         </div>
     </div>
 </div>
