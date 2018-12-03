@@ -4,28 +4,28 @@
         <div class="col-md-8">
             <h1><%= fullName %></h1>
         </div>
-            
+
         <div class="col-md-4">
             <div class="float-right">
-                <a href="/account/profile"><button class="profile">Edit Profile</button></a>
-                <a href="/account/password"><button class="settings"><i class="fa fa-cog fa-2x"></i></button></a>
+                <a href="#"><button class="profile">Logout</button></a>
+                <a class="icon" href="/account/password"><button class="settings"><i class=" settings fa fa-cog fa-2x"></i></button></a>
             </div>
-            
+
         </div>
-        
+
     </div>
 
     <!--followers row-->
     <div class="row">
         <p>
             <span class="number"><%= userProfile.followerList ? userProfile.followerList.length : 0 %></span><span class="label"> followers</span>
-            <span class="number"><%= userProfile.followingList ? userProfile.followingList.length : 0 %></span><span class="label"> following</span> 
+            <span class="number"><%= userProfile.followingList ? userProfile.followingList.length : 0 %></span><span class="label"> following</span>
         </p>
     </div>
-    
+
     <!--my cookbook-->
     <h2>MY COOKBOOK</h2>
-    <% 
+    <%
     let cookbook = userProfile.cookbook ? userProfile.cookbook : [];
 
     for (let i = 0; i < cookbook.length; i++) {
@@ -36,11 +36,8 @@
             </div>
             <div class="col-8">
                 <h3><%= cookbook[i].recipeName %></h3>
-                <p> Prep Time: <%= cookbook[i].prepTime %></p>
-                <p>Diet Type: <%= cookbook[i].dietType %></p>
-                <p>Cooking Method: <%= cookbook[i].cookingMethod %></p>
             </div>
         </a>
     <% } %>
-    
+
 </div>
