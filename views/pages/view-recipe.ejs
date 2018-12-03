@@ -63,7 +63,7 @@
             </form>
             <% for (let i = 0; i < reviews.length; i++) { %>
                 <div class="past-reviews">
-                    <h3 class="name"><%= reviews[i].user.fullName %></h3>
+                    <h3 class="name"><a href="/user/<%= reviews[i].user.id %>"><%= reviews[i].user.fullName %></a></h3>
                     <p><span class="txt-title">Rating: </span><%= reviews[i].rating %></p>
                     <p><span class="txt-title">Review: </span><%= reviews[i].reviewBody %></p>
                 </div>
