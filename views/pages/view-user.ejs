@@ -7,7 +7,13 @@
 
         <div class="col-md-4">
             <div class="float-right">
-                <a href="/logout"><button class="profile">Logout</button></a>
+                <% if (req.session.userId == id) { %>
+                    <a href="/logout"><button class="profile">Logout</button></a>
+                <% } else if (!following) { %>
+                    <a href="/follow-user/<%= id %>"><button class="profile">Follow</button></a>
+                <% } else { %>
+                    <a href="/unfollow-user/<%= id %>"><button class="profile">Unfollow</button></a>
+                <% } %>
                 <a class="icon" href="/account/password"><button class="settings"><i class=" settings fa fa-cog fa-2x"></i></button></a>
             </div>
 

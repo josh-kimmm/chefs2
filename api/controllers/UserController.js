@@ -23,7 +23,22 @@ module.exports= {
             return res.notFound();
         }
 
-        user.pageName = 'viewUserProfile';
+        user.pageName = 'viewUserProfile';        
+        
+        user.following = false;
+        if (req.session.userId) {
+            // check if user is following this user
+            let currentUser = await User.findOne({
+                id: req.session.userId,
+            }).populateAll();
+            let followingUser = await UserProfile.findOne({
+                id: currentUser.userProfile[0].id,
+            }).populate('followingList', {
+                id: user.id,
+            });
+            user.following = followingUser.followingList.length > 0 ? true : false;
+        }
+
 
         return res.view('pages/view-user', user);
     },
@@ -69,7 +84,7 @@ module.exports= {
         
         if (!userId || !req.session.userId || userId == req.session.userId) {
             sails.log.info('No user ID');
-            return res.notFound();
+            return res.redirect('/login');
         }
 
         let currentUser = await User.findOne({
