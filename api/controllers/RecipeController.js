@@ -1,5 +1,6 @@
 
 module.exports= {
+<<<<<<< HEAD
 
     searchPriority: async function (req, res) {
         var ingredientId = req.param('ingredients');
@@ -42,17 +43,23 @@ module.exports= {
         return res.json(sortedRecipes);
     },
 
+=======
+>>>>>>> 15d88d18d94637ad85b37e3e28b2a80f84ffdca7
     search: async function(req, res) {
         // ingredient id & key words should be extracted from req
         //var ingredientId = [1,3,4,5,6];
         //var keyWords = ['fish', 'apple','beef'];
+<<<<<<< HEAD
         // var ingredientId = req.param('ingredients').split(/[^a-zA-Z0-9]/).filter(Boolean).map(x => Number(x));
+=======
+>>>>>>> 15d88d18d94637ad85b37e3e28b2a80f84ffdca7
         var ingredientId = req.param('ingredients');
         var keyWords = req.param('keyWords').split(/[^a-zA-Z0-9]/).filter(Boolean);
 
         var keyWordConditions = [];
         for (var i = 0; i < keyWords.length; i++) {
             keyWordConditions.push({recipeName: {contains: keyWords[i]}});
+<<<<<<< HEAD
             //keyWordConditions.push({instructions: {contains: keyWords[i]}});
         }
         var recipes;
@@ -65,6 +72,13 @@ module.exports= {
             recipes = await Recipe.find().populateAll();
         }
 
+=======
+            keyWordConditions.push({instructions: {contains: keyWords[i]}});
+        }
+        var recipes = await Recipe.find({
+            or: keyWordConditions,
+        }).populateAll();
+>>>>>>> 15d88d18d94637ad85b37e3e28b2a80f84ffdca7
         var ingredientIdSet = new Set(ingredientId);
         var selectedRecipes = [];
         for (var i = 0; i < recipes.length; i++) {
@@ -78,6 +92,7 @@ module.exports= {
         return res.json(selectedRecipes);
     },
 
+<<<<<<< HEAD
     searchByKeyWords: async function (req, res) {
         var keyWords = ['fish', 'apple','beef'];
         var keyWordConditions = [];
@@ -91,6 +106,8 @@ module.exports= {
         return res.json(recipes);
     },
 
+=======
+>>>>>>> 15d88d18d94637ad85b37e3e28b2a80f84ffdca7
     createIngredient: async function(req, res) {
         let ingredientName = req.param('ingredientName');
         let existingIngredient = await Ingredient.findOne({
@@ -154,7 +171,11 @@ module.exports= {
         let recipe = await Recipe.findOne({
             id: recipeId,
         }).populateAll();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 15d88d18d94637ad85b37e3e28b2a80f84ffdca7
         if (!recipe) {
             return res.notFound();
         }
@@ -179,7 +200,11 @@ module.exports= {
 
     saveRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 15d88d18d94637ad85b37e3e28b2a80f84ffdca7
         if (!recipeId || !req.session.userId) {
             return res.notFound();
         }
@@ -208,7 +233,11 @@ module.exports= {
 
     unsaveRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 15d88d18d94637ad85b37e3e28b2a80f84ffdca7
         if (!recipeId || !req.session.userId) {
             return res.notFound();
         }
@@ -234,4 +263,8 @@ module.exports= {
 
         return res.redirect('/recipe/' + recipe.id);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 15d88d18d94637ad85b37e3e28b2a80f84ffdca7

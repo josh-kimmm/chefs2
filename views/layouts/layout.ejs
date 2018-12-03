@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NEW_APP_NAME</title>
+    <title>CHEFS</title>
 
     <% /* Viewport tag for sensible mobile support */ %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,6 +16,7 @@
     */ %>
 
     <% /* Auto-injected «link» tags: */ %>
+
     <!--STYLES-->
     <link rel="stylesheet" href="/dependencies/bootstrap-4/bootstrap-4.css">
     <link rel="stylesheet" href="/dependencies/font-awesome-4/css/font-awesome.css">
@@ -23,12 +24,12 @@
     <!--STYLES END-->
   </head>
 
-  <body>
+  <body class="<%= typeof pageName === 'undefined' ? '' : pageName %>">
     <%- partial('../navbar.ejs') %>
     <div id="server-side-content">
+      <div id="react"></div>
       <%- body %>
     </div>
-    <div id="react"></div>
 
 
     <% /*
@@ -79,12 +80,10 @@
     <script src="/js/pages/entrance/new-password.page.js"></script>
     <script src="/js/pages/entrance/signup.page.js"></script>
     <script src="/js/pages/faq.page.js"></script>
-    <script src="/js/pages/homepage.page.js"></script>
     <script src="/js/pages/legal/privacy.page.js"></script>
     <script src="/js/pages/legal/terms.page.js"></script>
     <!--SCRIPTS END-->
-
-    <!--<script type="module" src="/jsx-converted/test.js"></script>-->
+    
     <script type="module" src="/jsx-converted/App.js"></script>
   </body>
 </html>

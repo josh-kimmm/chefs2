@@ -27,7 +27,9 @@ module.exports = {
       throw {redirect: '/'};
     }
 
-    return exits.success();
+    return exits.success({
+      pageName: 'login',
+    });
 
   }
 

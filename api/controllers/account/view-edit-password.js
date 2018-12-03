@@ -18,7 +18,10 @@ module.exports = {
 
   fn: async function (inputs, exits) {
 
-    return exits.success();
+    return exits.success({
+      user: await User.findOne(this.req.me.id),
+      pageName: 'editPassword',
+    });
 
   }
 

@@ -1,6 +1,7 @@
 'use strict';
-
 import Home from './Home.js';
+// import SignUp from './Signup.js';
+// import Login from './Login.js';
 
 const Route = ReactRouterDOM.Route;
 const Router = ReactRouterDOM.BrowserRouter;
@@ -9,9 +10,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
-        <Route exact path="/" component={Home} />
-      </Router>
+      <div>
+        <Router>
+          <Route exact path="/" component={Home} />
+        </Router>
+      </div>
     );
   }
 }
