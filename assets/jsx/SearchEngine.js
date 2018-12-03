@@ -85,7 +85,7 @@ class SearchEngine extends React.Component {
             window.blah = res;
             console.log(res);
 
-            this.props.changeSearchResults(true, res);
+            this.props.changeSearchResults(true, res, this.state.recipeNameInput);
                  
         }.bind(this));
     }
