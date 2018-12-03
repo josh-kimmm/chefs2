@@ -529,6 +529,9 @@ a:active {
 .bold-it {
   font-weight: bold;
 }
+#dropdownStyleInResults {
+  transform: translate3d(-429px, -11px, 0px) !important;
+}
 .recipe-details .back-btn {
   margin-top: 1rem;
   margin-left: 1rem;
