@@ -36,6 +36,9 @@
             </div>
             <div class="col-8">
                 <h3><%= cookbook[i].recipeName %></h3>
+                <p> <span class="recipe-description">Prep Time: </span><%= cookbook[i].prepTime == '' ? 'N/A' : cookbook[i].prepTime%></p>
+                <p><span class="recipe-description">Diet Type: </span><%= cookbook[i].dietType == '' ? 'N/A' : cookbook[i].dietType%></p>
+                <p><span class="recipe-description">Cooking Method: </span><%= cookbook[i].cookingMethod %></p>
             </div>
         </a>
     <% } %>

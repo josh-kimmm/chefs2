@@ -14,7 +14,11 @@
                 <a href="/unsave-recipe/<%= id %>" class="btn btn-primary">Unsave Recipe</a>
             <% } %>
 
-            
+            <div class="description">
+                <p class="recipe-description"><span class="general-info">Diet Type: </span><%= dietType == '' ? 'N/A' : dietType %></p>
+                <p class="recipe-description"><span class="general-info">Prep Time: </span><%= prepTime == '' ? 'N/A' : prepTime %></p>
+                <p class="recipe-description"><span class="general-info">Cooking Method: </span><%= cookingMethod == '' ? 'N/A' : cookingMethod %></p>
+            </div>
         </div>
         <div class="recipe-ingredients-instructions">
             <div class="ingredients">
