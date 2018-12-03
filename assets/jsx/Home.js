@@ -63,20 +63,27 @@ function SearchResultItem(props) {
 
 	var cookingmethod = recipe.cookingMethod === "" ? "None" : recipe.cookingMethod;
 	var diettype = recipe.dietType === "" ? "N/A" : recipe.dietType;
+	var preptime = recipe.prepTime === "" ? "N/A" : recipe.prepTime;
+
+	var recipeURL = "/recipe/" + recipe.id;
 
 	return(
 		<section id="search-results">
             <div class="result">
                 <div class="row">
                     <div class="col-md-4">            
-                        <img class="recipe-img" src={recipe.image} />
+                        <a href={recipeURL}>
+                        	<img class="recipe-img" src={recipe.image} />
+                    	</a>
                     </div>
                     <div class="col-md-8">
-                        <h2 class="recipe-title">{recipe.recipeName}</h2>
+                    	<a href={recipeURL}>
+                        	<h2 class="recipe-title">{recipe.recipeName}</h2>
+                        </a>
                         <p class="recipe-description">
-                        	 Cooking Methods: {cookingmethod}
-                        	 Dietary Restrictions: {diettype}
-                        	 Cooking Time: Not available at this time ):
+                        	 <p>Cooking Methods: {cookingmethod}</p>
+                        	 <p>Dietary Restrictions: {diettype}</p>
+                        	 <p>Cooking Time: {preptime} </p>
                         </p>
                     </div>
                 </div>

@@ -86,6 +86,8 @@ class SearchEngine extends React.Component {
             console.log(res);
 
             this.props.changeSearchResults(true, res, this.state.recipeNameInput);
+            $('body.homepage').css('background-color', "#E2DBD4");
+            $('body.homepage').css('background-image', "none");
                  
         }.bind(this));
     }

@@ -88,7 +88,7 @@ class Filter extends React.Component {
                 <button className="btn btn-secondary dropdown-toggle" type="button" id={positionStyle} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Filters
                 </button>
-                <div className="dropdown-menu dropdown-menu-right" aria-labelledby="filter">
+                <div className="dropdown-menu dropdown-menu-right" style={{top: '18.5 rem'}} aria-labelledby="filter">
                     <form className="px-4 py-3 row">
                         <div className="form-group col-sm-6">
                             <label className="filter-label" for="ingredientsInput">Add Ingredients</label>

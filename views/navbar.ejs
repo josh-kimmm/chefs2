@@ -2,11 +2,12 @@
 <header class="container-fluid">
     <div class="row">
         <nav class="col-sm-12">
-            <% if (typeof pageName == 'undefined' || pageName != 'homepage') { %>
+            <!--<% if (typeof pageName !== 'undefined' && pageName != 'homepage') { %>
                 <a href="/"><img src="/images/chefs-logo-red.png" alt="CHEFS" class="nav-logo"/></a>
             <% } else { %>
                 <a></a>
-            <% } %>
+            <% } %>-->
+            <a href="/"><img src="/images/chefs-logo-red.png" alt="CHEFS" class="nav-logo"/></a>
             <div>
                 <% if (req.session.userId) { %>
                     <a href="/community"><p>COMMUNITY</p></a>
