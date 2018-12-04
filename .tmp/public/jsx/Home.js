@@ -81,9 +81,9 @@ function SearchResultItem(props) {
                         	<h2 class="recipe-title">{recipe.recipeName}</h2>
                         </a>
                         <p class="recipe-description">
-                        	 <p>Cooking Methods: {cookingmethod}</p>
-                        	 <p>Dietary Restrictions: {diettype}</p>
-                        	 <p>Cooking Time: {preptime} </p>
+                        	 <p><span className="bold-it">Cooking Methods: </span>{cookingmethod}</p>
+                        	 <p><span className="bold-it">Dietary Restrictions: </span>{diettype}</p>
+                        	 <p><span className="bold-it">Cooking Time: </span>{preptime} </p>
                         </p>
                     </div>
                 </div>

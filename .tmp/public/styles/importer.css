@@ -526,6 +526,9 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+.bold-it {
+  font-weight: bold;
+}
 .recipe-details .back-btn {
   margin-top: 1rem;
   margin-left: 1rem;
