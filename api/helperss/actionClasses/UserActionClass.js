@@ -19,4 +19,17 @@ module.exports = {
         await CommunityRecipe.addToCollection(communityRecipes.map((obj) => obj.id), 'userProfile').members([currentUser.id]);
 
     },
+
+    unfollowUser: async function(currentUser, userToFollow) {
+        await UserProfile.removeFromCollection(currentUser.userProfile[0].id, 'followingList').members([userToFollow.id]);
+        await UserProfile.removeFromCollection(userToFollow.userProfile[0].id, 'followerList').members([currentUser.id]);
+        let communityRecipes = await CommunityRecipe.find({
+            select: 'id',
+            where: {
+                savedBy: userToFollow.id,
+            },
+        });
+        await CommunityRecipe.removeFromCollection(communityRecipes.map((obj) => obj.id), 'userProfile').members([currentUser.id]);
+
+    }
 }

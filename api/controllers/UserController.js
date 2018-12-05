@@ -106,7 +106,7 @@ module.exports= {
         }
 
         await UserActionClass.followUser(currentUser, userToFollow);
-        
+
         return res.redirect('/user/' + userToFollow.id);
     },
 
@@ -133,16 +133,8 @@ module.exports= {
             return res.notFound();
         }
 
-        await UserProfile.removeFromCollection(currentUser.userProfile[0].id, 'followingList').members([userToFollow.id]);
-        await UserProfile.removeFromCollection(userToFollow.userProfile[0].id, 'followerList').members([currentUser.id]);
-        let communityRecipes = await CommunityRecipe.find({
-            select: 'id',
-            where: {
-                savedBy: userToFollow.id,
-            },
-        });
-        await CommunityRecipe.removeFromCollection(communityRecipes.map((obj) => obj.id), 'userProfile').members([currentUser.id]);
-
+        await UserActionClass.unfollowUser(currentUser, userToFollow);
+        
         return res.redirect('/user/' + userToFollow.id);
     },
 
