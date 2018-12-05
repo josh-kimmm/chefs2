@@ -225,7 +225,7 @@ module.exports= {
         let review = req.param('review');
 
         if (!req.session.userId) {
-            return res.notFound();
+            return res.redirect('/');
         }
 
         if (!recipeId) {

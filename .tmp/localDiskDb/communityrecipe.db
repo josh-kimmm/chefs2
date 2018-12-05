@@ -1,1 +1,5 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"recipeId":12,"savedBy":10,"createdAt":1543977578381,"updatedAt":1543977578381,"id":1,"_id":1}
+{"$$deleted":true,"_id":1}
+{"recipeId":1,"savedBy":10,"createdAt":1543980121321,"updatedAt":1543980121321,"id":2,"_id":2}
+{"$$deleted":true,"_id":2}
