@@ -1,3 +1,5 @@
+const RecipeActionClass = require('../helperss/actionClasses/RecipeActionClass');
+const RecipeFormClass = require('../helperss/formClasses/RecipeFormClass');
 
 module.exports= {
 
@@ -126,15 +128,7 @@ module.exports= {
         recipe.saved = false;
         if (req.session.userId) {
             // check if user has this recipe saved
-            let currentUser = await User.findOne({
-                id: req.session.userId,
-            }).populateAll();
-            let savedRecipe = await UserProfile.findOne({
-                id: currentUser.userProfile[0].id,
-            }).populate('cookbook', {
-                id: recipe.id,
-            });
-            recipe.saved = savedRecipe.cookbook.length > 0 ? true : false;
+            recipe.saved = await RecipeActionClass.checkSavedRecipe(req.session.userId, recipe)
         }
         recipe.pageName = 'viewRecipe';
 
@@ -148,8 +142,12 @@ module.exports= {
     saveRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
 
-        if (!recipeId || !req.session.userId) {
+        if (!recipeId) {
             return res.notFound();
+        }
+
+        if (!req.session.userId) {
+            return res.redirect('/login');
         }
 
         let currentUser = await User.findOne({
@@ -188,8 +186,12 @@ module.exports= {
     unsaveRecipe: async function(req, res) {
         let recipeId = req.param('recipeId', null);
 
-        if (!recipeId || !req.session.userId) {
+        if (!recipeId) {
             return res.notFound();
+        }
+
+        if (!req.session.userId) {
+            return res.redirect('/login');
         }
 
         let currentUser = await User.findOne({
