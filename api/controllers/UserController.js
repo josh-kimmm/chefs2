@@ -105,17 +105,8 @@ module.exports= {
             return res.notFound();
         }
 
-        await UserProfile.addToCollection(currentUser.userProfile[0].id, 'followingList').members([userToFollow.id]);
-        await UserProfile.addToCollection(userToFollow.userProfile[0].id, 'followerList').members([currentUser.id]);
-
-        let communityRecipes = await CommunityRecipe.find({
-            select: 'id',
-            where: {
-                savedBy: userToFollow.id,
-            },
-        });
-        await CommunityRecipe.addToCollection(communityRecipes.map((obj) => obj.id), 'userProfile').members([currentUser.id]);
-
+        await UserActionClass.followUser(currentUser, userToFollow);
+        
         return res.redirect('/user/' + userToFollow.id);
     },
 
