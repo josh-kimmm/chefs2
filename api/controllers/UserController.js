@@ -1,3 +1,5 @@
+const UserFormClass = require('../helperss/formClasses/UserFormClass');
+const UserActionClass = require('../helperss/actionClasses/UserActionClass');
 
 module.exports= {
     viewUserProfile: async function(req, res) {
@@ -67,14 +69,12 @@ module.exports= {
         let vegan = req.param('vegan');
         let vegetarian = req.param('vegetarian');
 
-        let dietaryPreferences = [];
-        if (vegan) dietaryPreferences.push('vegan');
-        if (vegetarian) dietaryPreferences.push('vegetarian');
-
-        let user = (await User.findOne(req.session.userId).populateAll()).userProfile[0];
-        await UserProfile.update(user, {
-            dietaryPreferences: dietaryPreferences.join(','),
+        let dietaryPreferences = await UserFormClass.validateDietaryPreferencesForm({
+            vegan: vegan,
+            vegetarian: vegetarian,
         });
+
+        await UserActionClass.updateDietaryPreferences(req.session.userId, dietaryPreferences);
 
         return res.redirect('/account/dietary-preferences');
     },
