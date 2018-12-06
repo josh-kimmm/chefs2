@@ -4,13 +4,31 @@ module.exports= {
 
     searchPriority: async function (req, res) {
         var ingredientId = req.param('ingredients');
-        var keyWords = req.param('keyWords').split(/[^a-zA-Z0-9]/).filter(Boolean);
+        var keyWords = req.param('keyWords');
+        if (keyWords != null) {
+            keyWords = keyWords.split(/[^a-zA-Z0-9]/).filter(Boolean);
+        }
+        var dietType = req.param('dietType');
+        if (dietType != null) {
+            dietType = dietType.toLowerCase();
+        }
+        var prepTime = req.param('prepTime');
+        if (prepTime != null) {
+            prepTime = prepTime.toLowerCase();
+        }
+        var cookingMethod = req.param('cookingMethod');
+        if (cookingMethod != null) {
+            cookingMethod = cookingMethod.toLowerCase();
+        }
+
+        console.log("diet: " + dietType + "|");
+        console.log("prep: " + prepTime + "|");
+        console.log("cook: " + cookingMethod + "|");
 
         var ingredientIdSet = new Set(ingredientId);
+
         var PriorityQueue = require('js-priority-queue');
         var priorityQueue = new PriorityQueue({comparator: (r1, r2) => r2[1] - r1[1]});
-
-        console.log(ingredientIdSet);
 
         var recipes = await Recipe.find().populateAll();
         var regExps = []
@@ -18,6 +36,17 @@ module.exports= {
             regExps.push(new RegExp(keyWords[i].toLowerCase(), "gi"));
         }
         for (var i = 0; i < recipes.length; i++) {
+            // filter out those recipes with a different dietType/prepTime/cookingMethod
+            if (recipes[i]["dietType"] !== "" && dietType != null && recipes[i]["dietType"].toLowerCase() !== dietType) {
+                continue;
+            }
+            if (recipes[i]["prepTime"] !== "" && prepTime != null && recipes[i]["prepTime"].toLowerCase() !== prepTime) {
+                continue;
+            }
+            if (recipes[i]["cookingMethod"] !== "" && cookingMethod != null && recipes[i]["cookingMethod"].toLowerCase() !== cookingMethod) {
+                continue;
+            }
+
             var rate = 0;
             // count frequencies of each key word appearing in recipe name
             for (var j = 0; j < regExps.length; j++) {
