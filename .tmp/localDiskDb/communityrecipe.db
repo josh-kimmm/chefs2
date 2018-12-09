@@ -1,1 +1,7 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"recipeId":12,"savedBy":8,"createdAt":1544347034494,"updatedAt":1544347034494,"id":1,"_id":1}
+{"recipeId":146,"savedBy":8,"createdAt":1544347170770,"updatedAt":1544347170770,"id":2,"_id":2}
+{"recipeId":8,"savedBy":9,"createdAt":1544347295000,"updatedAt":1544347295000,"id":3,"_id":3}
+{"recipeId":12,"savedBy":9,"createdAt":1544347421987,"updatedAt":1544347421987,"id":4,"_id":4}
+{"recipeId":47,"savedBy":9,"createdAt":1544347496129,"updatedAt":1544347496129,"id":5,"_id":5}
+{"recipeId":41,"savedBy":8,"createdAt":1544347558260,"updatedAt":1544347558260,"id":6,"_id":6}

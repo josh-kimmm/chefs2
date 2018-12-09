@@ -17,7 +17,7 @@ class SearchEngine extends React.Component {
         this.updateSearchInput = this.updateSearchInput.bind(this);
         this.handleSearchInput = this.handleSearchInput.bind(this);
         this.startSearchQuery = this.startSearchQuery.bind(this);
-        this.addNewIngredientFilter = this.addNewIngredientFilter.bind(this);
+        this.editIngredientFilter = this.editIngredientFilter.bind(this);
     }
 
     componentDidMount() {
@@ -53,10 +53,27 @@ class SearchEngine extends React.Component {
         }
     }
 
-    addNewIngredientFilter(ingredient) {
-
+    editIngredientFilter(ingredient, mode) {
         var ingredientArr = this.state.ingredientSearchList;
-        ingredientArr.push(ingredient);
+        
+        switch(mode) {
+            case 'add':
+                if(ingredientArr.indexOf(ingredient) !== -1){
+                    alert("Please choose another ingredient.");
+                    break;
+                }
+                ingredientArr.push(ingredient);
+                break;
+            
+            case 'delete':
+                var index = ingredientArr.indexOf(ingredient);
+                ingredientArr.splice(index, 1);
+                break;
+
+            default:
+                console.log("SOMEONE USED DIS WONG.");
+        }
+        
 
         this.setState({ingredientSearchList: ingredientArr});
     }
@@ -74,6 +91,10 @@ class SearchEngine extends React.Component {
             body: JSON.stringify({
                 ingredients: ingredientIdList,
                 keyWords: recipeNameInput
+                // dietType: ,
+                // prepTime: ,
+                // cookingMethod: 
+
             })
         };
 
@@ -95,19 +116,19 @@ class SearchEngine extends React.Component {
     render() {
 
         var totalIngredientList = this.state.totalIngredientList;
-        var addNewIngredientFilter = this.state.addNewIngredientFilter;
+        var editNewIngredientFilter = this.state.editIngredientFilter;
         var recipeNameInput = this.state.recipeNameInput;
         var ingredientSearchList = this.state.ingredientSearchList;
         
         var searchBar = this.props.showSearchResults ? 
             (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
-                       startSearchQuery={this.startSearchQuery} positionStyle="blah" />) :
+                        startSearchQuery={this.startSearchQuery} positionStyle="blah" />) :
             (<SearchBar recipeNameInput={recipeNameInput} updateSearchInput={this.updateSearchInput} handleSearchInput={this.handleSearchInput}
-                       startSearchQuery={this.startSearchQuery} />);
+                        startSearchQuery={this.startSearchQuery} />);
         
         var filterButton = this.props.showSearchResults ?
-            (<Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList} positionStyle="filter-in-result"/>) :
-            (<Filter addIngredientHandler={this.addNewIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList}/>);
+            (<Filter editIngredientHandler={this.editIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList} positionStyle="filter-in-result"/>) :
+            (<Filter editIngredientHandler={this.editIngredientFilter} ingredientList={totalIngredientList} searchedIngredients={ingredientSearchList}/>);
         
         var logo = this.props.showSearchResults ? null :
             (<img src="/images/chefs-logo-red.png" alt="" class="center" />);        

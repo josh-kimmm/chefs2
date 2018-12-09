@@ -1,1 +1,8 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"user":8,"rating":4,"reviewBody":"Wow this Recipe was amazing!","recipe":12,"createdAt":1544347048432,"updatedAt":1544347048432,"id":1,"_id":1}
+{"user":8,"rating":2,"reviewBody":"Simply. Amazing.","recipe":146,"createdAt":1544347184243,"updatedAt":1544347184243,"id":2,"_id":2}
+{"user":9,"rating":5,"reviewBody":"Oh I love Korean Food.","recipe":8,"createdAt":1544347307224,"updatedAt":1544347307224,"id":3,"_id":3}
+{"user":9,"rating":5,"reviewBody":"Sweeet!","recipe":9,"createdAt":1544347356085,"updatedAt":1544347356085,"id":4,"_id":4}
+{"user":9,"rating":2,"reviewBody":"I thought this was... alrite...","recipe":12,"createdAt":1544347437932,"updatedAt":1544347437932,"id":5,"_id":5}
+{"user":9,"rating":2,"reviewBody":"yasssssss","recipe":47,"createdAt":1544347502052,"updatedAt":1544347502052,"id":6,"_id":6}
+{"user":8,"rating":5,"reviewBody":"i luv pad thai, wau","recipe":41,"createdAt":1544347566452,"updatedAt":1544347566452,"id":7,"_id":7}

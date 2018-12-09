@@ -59,7 +59,7 @@ class Filter extends React.Component {
             var newIngredient = _(autocompletelist).find(function(ingredient){
                 return ingredient.selectorIndex === newIndex;
             });
-            this.props.addIngredientHandler(newIngredient);
+            this.props.editIngredientHandler(newIngredient, "add");
             ingredientNameInput = "";
             autoCompleteList = [];
             newIndex = 0;
@@ -73,6 +73,25 @@ class Filter extends React.Component {
             ingredientNameInput: ingredientNameInput,
             autoCompleteList: autoCompleteList
         });
+    }
+
+    componentDidMount() {
+        $('#cook').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+    }
+
+    componentDidUpdate() {
+        $('#cook').off('click');
+        $('#cook').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+    }
+
+    componentWillUnmount() {
+        $('#cook').off('click');
     }
 
     render() {
@@ -91,50 +110,16 @@ class Filter extends React.Component {
                 </button>
                 <div className="dropdown-menu dropdown-menu-right" id={dropdownStyleInResults} style={{top: '18.5 rem'}} aria-labelledby="filter">
                     <form className="px-4 py-3 row">
-                        <div className="form-group col-sm-6">
+                        <div className="form-group col-sm-12">
                             <label className="filter-label" for="ingredientsInput">Add Ingredients</label>
-                            
                             
                             <div class="ingredient-filter-wrapper">
                                 <input type="ingredient" className="form-control" value={ingredientNameInput} onChange={this.handleIngredientInput} onKeyDown={this.handleIngredientSelection} id="ingredientsInput" placeholder="Type to search and add ingredients" />
                                 <AutoCompleteList list={autoCompleteDropdown} selector={this.state.selectedIngredientIndex} />
                             </div>
-                            <IngredientBubbleChain list={ingredientBubbleList} />
-
-                            <label className="filter-label cooking-methods" for="cookingMethods">Add Cooking Methods</label>
-                            <button className="btn btn-secondary dropdown-item dropdown-toggle" type="button" id="cooking-method" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Choose Cooking Method
-                            </button>
+                            <IngredientBubbleChain list={ingredientBubbleList} deleteHandler={this.props.editIngredientHandler}/>
                             
-                            <ul className="dropdown-menu" aria-labelledby="diet">
-                                <li><input type="checkbox"/>Oven Bake</li>
-                            </ul>
-                        </div>
-                        <div className="col-sm-6">
-
-                            <label className="filter-label" for="diet">Add Dietary Restrictions</label>
-                            <button className="btn btn-secondary dropdown-item dropdown-toggle" type="button" id="diet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Choose Dietary Restriction
-                            </button>
-                            <ul className="dropdown-menu" aria-labelledby="diet">
-                                <li><input type="checkbox"/>Vegetarian</li>
-                                <li><input type="checkbox"/>Vegan</li>
-                            </ul>
-
-
-                            <label className="filter-label">Add Time Limit</label>
-                            <div>
-                                <select name="hrs" className="custom-select" id="hours">
-                                    <option selected>0 hr 0 min</option>
-                                    <option>0 hr 10 min</option>
-                                    <option>0 hr 30 min</option>
-                                    <option>1 hr 00 min</option>
-                                    <option>1 hr 30 min</option>
-                                    <option>2 hr 00 min</option>
-                                    <option>2 hr 30 min</option>
-                                </select>
-                            </div>
-                        </div>
+                        </div>  
                     </form>
                 </div>
     	    </div>
@@ -182,8 +167,10 @@ function IngredientBubbleChain(props){
 
     //iterate thru list and return bubble
     list = _(list).map(function(ingredient) {
-        return <IngredientBubble ingredientName={ingredient.ingredientName}/>
+        return <IngredientBubble key={ingredient.id} ingredient={ingredient} deleteHandler={props.deleteHandler}/>
     }).value();
+
+
 
     //bubbles to append to html
     return(
@@ -194,9 +181,12 @@ function IngredientBubbleChain(props){
 }
 
 function IngredientBubble(props){
+    var deleteHandler = props.deleteHandler;
+    var ingredientName = props.ingredient.ingredientName;
+
     return (
         <div class="bubble">
-            {props.ingredientName}<button class="bubble-delete"><i class="fa fa-times" aria-hidden="true"></i></button>
+            {ingredientName}<button class="bubble-delete" onClick={deleteHandler.bind({}, props.ingredient, "delete")}><i class="fa fa-times" aria-hidden="true"></i></button>
         </div>
     );
 }
