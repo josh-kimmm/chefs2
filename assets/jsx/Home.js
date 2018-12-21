@@ -44,7 +44,7 @@ class Home extends React.Component {
 function SearchResults(props) {
 	
 	var list = props.list;
-	console.log("yassssss");
+	console.log("yas");
 	list = _(list).map(function(recipe) {
 		return <SearchResultItem key={recipe.id} recipe={recipe} />
 	}).value();
