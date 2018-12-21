@@ -48,7 +48,7 @@ class SearchEngine extends React.Component {
 
     handleSearchInput(e) {
         if(e.key === "Enter"){
-            console.log("Enter is pressedd PLEZZ dasfdasf");
+            console.log("Enter is pressedd -___-");
             this.startSearchQuery();
         }
     }
